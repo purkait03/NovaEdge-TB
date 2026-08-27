@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ThingsboardServerApplication",
+            "request": "launch",
+            "mainClass": "org.thingsboard.server.ThingsboardServerApplication",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-Duser.timezone=UTC -Dspring.main.allow-bean-definition-overriding=true",
+            "env": {
+                "SPRING_DATASOURCE_URL": "jdbc:postgresql://localhost:5433/thingsboard",
+                "SPRING_DATASOURCE_USERNAME": "postgres",
+                "SPRING_DATASOURCE_PASSWORD": "postgres"
+            }
+        },
+        {
+            "type": "java",
+            "name": "ThingsboardInstallApplication",
+            "request": "launch",
+            "mainClass": "org.thingsboard.server.ThingsboardInstallApplication",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-Duser.timezone=UTC -Dspring.profiles.active=install -Dinstall.data_dir=${workspaceFolder}/application/target/data -Dinstall.load_demo=true -Dspring.jpa.hibernate.ddl-auto=none -Dspring.main.allow-bean-definition-overriding=true",
+            "env": {
+                "SPRING_DATASOURCE_URL": "jdbc:postgresql://localhost:5433/thingsboard",
+                "SPRING_DATASOURCE_USERNAME": "postgres",
+                "SPRING_DATASOURCE_PASSWORD": "postgres"
+            }
+        }
+    ]
+}
