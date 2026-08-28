@@ -25,6 +25,7 @@ import {
   signal,
   ViewChild
 } from '@angular/core';
+import { Renderer2 } from '@angular/core';
 import { skip, startWith, Subject } from 'rxjs';
 import { select, Store } from '@ngrx/store';
 import { debounceTime, distinctUntilChanged, take, takeUntil } from 'rxjs/operators';
@@ -66,6 +67,8 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   sidenavCollapsed = signal(false);
   menuCollapsed= computed(() => this.sidenavDesktop() && this.sidenavCollapsed());
 
+  darkMode = signal(false);
+
   logo = 'assets/logo_title_black.png';
   collapsedLogo =  'assets/small_logo_title_black.png';
 
@@ -89,11 +92,16 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
               private activeComponentService: ActiveComponentService,
               private fb: FormBuilder,
               public breakpointObserver: BreakpointObserver,
-              public homeService: HomeService) {
+              public homeService: HomeService,
+              private renderer: Renderer2) {
     super(store);
   }
 
   ngOnInit() {
+
+    const savedDarkMode = localStorage.getItem('tb-dark-mode') === 'true';
+    this.darkMode.set(savedDarkMode);
+    this.applyTheme(savedDarkMode);
 
     const isGtSm = this.breakpointObserver.isMatched(MediaBreakpoints['gt-sm']);
     this.sidenavMode = isGtSm ? 'side' : 'over';
@@ -160,6 +168,19 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
 
   isFullscreen() {
     return screenfull.isFullscreen;
+  }
+
+  toggleTheme() {
+    const dark = !this.darkMode();
+    this.darkMode.set(dark);
+    localStorage.setItem('tb-dark-mode', dark ? 'true' : 'false');
+    this.applyTheme(dark);
+  }
+
+  private applyTheme(dark: boolean) {
+    const body = this.window.document.body;
+    this.renderer.removeClass(body, dark ? 'tb-default' : 'tb-dark');
+    this.renderer.addClass(body, dark ? 'tb-dark' : 'tb-default');
   }
 
   goBack() {

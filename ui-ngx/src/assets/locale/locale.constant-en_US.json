@@ -37,6 +37,8 @@
         "make-private": "Make private",
         "apply": "Apply",
         "apply-changes": "Apply changes",
+        "dark-mode": "Switch to dark mode",
+        "light-mode": "Switch to light mode",
         "edit-mode": "Edit mode",
         "enter-edit-mode": "Enter edit mode",
         "decline-changes": "Decline changes",
