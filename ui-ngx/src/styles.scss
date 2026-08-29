@@ -1,5 +1,5 @@
-/**
- * Copyright © 2016-2026 The Thingsboard Authors
+﻿/**
+ * Copyright Â© 2016-2026 The Thingsboard Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -80,6 +80,16 @@ tb-root {
   --tb-nav-width: 250px;
   --tb-nav-width-collapsed: 60px;
   --tb-toolbar-height: 64px;
+  --tb-sidebar-bg: #1a0533;
+  --tb-sidebar-bg-hover: rgba(255, 255, 255, 0.08);
+  --tb-sidebar-bg-active: rgba(255, 255, 255, 0.14);
+  --tb-sidebar-text: rgba(255, 255, 255, 0.92);
+  --tb-sidebar-text-secondary: rgba(255, 255, 255, 0.70);
+  --tb-sidebar-text-muted: rgba(255, 255, 255, 0.55);
+  --tb-sidebar-border: rgba(255, 255, 255, 0.10);
+  --tb-sidebar-divider: rgba(255, 255, 255, 0.12);
+  --tb-sidebar-scrollbar-thumb: rgba(255, 255, 255, 0.30);
+  --tb-sidebar-scrollbar-thumb-hover: rgba(255, 255, 255, 0.45);
 }
 
 /***************
@@ -1504,10 +1514,10 @@ pre.tb-highlight {
  *********************************/
 
 .tb-dark {
-  --tb-page-background: #141a26;
-  --tb-surface: #1c2331;
-  --tb-surface-hover: #232c3d;
-  --tb-surface-active: #2a3450;
+  --tb-page-background: #0f051a;
+  --tb-surface: #1e0a3c;
+  --tb-surface-hover: #271245;
+  --tb-surface-active: #33185c;
   --tb-border-color: rgba(255, 255, 255, 0.08);
   --tb-border-strong: rgba(255, 255, 255, 0.14);
   --tb-text-primary: rgba(255, 255, 255, 0.92);
@@ -1515,6 +1525,7 @@ pre.tb-highlight {
   --tb-text-muted: rgba(255, 255, 255, 0.4);
   --tb-scrollbar-thumb: rgba(255, 255, 255, 0.25);
   --tb-scrollbar-thumb-hover: rgba(255, 255, 255, 0.4);
+  color: var(--tb-text-primary);
 }
 
 .tb-default {
@@ -1586,6 +1597,7 @@ pre.tb-highlight {
     color: rgba(255, 255, 255, 0.82);
   }
 }
+
 
 /***************
  * TAILWIND CSS

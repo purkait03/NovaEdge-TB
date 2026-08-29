@@ -43,6 +43,7 @@
     }
     .mat-divider.mat-divider-horizontal {
       margin: 14px 16px;
+      border-top-color: var(--tb-sidebar-divider) !important;
     }
   }
 
@@ -64,23 +65,23 @@
     margin-bottom: 2px;
     font-size: 14px;
     letter-spacing: 0.01em;
-    --mat-button-text-label-text-color: var(--tb-text-secondary);
+    --mat-button-text-label-text-color: var(--tb-sidebar-text-secondary);
     &:hover, &.tb-hovered {
-      background-color: var(--tb-surface-active);
+      background-color: var(--tb-sidebar-bg-hover);
       border-bottom: none;
-      --mat-button-text-label-text-color: var(--tb-text-primary);
+      --mat-button-text-label-text-color: var(--tb-sidebar-text);
     }
     &:focus {
       border-bottom: none;
       outline: none;
     }
     &.tb-active {
-      background: linear-gradient(90deg, rgba(49, 93, 141, 0.14), rgba(49, 93, 141, 0.06));
-      box-shadow: inset 3px 0 0 var(--tb-primary-color);
-      --mat-button-text-label-text-color: var(--tb-primary-color) !important;
+      background: var(--tb-sidebar-bg-active);
+      box-shadow: inset 3px 0 0 #ffffff;
+      --mat-button-text-label-text-color: var(--tb-sidebar-text) !important;
       font-weight: 500;
       .mat-icon {
-        color: var(--tb-primary-color);
+        color: var(--tb-sidebar-text);
       }
     }
     .mat-icon {
@@ -88,11 +89,11 @@
       margin-left: 0;
       min-width: 1.25rem;
       min-height: 1.25rem;
-      color: var(--tb-text-muted);
+      color: var(--tb-sidebar-text-muted);
       transition: color $sidenav-anim-timing;
     }
     &:hover .mat-icon {
-      color: var(--tb-text-primary);
+      color: var(--tb-sidebar-text);
     }
     span.mdc-button__label {
       width: 100%;

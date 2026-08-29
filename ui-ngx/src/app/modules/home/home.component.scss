@@ -52,8 +52,8 @@
   }
   mat-sidenav.tb-site-sidenav {
     width: var(--tb-nav-width);
-    border-right: 1px solid var(--tb-border-color);
-    background: var(--tb-surface);
+    border-right: 1px solid var(--tb-sidebar-border);
+    background: var(--tb-sidebar-bg);
     @media (max-width:456px) {
       width: calc(100% - 56px);
     }
@@ -70,8 +70,8 @@
         flex-shrink: 0;
         white-space: nowrap;
         border-right: none;
-        border-bottom: 1px solid var(--tb-border-color);
-        background: var(--tb-surface);
+        border-bottom: 1px solid var(--tb-sidebar-border);
+        background: var(--tb-sidebar-bg);
         .tb-logo-title {
           width: auto;
           max-width: calc(100% - 56px);
@@ -84,10 +84,10 @@
           position: absolute;
           right: 12px;
           top: 12px;
-          color: var(--tb-text-secondary);
+          color: var(--tb-sidebar-text-secondary);
           &:hover {
-            background-color: var(--tb-surface-hover);
-            color: var(--tb-text-primary);
+            background-color: var(--tb-sidebar-bg-hover);
+            color: var(--tb-sidebar-text);
           }
           .tb-collapsed-logo-container {
             position: relative;
@@ -128,19 +128,33 @@
       overflow: hidden;
       padding: 0;
       border-right: none;
-      --mat-toolbar-container-text-color: var(--tb-text-primary);
-      background: var(--tb-surface);
+      --mat-toolbar-container-text-color: var(--tb-sidebar-text);
+      background: var(--tb-sidebar-bg);
       .tb-side-menu-scroll {
         flex: 1 1 auto;
         min-height: 0;
         overflow-y: auto;
         overflow-x: hidden;
         scrollbar-width: thin;
-        scrollbar-color: var(--tb-border-strong) transparent;
+        scrollbar-color: var(--tb-sidebar-scrollbar-thumb) transparent;
       }
       tb-user-menu {
         flex-shrink: 0;
-        border-top: 1px solid var(--tb-border-color);
+        border-top: 1px solid var(--tb-sidebar-border);
+        ::ng-deep {
+          span.tb-user-display-name {
+            color: var(--tb-sidebar-text) !important;
+          }
+          span.tb-user-authority {
+            color: var(--tb-sidebar-text-secondary) !important;
+          }
+          .mat-icon.tb-mini-avatar {
+            color: var(--tb-sidebar-text) !important;
+          }
+          button.mat-mdc-button.tb-user-menu:hover {
+            background-color: var(--tb-sidebar-bg-hover) !important;
+          }
+        }
       }
     }
   }

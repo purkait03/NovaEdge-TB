@@ -132,14 +132,14 @@ $maxLegendHeight: 35%;
           display: flex;
           align-items: center;
           gap: 4px;
-          color: #ccc;
+          color: var(--tb-text-secondary);
           white-space: nowrap;
           cursor: pointer;
           .tb-time-series-chart-legend-item-label-circle {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background-color: #ccc;
+            background-color: var(--tb-text-muted);
           }
         }
       }
