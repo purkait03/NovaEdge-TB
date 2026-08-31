@@ -1518,18 +1518,114 @@ pre.tb-highlight {
   --tb-surface: #1e0a3c;
   --tb-surface-hover: #271245;
   --tb-surface-active: #33185c;
+  --tb-surface-raised: #26124e;
+  --tb-surface-overlay: #24104a;
   --tb-border-color: rgba(255, 255, 255, 0.08);
   --tb-border-strong: rgba(255, 255, 255, 0.14);
   --tb-text-primary: rgba(255, 255, 255, 0.92);
-  --tb-text-secondary: rgba(255, 255, 255, 0.6);
-  --tb-text-muted: rgba(255, 255, 255, 0.4);
+  --tb-text-secondary: rgba(255, 255, 255, 0.65);
+  --tb-text-muted: rgba(255, 255, 255, 0.45);
   --tb-scrollbar-thumb: rgba(255, 255, 255, 0.25);
   --tb-scrollbar-thumb-hover: rgba(255, 255, 255, 0.4);
   color: var(--tb-text-primary);
+  color-scheme: dark;
+
+  // Scrollbar
+  ::-webkit-scrollbar-thumb {
+    background: var(--tb-scrollbar-thumb);
+    &:hover { background: var(--tb-scrollbar-thumb-hover); }
+  }
+
+  // Links remain readable on dark
+  a:not(.mat-mdc-button-base, .mdc-tab) {
+    color: #8ab4f8;
+    border-bottom-color: rgba(138, 180, 248, 0.25);
+    &:hover, &:focus { border-bottom-color: #8ab4f8; }
+  }
+
+  blockquote { border-left-color: var(--tb-border-strong); }
+  .tb-progress-cover { background-color: var(--tb-page-background); }
+  pre.tb-highlight {
+    background-color: var(--tb-surface-raised);
+    border-color: var(--tb-border-color);
+    code { color: var(--tb-text-primary); }
+  }
+  .tb-notice { background-color: var(--tb-surface-raised); border-color: var(--tb-border-color); }
+  .tb-fullscreen-parent { background: var(--tb-page-background); }
+  .tb-timewindow-panel, .tb-legend-config-panel, .tb-filter-panel, .tb-panel-container {
+    background: var(--tb-surface-overlay);
+    border-color: var(--tb-border-color);
+  }
+  .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) {
+    background: var(--tb-surface);
+    border-bottom-color: var(--tb-border-color);
+  }
 }
 
 .tb-default {
   --tb-primary-color: #315d8d;
+  --tb-surface-raised: #ffffff;
+  --tb-surface-overlay: #ffffff;
+  color-scheme: light;
+}
+
+/*********************************
+ * DARK – INNER TAB CONTENT (THEME LAYER ONLY)
+ * No layout/display/visibility/position changes.
+ * Only background / text / border / shadow tokens.
+ * Targets existing ThingsBoard DOM inside tabs.
+ *********************************/
+.tb-dark {
+  // Entity / admin tables – card surface inside tabs must be dark, not white
+  .tb-entity-table .tb-entity-table-content,
+  tb-entities-table .tb-entity-table-content {
+    background: var(--tb-surface);
+  }
+  // Any component that hardcoded white surface (kept light in original) -> map to dark surface
+  // Scoped to known surface classes to avoid global * hacks
+  .tb-entity-table-content,
+  .tb-dashboard-page .mat-content,
+  .mat-drawer-container,
+  .mat-drawer {
+    // let Material system tokens handle text; only ensure surface is not forced white
+  }
+
+  // Forms inside tabs – Material outline borders
+  .mat-mdc-form-field.mat-form-field-appearance-outline {
+    .mdc-notched-outline__leading,
+    .mdc-notched-outline__notch,
+    .mdc-notched-outline__trailing {
+      border-color: var(--tb-border-strong);
+    }
+  }
+
+  // Cards/panels inside tabs
+  mat-card, .mat-mdc-card,
+  .mat-expansion-panel {
+    border-color: var(--tb-border-color);
+  }
+
+  // Divider inside tabs
+  .mat-divider { --mat-divider-color: var(--tb-border-color); border-color: var(--tb-border-color); }
+}
+
+/*********************************
+ * DARK – CDK OVERLAY (menus, dialogs, selects, datepickers)
+ * OverlayContainer receives tb-dark via HomeComponent.applyTheme
+ *********************************/
+.cdk-overlay-container.tb-dark,
+.cdk-overlay-container .tb-dark {
+  color: var(--tb-text-primary);
+  color-scheme: dark;
+}
+.cdk-overlay-container.tb-dark {
+  .mat-mdc-menu-panel, .mat-mdc-select-panel, .mat-mdc-autocomplete-panel,
+  .mat-datepicker-content, .mat-mdc-dialog-container .mdc-dialog__surface,
+  .mat-mdc-tooltip .mdc-tooltip__surface {
+    background-color: var(--tb-surface-overlay);
+    color: var(--tb-text-primary);
+    border: 1px solid var(--tb-border-color);
+  }
 }
 
 /*********************************

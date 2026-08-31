@@ -31,6 +31,7 @@ import { select, Store } from '@ngrx/store';
 import { debounceTime, distinctUntilChanged, take, takeUntil } from 'rxjs/operators';
 
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { OverlayContainer } from '@angular/cdk/overlay';
 import { PageComponent } from '@shared/components/page.component';
 import { AppState } from '@core/core.state';
 import { getCurrentAuthState, selectUserSettingsProperty } from '@core/auth/auth.selectors';
@@ -93,7 +94,8 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
               private fb: FormBuilder,
               public breakpointObserver: BreakpointObserver,
               public homeService: HomeService,
-              private renderer: Renderer2) {
+              private renderer: Renderer2,
+              private overlayContainer: OverlayContainer) {
     super(store);
   }
 
@@ -179,8 +181,22 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
 
   private applyTheme(dark: boolean) {
     const body = this.window.document.body;
-    this.renderer.removeClass(body, dark ? 'tb-default' : 'tb-dark');
-    this.renderer.addClass(body, dark ? 'tb-dark' : 'tb-default');
+    // Tailwind is configured with important: ".tb-default" so utilities are scoped to .tb-default.
+    // Keep tb-default always so layout utilities (flex, etc) continue to work in dark mode,
+    // and toggle tb-dark as an additional theme layer.
+    this.renderer.addClass(body, 'tb-default');
+    if (dark) {
+      this.renderer.addClass(body, 'tb-dark');
+    } else {
+      this.renderer.removeClass(body, 'tb-dark');
+    }
+    const overlayEl = this.overlayContainer.getContainerElement();
+    this.renderer.addClass(overlayEl, 'tb-default');
+    if (dark) {
+      this.renderer.addClass(overlayEl, 'tb-dark');
+    } else {
+      this.renderer.removeClass(overlayEl, 'tb-dark');
+    }
   }
 
   goBack() {
