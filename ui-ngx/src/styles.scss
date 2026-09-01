@@ -54,6 +54,52 @@ tb-root {
   box-sizing: border-box;
 }
 
+/*********************************
+ * MODERN DESIGN TOKENS
+ *********************************/
+
+:root {
+  --tb-page-background: #eef1f6;
+  --tb-surface: #FFF8CF;
+  --tb-surface-hover: #f5f6fa;
+  --tb-surface-active: #ebedf4;
+  --tb-border-color: rgba(16, 24, 40, 0.08);
+  --tb-border-strong: rgba(16, 24, 40, 0.12);
+  --tb-text-primary: rgba(16, 24, 40, 0.87);
+  --tb-text-secondary: rgba(16, 24, 40, 0.6);
+  --tb-text-muted: rgba(16, 24, 40, 0.42);
+  --tb-scrollbar-thumb: rgba(16, 24, 40, 0.25);
+  --tb-scrollbar-thumb-hover: rgba(16, 24, 40, 0.4);
+  --tb-radius-sm: 6px;
+  --tb-radius-md: 10px;
+  --tb-radius-lg: 14px;
+  --tb-radius-xl: 18px;
+  --tb-shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+  --tb-shadow-md: 0 4px 10px -2px rgba(16, 24, 40, 0.08), 0 2px 4px -2px rgba(16, 24, 40, 0.06);
+  --tb-shadow-lg: 0 12px 24px -6px rgba(16, 24, 40, 0.12), 0 4px 8px -4px rgba(16, 24, 40, 0.08);
+  --tb-nav-width: 250px;
+  --tb-nav-width-collapsed: 60px;
+  --tb-toolbar-height: 64px;
+  --tb-sidebar-bg: #2E2910;
+  --tb-sidebar-bg-hover: rgba(255, 248, 207, 0.08);
+  --tb-sidebar-bg-active: rgba(255, 248, 207, 0.14);
+  --tb-sidebar-text: rgba(255, 248, 207, 0.92);
+  --tb-sidebar-text-secondary: rgba(255, 248, 207, 0.70);
+  --tb-sidebar-text-muted: rgba(255, 248, 207, 0.55);
+  --tb-sidebar-border: rgba(255, 248, 207, 0.10);
+  --tb-sidebar-divider: rgba(255, 248, 207, 0.12);
+  --tb-sidebar-scrollbar-thumb: rgba(255, 248, 207, 0.30);
+  --tb-sidebar-scrollbar-thumb-hover: rgba(255, 248, 207, 0.45);
+  --tb-details-panel-bg: #FFF8CF;
+  --tb-details-header-bg: #FFF8CF;
+  --tb-details-drawer-bg: #FFF8CF;
+  --tb-details-drawer-border: rgba(16, 24, 40, 0.08);
+}
+
+body {
+  background-color: var(--tb-page-background, #eef1f6);
+}
+
 /***************
  * TYPE DEFAULTS
  ***************/
@@ -1370,6 +1416,278 @@ pre.tb-highlight {
     }
   }
 }
+
+/*********************************
+ * NOVAEDGE DARK BROWN THEME – CLEAN ROOT FIX
+ * No page-specific hacks, no blanket !important, no layout-breaking overrides
+ *********************************/
+
+.tb-dark {
+  --tb-page-background: #1A120D;
+  --tb-surface: #2A1D14;
+  --tb-surface-hover: #3D2A1D;
+  --tb-surface-active: #4A3323;
+  --tb-surface-raised: #342419;
+  --tb-surface-overlay: #21170E;
+  --tb-border-color: #4A3526;
+  --tb-border-strong: #5C4433;
+  --tb-text-primary: #F5EDE3;
+  --tb-text-secondary: #D2C0AD;
+  --tb-text-muted: #A9907A;
+  --tb-scrollbar-thumb: rgba(201, 154, 108, 0.28);
+  --tb-scrollbar-thumb-hover: rgba(201, 154, 108, 0.42);
+  --tb-primary-color: #C49A6C;
+  --tb-sidebar-bg: #1A120D;
+  --tb-sidebar-bg-hover: #3D2A1D;
+  --tb-sidebar-bg-active: #4A3323;
+  --tb-sidebar-text: #F5EDE3;
+  --tb-sidebar-text-secondary: #D2C0AD;
+  --tb-sidebar-text-muted: #A9907A;
+  --tb-sidebar-border: #4A3526;
+  --tb-sidebar-divider: #4A3526;
+  --tb-details-panel-bg: #1D130B;
+  --tb-details-header-bg: #291B10;
+  --tb-details-drawer-bg: #1D130B;
+  --tb-details-drawer-border: #5A3A1F;
+  // Material MDC tokens – brown overlays, no cream
+  --mat-sys-surface: #2A1D14;
+  --mat-sys-on-surface: #F5EDE3;
+  --mat-sys-surface-container: #2A1D14;
+  --mat-sys-surface-container-high: #342419;
+  --mat-menu-container-color: #21170E;
+  --mat-select-panel-background-color: #21170E;
+  --mat-autocomplete-background-color: #21170E;
+  --mat-dialog-container-color: #21170E;
+  --mat-tooltip-container-color: #21170E;
+  --mdc-list-list-item-label-text-color: #F5EDE3;
+  --mdc-list-list-item-supporting-text-color: #D2C0AD;
+  --mdc-list-list-item-leading-icon-color: #D2C0AD;
+  --mat-table-background-color: var(--tb-surface);
+  --mat-table-header-headline-color: var(--tb-text-secondary);
+  --mat-table-row-item-label-text-color: var(--tb-text-primary);
+  --mat-table-row-item-outline-color: var(--tb-border-color);
+  --mat-table-row-item-hover-state-layer-color: var(--tb-surface-hover);
+  --mat-table-row-item-selected-state-layer-color: var(--tb-surface-active);
+  --mdc-data-table-row-item-selected-container-color: var(--tb-surface-active);
+  --tb-hover-color: var(--tb-surface-hover);
+  --tb-current-entity-color: var(--tb-surface-active);
+  --mat-paginator-container-background-color: #2A1D14;
+  --mat-card-elevated-container-color: #2A1D14;
+  // Disabled – muted brown, readable
+  --mdc-list-list-item-disabled-container-color: #2A1D14;
+  --mdc-list-list-item-disabled-label-text-color: #8F7A60;
+  --mdc-list-list-item-disabled-leading-icon-color: #8F7A60;
+  --mat-menu-item-disabled-label-text-color: #8F7A60;
+  --mat-option-disabled-label-text-color: #8F7A60;
+  color: var(--tb-text-primary);
+  color-scheme: dark;
+}
+
+.cdk-overlay-container.tb-dark,
+.cdk-overlay-container .tb-dark {
+  --mat-menu-container-color: #21170E;
+  --mat-select-panel-background-color: #21170E;
+  --mat-autocomplete-background-color: #21170E;
+  --mat-dialog-container-color: #21170E;
+  --mat-tooltip-container-color: #21170E;
+  --mdc-list-list-item-disabled-container-color: #2A1D14;
+  color: var(--tb-text-primary);
+  color-scheme: dark;
+}
+
+// Details drawer – original hard-coded #FFF8CF via inline style
+.tb-dark tb-details-panel .mat-content,
+.tb-dark tb-entity-details-panel .mat-content {
+  background-color: var(--tb-details-panel-bg);
+}
+.tb-dark mat-drawer.tb-details-drawer {
+  --mat-sidenav-container-background-color: #1D130B;
+}
+
+// Filter panels hard-coded #FFF8CF – scoped, no layout change
+.tb-dark tb-filters-edit-panel,
+.tb-dark tb-filter-predicate-list .tb-filter-predicate {
+  background: var(--tb-surface-overlay);
+}
+
+.tb-dark .tb-popover-inner {
+  border: 1px solid var(--tb-border-color);
+  color: var(--tb-text-primary);
+}
+
+.tb-dark .tb-toggle-menu-items {
+  color: var(--tb-text-primary);
+}
+.tb-dark .tb-toggle-menu-items .tb-menu-toggle-header {
+  color: var(--tb-text-primary);
+  border-bottom-color: var(--tb-border-color);
+}
+.tb-dark .tb-toggle-menu-items a.mat-mdc-button {
+  color: var(--tb-text-primary);
+}
+
+// Filter / entity-table popups – ensure dark brown, not white, with readable form fields
+.tb-dark .tb-filter-panel,
+.tb-dark .tb-entity-filter,
+.cdk-overlay-container.tb-dark .tb-filter-panel,
+.cdk-overlay-container.tb-dark .tb-entity-filter {
+  background: var(--tb-surface-overlay);
+  border: 1px solid var(--tb-border-color);
+  color: var(--tb-text-primary);
+}
+
+// Table header – was white via default Material, now brown (match original :not(.mat-primary) specificity)
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) {
+  background: var(--tb-surface);
+  color: var(--tb-text-primary);
+  --mat-toolbar-container-background-color: var(--tb-surface);
+  --mat-toolbar-container-text-color: var(--tb-text-primary);
+  border-bottom: 1px solid var(--tb-border-color);
+}
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) .mat-icon,
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) .mat-mdc-icon-button .mat-icon {
+  color: var(--tb-text-secondary);
+}
+.tb-dark .mat-card,
+.tb-dark .mat-mdc-card {
+  --mat-card-elevated-container-color: var(--tb-surface);
+  --mat-card-outlined-container-color: var(--tb-surface);
+}
+.tb-dark .mat-mdc-header-row {
+  background: var(--tb-surface);
+}
+.tb-dark .mat-mdc-header-cell {
+  background: var(--tb-surface);
+  color: var(--tb-text-secondary);
+  --mat-table-header-headline-color: var(--tb-text-secondary);
+}
+
+// Table rows – hover/selected was white, now brown
+.tb-dark .mat-mdc-table .mat-mdc-row {
+  transition: background-color 180ms;
+}
+.tb-dark .mat-mdc-table .mat-mdc-row:hover {
+  background: var(--tb-surface-hover);
+}
+.tb-dark .mat-mdc-table .mat-mdc-row.cdk-row--selected,
+.tb-dark .mat-mdc-table .mat-mdc-row.mat-mdc-selected,
+.tb-dark .mat-mdc-table .mat-mdc-row.tb-current-entity {
+  background: var(--tb-surface-active);
+}
+
+// Paginator, sort, checkbox – ensure dark readable
+.tb-dark .mat-mdc-paginator {
+  background: var(--tb-surface);
+}
+.tb-dark .mat-sort-header-arrow {
+  color: var(--tb-primary-color);
+}
+
+// Material form-field in dark – readable labels/inputs/selects, correct floating label (no layout override)
+.tb-dark,
+.cdk-overlay-container.tb-dark,
+.cdk-overlay-container .tb-dark {
+  --mat-form-field-outlined-outline-color: var(--tb-border-strong);
+  --mat-form-field-outlined-hover-outline-color: #C49A6C;
+  --mat-form-field-outlined-focus-outline-color: #C49A6C;
+  --mat-form-field-outlined-input-text-color: var(--tb-text-primary);
+  --mat-form-field-outlined-label-text-color: var(--tb-text-secondary);
+  --mat-form-field-outlined-hover-label-text-color: var(--tb-text-primary);
+  --mat-form-field-outlined-focus-label-text-color: #C49A6C;
+  --mdc-outlined-text-field-outline-color: var(--tb-border-strong);
+  --mdc-outlined-text-field-hover-outline-color: var(--tb-border-strong);
+  --mdc-outlined-text-field-focus-outline-color: #C49A6C;
+  --mdc-outlined-text-field-input-text-color: var(--tb-text-primary);
+  --mdc-outlined-text-field-label-text-color: var(--tb-text-secondary);
+  --mdc-outlined-text-field-caret-color: var(--tb-primary-color);
+  --mat-select-enabled-trigger-text-color: var(--tb-text-primary);
+  --mat-select-placeholder-text-color: var(--tb-text-muted);
+  --mdc-filled-text-field-input-text-color: var(--tb-text-primary);
+}
+
+// Ensure overlay filter form-fields inherit dark tokens (no height/padding override)
+.cdk-overlay-container.tb-dark .mat-mdc-form-field,
+.tb-dark .tb-filter-panel .mat-mdc-form-field {
+  color: var(--tb-text-primary);
+}
+
+// Device Filter button – prevent clipping from previous card overflow fix
+.tb-dark .tb-entity-filter .mat-mdc-button,
+.tb-dark .tb-filter-panel .mat-mdc-button {
+  overflow: visible;
+}
+
+// ── Widget/Table toolbar – was white via .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) {background:#fff} ──
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar {
+  background: var(--tb-surface);
+  color: var(--tb-text-primary);
+  border-bottom: 1px solid var(--tb-border-color);
+}
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar .mat-icon,
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar .mat-mdc-icon-button .mat-icon {
+  color: var(--tb-text-secondary);
+}
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar .mat-mdc-icon-button:hover .mat-icon {
+  color: var(--tb-text-primary);
+}
+
+// ── Table – header, rows, cells, hover/selected, sort, paginator, checkbox ──
+.tb-dark {
+  --mat-table-background-color: var(--tb-surface);
+  --mat-table-row-item-outline-color: var(--tb-border-color);
+  --mat-table-header-headline-color: var(--tb-text-secondary);
+  --mat-table-row-item-label-text-color: var(--tb-text-primary);
+  --mat-paginator-container-background-color: var(--tb-surface);
+  --mat-paginator-container-text-color: var(--tb-text-primary);
+  --mat-paginator-enabled-icon-color: var(--tb-text-secondary);
+  --mdc-checkbox-unselected-icon-color: var(--tb-border-strong);
+  --mdc-checkbox-selected-icon-color: var(--tb-primary-color);
+}
+
+.tb-dark .mat-mdc-table {
+  background: var(--tb-surface);
+}
+.tb-dark .mat-mdc-header-row {
+  background: var(--tb-surface);
+}
+.tb-dark .mat-mdc-header-cell {
+  background: var(--tb-surface);
+  color: var(--tb-text-secondary);
+}
+.tb-dark .mat-mdc-cell {
+  color: var(--tb-text-primary);
+  border-bottom-color: var(--tb-border-color);
+}
+.tb-dark .mat-mdc-table .mat-mdc-row {
+  background: var(--tb-surface);
+}
+.tb-dark .mat-mdc-table .mat-mdc-row:hover {
+  background: var(--tb-surface-hover);
+}
+.tb-dark .mat-mdc-table .mat-mdc-row.mdc-data-table__row--selected,
+.tb-dark .mat-mdc-table .mat-mdc-row.mat-mdc-selected,
+.tb-dark .mat-mdc-table .mat-mdc-row.tb-current-entity {
+  background: var(--tb-surface-active);
+  color: var(--tb-text-primary);
+}
+.tb-dark .mat-sort-header-arrow,
+.tb-dark .mat-sort-header-sorted .mat-sort-header-arrow {
+  color: var(--tb-primary-color);
+}
+.tb-dark .mat-mdc-paginator {
+  background: var(--tb-surface);
+  color: var(--tb-text-primary);
+  border-top: 1px solid var(--tb-border-color);
+}
+.tb-dark .mat-mdc-paginator .mat-mdc-icon-button .mat-icon {
+  color: var(--tb-text-secondary);
+}
+.tb-dark .mat-mdc-checkbox .mdc-checkbox__background {
+  border-color: var(--tb-border-strong);
+}
+
+// Ensure overlay panels use variable (no direct background !important needed)
+// Popover already uses var(--tb-surface-overlay) via $popover-bg
 
 /***************
  * TAILWIND CSS
