@@ -31,6 +31,8 @@ import { map } from 'rxjs/operators';
 import { AuthService } from '@core/auth/auth.service';
 import { Router } from '@angular/router';
 import { coerceBoolean } from '@shared/decorators/coercion';
+import { TranslateService } from '@ngx-translate/core';
+import { DialogService } from '@core/services/dialog.service';
 
 @Component({
     selector: 'tb-user-menu',
@@ -73,7 +75,9 @@ export class UserMenuComponent implements OnInit, OnDestroy {
 
   constructor(private store: Store<AppState>,
               private router: Router,
-              private authService: AuthService) {
+              private authService: AuthService,
+              private dialogService: DialogService,
+              private translate: TranslateService) {
   }
 
   ngOnInit(): void {
@@ -129,7 +133,16 @@ export class UserMenuComponent implements OnInit, OnDestroy {
 
   logout(): void {
     this.menuClicked.emit();
-    this.authService.logout();
+    this.dialogService.confirm(
+      this.translate.instant('home.logout-title'),
+      this.translate.instant('home.logout-message'),
+      this.translate.instant('action.no'),
+      this.translate.instant('action.yes')
+    ).subscribe((res) => {
+      if (res) {
+        this.authService.logout();
+      }
+    });
   }
 
 }

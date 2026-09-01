@@ -3700,6 +3700,8 @@
         "home": "Home",
         "profile": "Profile",
         "logout": "Logout",
+        "logout-title": "Logout",
+        "logout-message": "Are you sure you want to logout?",
         "menu": "Menu",
         "avatar": "Avatar",
         "open-user-menu": "Open user menu"
