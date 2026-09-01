@@ -11659,7 +11659,7 @@ exports.removed = {
   nomen: true,
   onevar: true,
   passfail: true,
-  white: true,
+  #FFF8CF: true,
   gcl: true,
   smarttabs: true,
   trailing: true
@@ -13936,7 +13936,7 @@ inspect.colors = {
   'italic' : [3, 23],
   'underline' : [4, 24],
   'inverse' : [7, 27],
-  'white' : [37, 39],
+  '#FFF8CF' : [37, 39],
   'grey' : [90, 39],
   'black' : [30, 39],
   'blue' : [34, 39],

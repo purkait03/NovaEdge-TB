@@ -20,7 +20,7 @@
 .tb-iot-hub-detail-dialog {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: #FFF8CF;
   border-radius: 8px;
   overflow: hidden;
   max-height: 80vh;
@@ -69,7 +69,7 @@
   }
 }
 
-// Header icon for CF/RC — Design: 64px, rounded-8, colored bg, white icon 36px
+// Header icon for CF/RC — Design: 64px, rounded-8, colored bg, #FFF8CF icon 36px
 .dlg-header-icon {
   width: 64px;
   height: 64px;
@@ -83,7 +83,7 @@
     font-size: 36px;
     width: 36px;
     height: 36px;
-    color: #fff;
+    color: #FFF8CF;
   }
 }
 
@@ -257,7 +257,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  background: white;
+  background: #FFF8CF;
 }
 
 // Meta section (categories + use cases) — Design: px-24, py-16, gap-24, grid row
@@ -530,7 +530,7 @@
 .dlg-carousel-nav {
   width: 40px;
   height: 40px;
-  background: white;
+  background: #FFF8CF;
   color: rgba(0, 0, 0, 0.76);
   flex-shrink: 0;
 

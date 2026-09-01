@@ -132,7 +132,7 @@ export const segmentedButtonDefaultAppearance: ButtonToggleAppearance = {
     iconSizeUnit: 'px',
   },
   selectedStyle: {
-    mainColor: '#FFFFFF',
+    mainColor: '#FFF8CF',
     backgroundColor: '#00695C',
     customStyle: {
       enabled: null,

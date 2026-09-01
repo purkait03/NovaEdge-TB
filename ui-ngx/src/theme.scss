@@ -43,16 +43,16 @@ $tb-mat-indigo: (
     100: rgba(black, 0.87),
     200: rgba(black, 0.87),
     300: rgba(black, 0.87),
-    400: white,
-    500: white,
-    600: white,
-    700: white,
-    800: white,
-    900: white,
+    400: #FFF8CF,
+    500: #FFF8CF,
+    600: #FFF8CF,
+    700: #FFF8CF,
+    800: #FFF8CF,
+    900: #FFF8CF,
     A100: rgba(black, 0.87),
-    A200: white,
-    A400: white,
-    A700: white,
+    A200: #FFF8CF,
+    A400: #FFF8CF,
+    A700: #FFF8CF,
   )
 );
 
@@ -78,31 +78,31 @@ $primary: mat.m2-get-color-from-palette($tb-primary);
 $accent: mat.m2-get-color-from-palette($tb-accent);
 
 $tb-dark-mat-indigo: (
-  50: #e8eaf6,
-  100: #c5cae9,
-  200: #9fa8da,
-  300: #7986cb,
-  400: #5c6bc0,
+  50: #fdf6ee,
+  100: #f3dec6,
+  200: #e7c49c,
+  300: #d5ab7a,
+  400: #cc9a68,
   500: $tb-dark-primary-color,
-  600: $tb-secondary-color,
-  700: #303f9f,
-  800: $tb-primary-color,
-  900: #1a237e,
-  A100: $tb-hue3-color,
-  A200: #536dfe,
-  A400: #3d5afe,
-  A700: #304ffe,
+  600: #b78d5e,
+  700: #a67c52,
+  800: #8d6b46,
+  900: #6b4e32,
+  A100: #ffe0b8,
+  A200: #ffd19b,
+  A400: #ffb86a,
+  A700: #ffad55,
   contrast: (
     50: rgba(black, 0.87),
     100: rgba(black, 0.87),
     200: rgba(black, 0.87),
     300: rgba(black, 0.87),
     400: rgba(black, 0.87),
-    500: map_get($tb-mat-indigo, 900),
-    600: white,
-    700: white,
-    800: white,
-    900: white,
+    500: #1A120D,
+    600: #1A120D,
+    700: #F5EDE3,
+    800: #F5EDE3,
+    900: #F5EDE3,
     A100: rgba(black, 0.87),
     A200: rgba(black, 0.87),
     A400: rgba(black, 0.87),
@@ -110,6 +110,8 @@ $tb-dark-mat-indigo: (
   )
 );
 
+// Warm brown primary palette alias (keeps old variable name for compatibility)
+$tb-dark-mat-brown: $tb-dark-mat-indigo;
 $tb-dark-primary: mat.m2-define-palette($tb-dark-mat-indigo);
 
 $tb-dark-theme: mat.m2-define-dark-theme((
@@ -122,7 +124,7 @@ $tb-dark-theme: mat.m2-define-dark-theme((
 ));
 
 $tb-dark-theme-system: m2-utils.get-system($tb-dark-theme);
-$tb-dark-theme-system: map_merge($tb-dark-theme-system, ( surface: map_get($tb-dark-mat-indigo, 800) ));
+$tb-dark-theme-system: map_merge($tb-dark-theme-system, ( surface: #2A1D14 ));
 $tb-dark-theme: map_merge($tb-dark-theme, (_mat-system: $tb-dark-theme-system));
 
 @mixin mat-fab-toolbar-theme($theme) {

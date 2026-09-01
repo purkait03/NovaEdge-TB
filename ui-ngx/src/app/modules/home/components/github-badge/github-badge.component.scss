@@ -26,17 +26,17 @@
 
   .group {
     .mdc-button {
-      background-color: rgba(255, 255, 255, 0.12);
+      background-color: rgba(255, 248, 207, 0.12);
     }
 
     &:hover {
       .mdc-button {
-        background-color: rgba(255, 255, 255, 0.20);
+        background-color: rgba(255, 248, 207, 0.20);
       }
     }
 
     .mdc-icon-button {
-      --mat-icon-color: #fff;
+      --mat-icon-color: #FFF8CF;
       background-color: #162C41;
 
       &:hover {

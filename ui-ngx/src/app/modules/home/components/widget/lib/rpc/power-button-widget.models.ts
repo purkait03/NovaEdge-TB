@@ -204,17 +204,17 @@ export const powerButtonDefaultSettings: PowerButtonWidgetSettings = {
     icon: 'power_settings_new'
   },
   mainColorOn: '#3F52DD',
-  backgroundColorOn: '#FFFFFF',
+  backgroundColorOn: '#FFF8CF',
   mainColorOff: '#A2A2A2',
-  backgroundColorOff: '#FFFFFF',
+  backgroundColorOff: '#FFF8CF',
   mainColorDisabled: 'rgba(0,0,0,0.12)',
-  backgroundColorDisabled: '#FFFFFF',
+  backgroundColorDisabled: '#FFF8CF',
   background: {
     type: BackgroundType.color,
-    color: '#fff',
+    color: '#FFF8CF',
     overlay: {
       enabled: false,
-      color: 'rgba(255,255,255,0.72)',
+      color: 'rgba(255, 248, 207, 0.72)',
       blur: 3
     }
   },
@@ -653,7 +653,7 @@ export abstract class PowerButtonShape {
 
   protected createMask(shape: Element, maskElements: Element[]) {
     const mask =
-      this.svgShape.mask().add(this.svgShape.rect().width('100%').height('100%').fill('#fff'));
+      this.svgShape.mask().add(this.svgShape.rect().width('100%').height('100%').fill('#FFF8CF'));
     maskElements.forEach(e => {
       mask.add(e.fill('#000').attr({'fill-opacity': 1}));
     });
@@ -697,7 +697,7 @@ class InnerShadowCircle {
               private shadowColor = '#000') {
 
     this.shadowCircle = this.svgShape.circle(this.diameter).center(this.centerX, this.centerY)
-    .fill({color: '#fff', opacity: 1}).stroke({width: 0});
+    .fill({color: '#FFF8CF', opacity: 1}).stroke({width: 0});
 
     this.shadowCircle.filterWith(add => {
       add.x('-50%').y('-50%').width('200%').height('200%');
@@ -977,7 +977,7 @@ class DefaultVolumePowerButtonShape extends PowerButtonShape {
     this.createMask(this.outerBorder, [this.outerBorderMask]);
     this.outerBorderGradient = this.svgShape.gradient('linear', (add) => {
       add.stop(0, '#CCCCCC', 1);
-      add.stop(1, '#FFFFFF', 1);
+      add.stop(1, '#FFF8CF', 1);
     }).from(0.268, 0.92).to(0.832, 0.1188);
     this.innerBorder = this.svgShape.circle(powerButtonShapeSize - 20).center(cx, cy)
     .fill({opacity: 0}).stroke({width: 0});
@@ -985,7 +985,7 @@ class DefaultVolumePowerButtonShape extends PowerButtonShape {
     this.createMask(this.innerBorder, [this.innerBorderMask]);
     this.innerBorderGradient = this.svgShape.gradient('linear', (add) => {
       add.stop(0, '#CCCCCC', 1);
-      add.stop(1, '#FFFFFF', 1);
+      add.stop(1, '#FFF8CF', 1);
     }).from(0.832, 0.1188).to(0.268, 0.92);
     this.centerGroup = this.svgShape.group();
     this.drawOffCenter(this.centerGroup);
@@ -1207,7 +1207,7 @@ class OutlinedVolumePowerButtonShape extends PowerButtonShape {
     this.createMask(this.outerBorder, [this.outerBorderMask]);
     this.outerBorderGradient = this.svgShape.gradient('linear', (add) => {
       add.stop(0, '#CCCCCC', 1);
-      add.stop(1, '#FFFFFF', 1);
+      add.stop(1, '#FFF8CF', 1);
     }).from(0.268, 0.92).to(0.832, 0.1188);
     this.innerBorder = this.svgShape.circle(powerButtonShapeSize - 20).center(cx, cy)
     .fill({opacity: 0}).stroke({width: 0});

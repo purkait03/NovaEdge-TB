@@ -93,7 +93,7 @@ export const countDefaultSettings = (alarmElseEntity: boolean): CountWidgetSetti
   icon: alarmElseEntity ? 'warning' : 'devices',
   iconSize: 20,
   iconSizeUnit: 'px',
-  iconColor: constantColor('rgba(255, 255, 255, 1)'),
+  iconColor: constantColor('rgba(255, 248, 207, 1)'),
   showIconBackground: true,
   iconBackgroundSize: 36,
   iconBackgroundSizeUnit: 'px',

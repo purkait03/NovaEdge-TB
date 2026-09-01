@@ -44,7 +44,7 @@ export class DetailsPanelComponent extends PageComponent implements OnDestroy {
   @Input() isReadOnly = false;
   @Input() isAlwaysEdit = false;
   @Input() isShowSearch = false;
-  @Input() backgroundColor = '#FFF';
+  @Input() backgroundColor = 'var(--tb-details-panel-bg, #FFF8CF)';
 
   @Input()
   @coerceBoolean()

@@ -317,7 +317,7 @@ export class TbFlot {
           radius: this.settings.radius || 1,
           innerRadius: this.settings.innerRadius || 0,
           stroke: {
-            color: '#fff',
+            color: '#FFF8CF',
             width: 0
           },
           tilt: this.settings.tilt || 1,
@@ -332,7 +332,7 @@ export class TbFlot {
       this.options.grid.clickable = true;
 
       if (this.settings.stroke) {
-        this.options.series.pie.stroke.color = this.settings.stroke.color || '#fff';
+        this.options.series.pie.stroke.color = this.settings.stroke.color || '#FFF8CF';
         this.options.series.pie.stroke.width = this.settings.stroke.width || 0;
         if (this.options.series.pie.stroke.width) {
           this.scalingPieRadius();
@@ -1115,7 +1115,7 @@ export class TbFlot {
     });
     if (active) {
       labelSpan.css({
-        color: '#FFF',
+        color: '#FFF8CF',
         fontWeight: '700'
       });
     }
@@ -1136,7 +1136,7 @@ export class TbFlot {
     });
     if (active) {
       valueSpan.css({
-        color: '#FFF'
+        color: '#FFF8CF'
       });
     }
     divElement.append(valueSpan);

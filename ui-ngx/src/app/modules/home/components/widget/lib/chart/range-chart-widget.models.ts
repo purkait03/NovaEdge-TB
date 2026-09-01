@@ -151,7 +151,7 @@ export const rangeChartDefaultSettings: RangeChartWidgetSettings = {
   },
   pointLabelColor: chartColorScheme['series.label'].light,
   enablePointLabelBackground: false,
-  pointLabelBackground: 'rgba(255,255,255,0.56)',
+  pointLabelBackground: 'rgba(255, 248, 207, 0.56)',
   pointShape: ChartShape.emptyCircle,
   pointSize: 4,
   grid: mergeDeep({} as TimeSeriesChartGridSettings,
@@ -207,14 +207,14 @@ export const rangeChartDefaultSettings: RangeChartWidgetSettings = {
     lineHeight: '16px'
   },
   tooltipDateColor: 'rgba(0, 0, 0, 0.76)',
-  tooltipBackgroundColor: 'rgba(255, 255, 255, 0.76)',
+  tooltipBackgroundColor: 'rgba(255, 248, 207, 0.76)',
   tooltipBackgroundBlur: 4,
   background: {
     type: BackgroundType.color,
-    color: '#fff',
+    color: '#FFF8CF',
     overlay: {
       enabled: false,
-      color: 'rgba(255,255,255,0.72)',
+      color: 'rgba(255, 248, 207, 0.72)',
       blur: 3
     }
   },

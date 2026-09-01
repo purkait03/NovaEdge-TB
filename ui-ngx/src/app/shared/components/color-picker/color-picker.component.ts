@@ -91,7 +91,7 @@ export class ColorPickerComponent implements ControlValueAccessor, OnDestroy {
   writeValue(value: string): void {
     const valid = this.isValidColorValue(value);
     this.setValue = valid;
-    this.control.setValueFrom(valid ? value : '#fff');
+    this.control.setValueFrom(valid ? value : '#FFF8CF');
     this.modelValue = value;
 
     if (this.control.initType === ColorType.hexa) {

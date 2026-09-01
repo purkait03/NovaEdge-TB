@@ -562,7 +562,7 @@ export const timeSeriesChartThresholdDefaultSettings: TimeSeriesChartThreshold =
   },
   labelColor: chartColorScheme['threshold.label'].light,
   enableLabelBackground: false,
-  labelBackground: 'rgba(255,255,255,0.56)'
+  labelBackground: 'rgba(255, 248, 207, 0.56)'
 };
 
 export enum TimeSeriesChartNoAggregationBarWidthStrategy {
@@ -767,7 +767,7 @@ export const timeSeriesChartDefaultSettings: TimeSeriesChartSettings = {
   tooltipDateColor: 'rgba(0, 0, 0, 0.76)',
   tooltipDateInterval: true,
   tooltipStackedShowTotal: false,
-  tooltipBackgroundColor: 'rgba(255, 255, 255, 0.76)',
+  tooltipBackgroundColor: 'rgba(255, 248, 207, 0.76)',
   tooltipBackgroundBlur: 4,
   comparisonEnabled: false,
   timeForComparison: 'previousInterval',
@@ -832,7 +832,7 @@ export const timeSeriesChartKeyDefaultSettings: TimeSeriesChartKeySettings = {
     },
     pointLabelColor: chartColorScheme['series.label'].light,
     enablePointLabelBackground: false,
-    pointLabelBackground: 'rgba(255,255,255,0.56)',
+    pointLabelBackground: 'rgba(255, 248, 207, 0.56)',
     pointShape: ChartShape.emptyCircle,
     pointSize: 4,
     fillAreaSettings: {

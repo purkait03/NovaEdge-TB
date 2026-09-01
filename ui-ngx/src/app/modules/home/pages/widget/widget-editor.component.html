@@ -141,7 +141,7 @@
           <div #topLeftPanel class="tb-split tb-content">
             <mat-tab-group mat-stretch-tabs="false" selectedIndex="1" dynamicHeight="true" style="width: 100%; height: 100%;">
               <mat-tab label="{{ 'widget.resources' | translate }}">
-                <div class="tb-resize-container" style="background-color: #fff;">
+                <div class="tb-resize-container" style="background-color: #FFF8CF;">
                   <div class="mat-padding">
                     @for (resource of widget.resources; track resource; let i = $index) {
                       <div class="flex flex-1 flex-row items-center justify-start" style="max-height: 40px;"
@@ -215,7 +215,7 @@
           <div #topRightPanel class="tb-split tb-content">
             <mat-tab-group mat-stretch-tabs="false" dynamicHeight="true" style="width: 100%; height: 100%;">
               <mat-tab label="{{ 'widget.settings-form' | translate }}">
-                <div class="tb-resize-container" style="background-color: #fff;">
+                <div class="tb-resize-container" style="background-color: #FFF8CF;">
                   <tb-dynamic-form-properties
                     importExport
                     [exportFileName]="(widget.widgetName || 'widget') + '-settings-form'"
@@ -226,7 +226,7 @@
                 </div>
               </mat-tab>
               <mat-tab label="{{ 'widget.data-key-settings-form' | translate }}">
-                <div class="tb-resize-container" style="background-color: #fff;">
+                <div class="tb-resize-container" style="background-color: #FFF8CF;">
                   <tb-dynamic-form-properties
                     importExport
                     [exportFileName]="(widget.widgetName || 'widget') + '-data-key-settings-form'"
@@ -237,7 +237,7 @@
                 </div>
               </mat-tab>
               <mat-tab [aria-labelledby]="widget.type !== widgetTypes.timeseries ? 'hidden': ''" label="{{ 'widget.latest-data-key-settings-form' | translate }}">
-                <div class="tb-resize-container" style="background-color: #fff;">
+                <div class="tb-resize-container" style="background-color: #FFF8CF;">
                   <tb-dynamic-form-properties
                     importExport
                     [exportFileName]="(widget.widgetName || 'widget') + '-latest-data-key-settings-form'"
@@ -248,7 +248,7 @@
                 </div>
               </mat-tab>
               <mat-tab label="{{ 'widget.widget-settings' | translate }}">
-                <div class="tb-resize-container" style="background-color: #fff;">
+                <div class="tb-resize-container" style="background-color: #FFF8CF;">
                   <div class="mat-padding">
                     <tb-gallery-image-input class="flex-1" label="{{'widget.image-preview' | translate}}"
                                             [(ngModel)]="widget.image"

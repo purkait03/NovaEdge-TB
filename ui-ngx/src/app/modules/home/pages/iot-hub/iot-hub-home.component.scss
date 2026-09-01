@@ -16,16 +16,16 @@
 
 @import "../../../../../scss/constants";
 
-// Outer page — 16px padding around the white container
+// Outer page — 16px padding around the #FFF8CF container
 :host {
   display: block;
   padding: 16px;
 }
 
-// Page container — white card with 8px radius, matches Design "page-container"
+// Page container — #FFF8CF card with 8px radius, matches Design "page-container"
 .tb-iot-hub-home {
   position: relative;
-  background: white;
+  background: #FFF8CF;
   border-radius: 8px;
   overflow: hidden;
 
@@ -52,13 +52,13 @@
   }
 }
 
-// Installed Items button — Design: top-right, white bg, primary border, card shadow
+// Installed Items button — Design: top-right, #FFF8CF bg, primary border, card shadow
 .tb-iot-hub-installed-btn {
   position: absolute;
   top: 24px;
   right: 24px;
   z-index: 3;
-  background: white;
+  background: #FFF8CF;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 
   &.mat-primary {
@@ -210,7 +210,7 @@
   max-width: 100%;
 
   ::ng-deep .mat-mdc-text-field-wrapper {
-    background: white;
+    background: #FFF8CF;
     border-radius: 8px;
     box-shadow:
       0 7px 16px 0 rgba(0, 0, 0, 0.04),
@@ -324,8 +324,8 @@
     font-size: 28px;
     width: 28px;
     height: 28px;
-    color: white !important;
-    --tb-icon-color: white;
+    color: #FFF8CF !important;
+    --tb-icon-color: #FFF8CF;
   }
 
   // Text block — Design: flex-col, 4px gap, flex 1
@@ -421,7 +421,7 @@
     letter-spacing: 0.25px;
     color: $tb-primary-color;
     cursor: pointer;
-    background: white;
+    background: #FFF8CF;
     white-space: nowrap;
 
     &:hover {

@@ -833,7 +833,7 @@
                     "stops": [
                         [
                             10,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             12,
@@ -934,7 +934,7 @@
                     "stops": [
                         [
                             10,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             12,
@@ -1187,7 +1187,7 @@
                     "stops": [
                         [
                             10,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             12,
@@ -1288,7 +1288,7 @@
                     "stops": [
                         [
                             10,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             12,
@@ -3102,7 +3102,7 @@
                     "stops": [
                         [
                             1,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             2,
@@ -3253,7 +3253,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#ffffff",
+                "line-color": "#FFF8CF",
                 "line-opacity": 0.55,
                 "line-dasharray": [
                     2,
@@ -3301,7 +3301,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#ffffff",
+                "line-color": "#FFF8CF",
                 "line-dasharray": [
                     4,
                     3
@@ -3366,7 +3366,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#ffffff",
+                "line-color": "#FFF8CF",
                 "line-opacity": {
                     "base": 1.0,
                     "stops": [
@@ -4317,7 +4317,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -4358,7 +4358,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -42637,7 +42637,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -42689,7 +42689,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -42741,7 +42741,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -42793,7 +42793,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -42845,7 +42845,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -42897,7 +42897,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -42949,13 +42949,13 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon brown white (Alt)",
+            "id": "Road/label/Rectangle hexagon brown #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -42982,7 +42982,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon brown white (Alt)/{_len}",
+                "icon-image": "Road/Rectangle hexagon brown #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -42996,7 +42996,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon green white (Alt)",
+            "id": "Road/label/Rectangle hexagon green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43023,7 +43023,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon green white (Alt)/{_len}",
+                "icon-image": "Road/Rectangle hexagon green #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43037,7 +43037,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon red white (Alt)",
+            "id": "Road/label/Rectangle hexagon red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43064,7 +43064,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon red white (Alt)/{_len}",
+                "icon-image": "Road/Rectangle hexagon red #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43078,7 +43078,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon blue white (Alt)",
+            "id": "Road/label/Rectangle hexagon blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43105,7 +43105,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon blue white (Alt)/{_len}",
+                "icon-image": "Road/Rectangle hexagon blue #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43119,7 +43119,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon brown white",
+            "id": "Road/label/Rectangle hexagon brown #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43146,7 +43146,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon brown white/{_len}",
+                "icon-image": "Road/Rectangle hexagon brown #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43160,7 +43160,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon green white",
+            "id": "Road/label/Rectangle hexagon green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43187,7 +43187,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon green white/{_len}",
+                "icon-image": "Road/Rectangle hexagon green #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43201,7 +43201,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon red white",
+            "id": "Road/label/Rectangle hexagon red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43228,7 +43228,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon red white/{_len}",
+                "icon-image": "Road/Rectangle hexagon red #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43242,7 +43242,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon blue white",
+            "id": "Road/label/Rectangle hexagon blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43269,7 +43269,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon blue white/{_len}",
+                "icon-image": "Road/Rectangle hexagon blue #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43283,7 +43283,7 @@
             }
         },
         {
-            "id": "Road/label/Octagon green white (Alt)",
+            "id": "Road/label/Octagon green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43311,7 +43311,7 @@
                 "text-letter-spacing": 0.02,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Octagon green white (Alt)/{_len}",
+                "icon-image": "Road/Octagon green #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43367,7 +43367,7 @@
             }
         },
         {
-            "id": "Road/label/Hexagon green white (Alt)",
+            "id": "Road/label/Hexagon green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43395,7 +43395,7 @@
                 "text-letter-spacing": 0.03,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon green white (Alt)/{_len}",
+                "icon-image": "Road/Hexagon green #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43409,7 +43409,7 @@
             }
         },
         {
-            "id": "Road/label/Hexagon red white (Alt)",
+            "id": "Road/label/Hexagon red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43437,7 +43437,7 @@
                 "text-letter-spacing": 0.03,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon red white (Alt)/{_len}",
+                "icon-image": "Road/Hexagon red #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43447,11 +43447,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon white black (Alt)",
+            "id": "Road/label/Hexagon #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43479,7 +43479,7 @@
                 "text-letter-spacing": 0.03,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon white black (Alt)/{_len}",
+                "icon-image": "Road/Hexagon #FFF8CF black (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43534,7 +43534,7 @@
             }
         },
         {
-            "id": "Road/label/Pentagon green white (Alt)",
+            "id": "Road/label/Pentagon green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43561,7 +43561,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon green white (Alt)/{_len}",
+                "icon-image": "Road/Pentagon green #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43571,7 +43571,7 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -43617,7 +43617,7 @@
             }
         },
         {
-            "id": "Road/label/Pentagon blue white (Alt)",
+            "id": "Road/label/Pentagon blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43645,7 +43645,7 @@
                 "text-letter-spacing": 0.02,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon blue white (Alt)/{_len}",
+                "icon-image": "Road/Pentagon blue #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43655,11 +43655,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon white black (Alt)",
+            "id": "Road/label/Pentagon #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43686,7 +43686,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon white black (Alt)/{_len}",
+                "icon-image": "Road/Pentagon #FFF8CF black (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43700,7 +43700,7 @@
             }
         },
         {
-            "id": "Road/label/Pentagon inverse white black (Alt)",
+            "id": "Road/label/Pentagon inverse #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43727,7 +43727,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon inverse white black (Alt)/{_len}",
+                "icon-image": "Road/Pentagon inverse #FFF8CF black (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43782,7 +43782,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle green white (Alt)",
+            "id": "Road/label/Rectangle green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43810,7 +43810,7 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle green white (Alt)/{_len}",
+                "icon-image": "Road/Rectangle green #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43820,7 +43820,7 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -43866,7 +43866,7 @@
             }
         },
         {
-            "id": "Road/label/Hexagon blue white (Alt)",
+            "id": "Road/label/Hexagon blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43894,7 +43894,7 @@
                 "text-letter-spacing": 0.03,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon blue white (Alt)/{_len}",
+                "icon-image": "Road/Hexagon blue #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43907,7 +43907,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle red white (Alt)",
+            "id": "Road/label/Rectangle red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43935,7 +43935,7 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle red white (Alt)/{_len}",
+                "icon-image": "Road/Rectangle red #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43945,11 +43945,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle blue white (Alt)",
+            "id": "Road/label/Rectangle blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -43976,7 +43976,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle blue white (Alt)/{_len}",
+                "icon-image": "Road/Rectangle blue #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -43986,11 +43986,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle white black (Alt)",
+            "id": "Road/label/Rectangle #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44018,7 +44018,7 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+                "icon-image": "Road/Rectangle #FFF8CF black (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44032,7 +44032,7 @@
             }
         },
         {
-            "id": "Road/label/V-shaped white black (Alt)",
+            "id": "Road/label/V-shaped #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44059,7 +44059,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/V-shaped white black (Alt)/{_len}",
+                "icon-image": "Road/V-shaped #FFF8CF black (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44073,7 +44073,7 @@
             }
         },
         {
-            "id": "Road/label/U-shaped blue white (Alt)",
+            "id": "Road/label/U-shaped blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44101,7 +44101,7 @@
                 "text-letter-spacing": 0.02,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped blue white (Alt)/{_len}",
+                "icon-image": "Road/U-shaped blue #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44111,11 +44111,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/U-shaped red white (Alt)",
+            "id": "Road/label/U-shaped red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44142,7 +44142,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped red white (Alt)/{_len}",
+                "icon-image": "Road/U-shaped red #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44152,7 +44152,7 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -44239,7 +44239,7 @@
             }
         },
         {
-            "id": "Road/label/U-shaped white green (Alt)",
+            "id": "Road/label/U-shaped #FFF8CF green (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44266,7 +44266,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped white green (Alt)/{_len}",
+                "icon-image": "Road/U-shaped #FFF8CF green (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44280,7 +44280,7 @@
             }
         },
         {
-            "id": "Road/label/U-shaped white black (Alt)",
+            "id": "Road/label/U-shaped #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44307,7 +44307,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped white black (Alt)/{_len}",
+                "icon-image": "Road/U-shaped #FFF8CF black (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44321,7 +44321,7 @@
             }
         },
         {
-            "id": "Road/label/Secondary Hwy red white (Alt)",
+            "id": "Road/label/Secondary Hwy red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44348,7 +44348,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy red white (Alt)/{_len}",
+                "icon-image": "Road/Secondary Hwy red #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44358,11 +44358,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy green white (Alt)",
+            "id": "Road/label/Secondary Hwy green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44389,7 +44389,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy green white (Alt)/{_len}",
+                "icon-image": "Road/Secondary Hwy green #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44399,11 +44399,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy white black (Alt)",
+            "id": "Road/label/Secondary Hwy #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44430,7 +44430,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy white black (Alt)/{_len}",
+                "icon-image": "Road/Secondary Hwy #FFF8CF black (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44444,7 +44444,7 @@
             }
         },
         {
-            "id": "Road/label/Shield white black (Alt)",
+            "id": "Road/label/Shield #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44471,7 +44471,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Shield white black (Alt)/{_len}",
+                "icon-image": "Road/Shield #FFF8CF black (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-rotation-alignment": "viewport",
                 "text-padding": 30
@@ -44481,7 +44481,7 @@
             }
         },
         {
-            "id": "Road/label/Shield blue white (Alt)",
+            "id": "Road/label/Shield blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44508,7 +44508,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Shield blue white (Alt)/{_len}",
+                "icon-image": "Road/Shield blue #FFF8CF (Alt)/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-rotation-alignment": "viewport",
                 "text-padding": 30
@@ -44518,7 +44518,7 @@
             }
         },
         {
-            "id": "Road/label/Octagon green white",
+            "id": "Road/label/Octagon green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44546,7 +44546,7 @@
                 "text-letter-spacing": 0.02,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Octagon green white/{_len}",
+                "icon-image": "Road/Octagon green #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44602,7 +44602,7 @@
             }
         },
         {
-            "id": "Road/label/Hexagon green white",
+            "id": "Road/label/Hexagon green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44630,7 +44630,7 @@
                 "text-letter-spacing": 0.03,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon green white/{_len}",
+                "icon-image": "Road/Hexagon green #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44644,7 +44644,7 @@
             }
         },
         {
-            "id": "Road/label/Hexagon red white",
+            "id": "Road/label/Hexagon red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44672,7 +44672,7 @@
                 "text-letter-spacing": 0.03,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon red white/{_len}",
+                "icon-image": "Road/Hexagon red #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44682,11 +44682,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon white black",
+            "id": "Road/label/Hexagon #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44714,7 +44714,7 @@
                 "text-letter-spacing": 0.03,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon white black/{_len}",
+                "icon-image": "Road/Hexagon #FFF8CF black/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44769,7 +44769,7 @@
             }
         },
         {
-            "id": "Road/label/Pentagon green white",
+            "id": "Road/label/Pentagon green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44796,7 +44796,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon green white/{_len}",
+                "icon-image": "Road/Pentagon green #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44806,7 +44806,7 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -44852,7 +44852,7 @@
             }
         },
         {
-            "id": "Road/label/Pentagon blue white",
+            "id": "Road/label/Pentagon blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44880,7 +44880,7 @@
                 "text-letter-spacing": 0.02,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon blue white/{_len}",
+                "icon-image": "Road/Pentagon blue #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44890,11 +44890,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon white black",
+            "id": "Road/label/Pentagon #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44921,7 +44921,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon white black/{_len}",
+                "icon-image": "Road/Pentagon #FFF8CF black/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -44935,7 +44935,7 @@
             }
         },
         {
-            "id": "Road/label/Pentagon inverse white black",
+            "id": "Road/label/Pentagon inverse #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -44962,7 +44962,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon inverse white black/{_len}",
+                "icon-image": "Road/Pentagon inverse #FFF8CF black/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45017,7 +45017,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle green white",
+            "id": "Road/label/Rectangle green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45045,7 +45045,7 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle green white/{_len}",
+                "icon-image": "Road/Rectangle green #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45055,7 +45055,7 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -45101,7 +45101,7 @@
             }
         },
         {
-            "id": "Road/label/Hexagon blue white",
+            "id": "Road/label/Hexagon blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45129,7 +45129,7 @@
                 "text-letter-spacing": 0.03,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon blue white/{_len}",
+                "icon-image": "Road/Hexagon blue #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45142,7 +45142,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle red white",
+            "id": "Road/label/Rectangle red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45170,7 +45170,7 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle red white/{_len}",
+                "icon-image": "Road/Rectangle red #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45180,11 +45180,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle blue white",
+            "id": "Road/label/Rectangle blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45211,7 +45211,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle blue white/{_len}",
+                "icon-image": "Road/Rectangle blue #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45221,11 +45221,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle white black",
+            "id": "Road/label/Rectangle #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45253,7 +45253,7 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle white black/{_len}",
+                "icon-image": "Road/Rectangle #FFF8CF black/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45267,7 +45267,7 @@
             }
         },
         {
-            "id": "Road/label/V-shaped white black",
+            "id": "Road/label/V-shaped #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45294,7 +45294,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/V-shaped white black/{_len}",
+                "icon-image": "Road/V-shaped #FFF8CF black/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45308,7 +45308,7 @@
             }
         },
         {
-            "id": "Road/label/U-shaped blue white",
+            "id": "Road/label/U-shaped blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45336,7 +45336,7 @@
                 "text-letter-spacing": 0.02,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped blue white/{_len}",
+                "icon-image": "Road/U-shaped blue #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45346,11 +45346,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/U-shaped red white",
+            "id": "Road/label/U-shaped red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45377,7 +45377,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped red white/{_len}",
+                "icon-image": "Road/U-shaped red #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45387,7 +45387,7 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -45474,7 +45474,7 @@
             }
         },
         {
-            "id": "Road/label/U-shaped white green",
+            "id": "Road/label/U-shaped #FFF8CF green",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45501,7 +45501,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped white green/{_len}",
+                "icon-image": "Road/U-shaped #FFF8CF green/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45515,7 +45515,7 @@
             }
         },
         {
-            "id": "Road/label/U-shaped white black",
+            "id": "Road/label/U-shaped #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45542,7 +45542,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped white black/{_len}",
+                "icon-image": "Road/U-shaped #FFF8CF black/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45556,7 +45556,7 @@
             }
         },
         {
-            "id": "Road/label/Secondary Hwy red white",
+            "id": "Road/label/Secondary Hwy red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45583,7 +45583,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy red white/{_len}",
+                "icon-image": "Road/Secondary Hwy red #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45593,11 +45593,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy green white",
+            "id": "Road/label/Secondary Hwy green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45624,7 +45624,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy green white/{_len}",
+                "icon-image": "Road/Secondary Hwy green #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45634,11 +45634,11 @@
                 "text-padding": 30
             },
             "paint": {
-                "text-color": "#FFFFFF"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy white black",
+            "id": "Road/label/Secondary Hwy #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45665,7 +45665,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy white black/{_len}",
+                "icon-image": "Road/Secondary Hwy #FFF8CF black/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-offset": [
                     0,
@@ -45679,7 +45679,7 @@
             }
         },
         {
-            "id": "Road/label/Shield white black",
+            "id": "Road/label/Shield #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45706,7 +45706,7 @@
                 "text-size": 9.33,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Shield white black/{_len}",
+                "icon-image": "Road/Shield #FFF8CF black/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-rotation-alignment": "viewport",
                 "text-padding": 30
@@ -45716,7 +45716,7 @@
             }
         },
         {
-            "id": "Road/label/Shield blue white",
+            "id": "Road/label/Shield blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -45743,7 +45743,7 @@
                 "text-size": 8.67,
                 "text-max-width": 8,
                 "text-field": "{_name}",
-                "icon-image": "Road/Shield blue white/{_len}",
+                "icon-image": "Road/Shield blue #FFF8CF/{_len}",
                 "icon-rotation-alignment": "viewport",
                 "text-rotation-alignment": "viewport",
                 "text-padding": {
@@ -45814,7 +45814,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -45878,7 +45878,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -45930,7 +45930,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -45982,7 +45982,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -46034,7 +46034,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -46086,7 +46086,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -46138,7 +46138,7 @@
                 }
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.33
             }
@@ -56637,7 +56637,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 2
             }
@@ -56693,7 +56693,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 2
             }
@@ -56759,7 +56759,7 @@
                     "stops": [
                         [
                             10,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             13,
@@ -56815,7 +56815,7 @@
                     "stops": [
                         [
                             10,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             13,
@@ -56871,7 +56871,7 @@
                     "stops": [
                         [
                             10,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             11,
@@ -56991,7 +56991,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57026,7 +57026,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57061,7 +57061,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57096,7 +57096,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57131,7 +57131,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57166,7 +57166,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57201,7 +57201,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57236,7 +57236,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57411,7 +57411,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57450,7 +57450,7 @@
                     "stops": [
                         [
                             2,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             6,
@@ -57492,7 +57492,7 @@
                 ]
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000000",
                 "text-halo-width": 1.2
             }
@@ -57566,7 +57566,7 @@
                     "stops": [
                         [
                             2,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             6,
@@ -57612,7 +57612,7 @@
                     "stops": [
                         [
                             2,
-                            "#ffffff"
+                            "#FFF8CF"
                         ],
                         [
                             6,

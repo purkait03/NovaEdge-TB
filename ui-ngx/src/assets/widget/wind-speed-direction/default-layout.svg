@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="134" height="133" fill="none" version="1.1" viewBox="0 0 134 133" xmlns="http://www.w3.org/2000/svg">
- <rect x="8.8335" y="4.5" width="117" height="117" rx="1.7594" fill="#fff" filter="url(#filter0_d_3060_521241)"/>
+ <rect x="8.8335" y="4.5" width="117" height="117" rx="1.7594" fill="#FFF8CF" filter="url(#filter0_d_3060_521241)"/>
  <defs>
   <filter id="filter0_d_3060_521241" x=".8335" y=".5" width="133" height="133" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
    <feFlood flood-opacity="0" result="BackgroundImageFix"/>

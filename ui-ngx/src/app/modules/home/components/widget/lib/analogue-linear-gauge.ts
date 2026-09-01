@@ -43,7 +43,7 @@ export class TbAnalogueLinearGauge extends TbAnalogueGauge<AnalogueLinearGaugeSe
 
     gaugeData.barStrokeWidth = (isDefined(settings.barStrokeWidth) && settings.barStrokeWidth !== null) ? settings.barStrokeWidth : 2.5;
     gaugeData.colorBarStroke = settings.colorBarStroke || barStrokeColor;
-    gaugeData.colorBar = settings.colorBar || '#fff';
+    gaugeData.colorBar = settings.colorBar || '#FFF8CF';
     gaugeData.colorBarEnd = settings.colorBarEnd || '#ddd';
     gaugeData.colorBarProgress = settings.colorBarProgress || progressColorStart;
     gaugeData.colorBarProgressEnd = settings.colorBarProgressEnd || progressColorEnd;

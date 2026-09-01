@@ -96,21 +96,21 @@
       .tb-two-factor-auth-login-card {
         button.mat-mdc-icon-button {
           .mat-icon {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 248, 207, 0.8);
           }
         }
       }
       .mat-mdc-form-field .mat-mdc-form-field-hint-wrapper {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 248, 207, 0.8);
       }
     }
 
     button.provider, button.navigation {
       text-align: start;
       font-weight: 400;
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 248, 207, 0.8);
       &:not([disabled][disabled]) {
-        border-color: rgba(255, 255, 255, .8);
+        border-color: rgba(255, 248, 207, .8);
       }
     }
   }

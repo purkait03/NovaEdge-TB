@@ -45,7 +45,7 @@ const PHOTO_GALLERY_STYLE =
   '}\n' +
   '\n' +
   '.pswp__tb-photoswipe-caption .tb-gallery-caption {\n' +
-  '    color: #fff;\n' +
+  '    color: #FFF8CF;\n' +
   '    font-size: 1.125rem;\n' +
   '    line-height: 1.5;\n' +
   '    background: #000000a6;\n' +
@@ -73,11 +73,11 @@ const PHOTO_GALLERY_STYLE =
   '\n' +
   '.pswp__button {\n' +
   '    border-radius: 50%;\n' +
-  '    border: 1px solid rgba(255, 255, 255, .2);\n' +
+  '    border: 1px solid rgba(255, 248, 207, .2);\n' +
   '    background: #1e1e2899;\n' +
   '    backdrop-filter: blur(8px);\n' +
   '    -webkit-backdrop-filter: blur(8px);\n' +
-  '    color: #fff;\n' +
+  '    color: #FFF8CF;\n' +
   '    transition: background .18s ease, transform .18s ease;\n' +
   '    outline: none;\n' +
   '}\n' +

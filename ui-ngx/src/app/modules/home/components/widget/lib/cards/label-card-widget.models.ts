@@ -49,10 +49,10 @@ export const labelCardWidgetDefaultSettings: LabelCardWidgetSettings = {
   iconColor: '#5469FF',
   background: {
     type: BackgroundType.color,
-    color: '#fff',
+    color: '#FFF8CF',
     overlay: {
       enabled: false,
-      color: 'rgba(255,255,255,0.72)',
+      color: 'rgba(255, 248, 207, 0.72)',
       blur: 3
     }
   },

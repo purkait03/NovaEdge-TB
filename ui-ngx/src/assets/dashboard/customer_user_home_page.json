@@ -13,7 +13,7 @@
         "config": {
           "datasources": [],
           "showTitle": false,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -39,7 +39,7 @@
         "sizeY": 3,
         "config": {
           "showTitle": false,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -66,7 +66,7 @@
         "sizeY": 6.5,
         "config": {
           "showTitle": false,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {},
@@ -156,7 +156,7 @@
             }
           ],
           "showTitle": false,
-          "backgroundColor": "#fff",
+          "backgroundColor": "#FFF8CF",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -277,7 +277,7 @@
             }
           ],
           "showTitle": false,
-          "backgroundColor": "#fff",
+          "backgroundColor": "#FFF8CF",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {

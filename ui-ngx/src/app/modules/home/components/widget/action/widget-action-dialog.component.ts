@@ -198,7 +198,7 @@ export class WidgetActionDialogComponent extends DialogComponent<WidgetActionDia
     const buttonType = this.widgetActionFormGroup.get('buttonType').value;
     if (!ignoreUpdatedButtonColor) {
       if ([WidgetHeaderActionButtonType.raised, WidgetHeaderActionButtonType.flat, WidgetHeaderActionButtonType.miniFab].includes(buttonType)) {
-        this.widgetActionFormGroup.get('buttonColor').patchValue('#ffffff', {emitEvent: false});
+        this.widgetActionFormGroup.get('buttonColor').patchValue('#FFF8CF', {emitEvent: false});
       } else if ([WidgetHeaderActionButtonType.stroked].includes(buttonType)) {
         this.widgetActionFormGroup.get('buttonColor').patchValue('#305680', {emitEvent: false});
       } else {

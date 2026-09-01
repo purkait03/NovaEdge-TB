@@ -42,7 +42,7 @@ mat-toolbar {
     .mat-mdc-text-field-wrapper {
       border-radius: 0;
       .mat-mdc-form-field-infix {
-        background: rgba(255, 255, 255, .2);
+        background: rgba(255, 248, 207, .2);
         padding: 5px 20px !important;
         min-height: 44.5px;
         .mat-mdc-select {
@@ -55,7 +55,7 @@ mat-toolbar {
               padding: 2px 2px 1px;
               .mat-mdc-select-value-text {
                 font-size: 1.2rem;
-                color: #fff;
+                color: #FFF8CF;
               }
             }
           }
@@ -75,7 +75,7 @@ mat-toolbar {
       display: none;
     }
     .mat-mdc-form-field.mat-focused.mat-primary .mat-mdc-select-arrow-wrapper .mat-mdc-select-arrow {
-      color: #fff;
+      color: #FFF8CF;
     }
   }
 }

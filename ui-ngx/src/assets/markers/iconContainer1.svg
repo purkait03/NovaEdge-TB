@@ -2,7 +2,7 @@
   <g filter="url(#shadow-filter)">
     <path class="marker-opacity" d="M19 24.5C17.4075 27.4125 17 33 17 33C17 33 27.0858 32.1955 30.9992 27.4998C34 23.8992 31.9992 19 27.9992 19C23.9993 19 21.1929 20.4894 19 24.5Z" fill="black" fill-opacity="0.24"/>
   </g>
-  <circle cx="17" cy="13" r="13" fill="white"/>
+  <circle cx="17" cy="13" r="13" fill="#FFF8CF"/>
   <g class="marker-icon-container" transform="translate(17,13)">
   </g>
   <path fill-rule="evenodd" clip-rule="evenodd" d="M 30,12.9625 C 30,6.39011 25.6157,0 17,0 8.38434,0 4,6.39011 4,12.9625 4,25 17,34 17,34 17,34 30,25 30,12.9625 Z M 26,13 c 0,4.9706 -4.0294,9 -9,9 -4.9706,0 -9,-4.0294 -9,-9 0,-4.97056 4.0294,-9 9,-9 4.9706,0 9,4.02944 9,9 z" />

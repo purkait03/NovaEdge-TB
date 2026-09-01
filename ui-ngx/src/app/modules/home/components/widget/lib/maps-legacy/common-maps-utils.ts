@@ -300,7 +300,7 @@ export function createLoadingDiv(loadingText: string): JQuery<HTMLElement> {
           align-items: center;
           justify-content: center;
           display: flex;
-          background: rgba(255,255,255,0.7);
+          background: rgba(255, 248, 207, 0.7);
           font-size: 16px;
           font-family: Roboto;
           font-weight: 400;

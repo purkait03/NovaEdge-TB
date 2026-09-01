@@ -381,8 +381,8 @@ export class ScadaSymbolEditObject {
       this.svgShape.style().attr('tb:inner', true).rule('.hovered',
         {
           filter:
-            `drop-shadow(0px 0px ${whiteBlur}px white) drop-shadow(0px 0px ${whiteBlur}px white)
-             drop-shadow(0px 0px ${whiteBlur}px white) drop-shadow(0px 0px ${whiteBlur}px white)
+            `drop-shadow(0px 0px ${whiteBlur}px #FFF8CF) drop-shadow(0px 0px ${whiteBlur}px #FFF8CF)
+             drop-shadow(0px 0px ${whiteBlur}px #FFF8CF) drop-shadow(0px 0px ${whiteBlur}px #FFF8CF)
              drop-shadow(0px 0px ${blackBlur}px black)`
         }
       );

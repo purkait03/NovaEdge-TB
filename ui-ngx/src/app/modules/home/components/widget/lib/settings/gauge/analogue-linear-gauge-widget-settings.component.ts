@@ -42,7 +42,7 @@ export class AnalogueLinearGaugeWidgetSettingsComponent extends AnalogueGaugeWid
     const settings = super.defaultSettings();
     settings.barStrokeWidth = 2.5;
     settings.colorBarStroke = null;
-    settings.colorBar = '#fff';
+    settings.colorBar = '#FFF8CF';
     settings.colorBarEnd = '#ddd';
     settings.colorBarProgress = null;
     settings.colorBarProgressEnd = null;

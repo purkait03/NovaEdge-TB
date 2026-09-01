@@ -18,7 +18,7 @@ import { cssUnit } from '@shared/models/widget-settings.models';
 import tinycolor from 'tinycolor2';
 
 const defaultMainColor = '#3F52DD';
-const defaultBackgroundColor = '#FFFFFF';
+const defaultBackgroundColor = '#FFF8CF';
 
 const hoveredFilledDarkenAmount = 6;
 const pressedFilledDarkenAmount = 12;

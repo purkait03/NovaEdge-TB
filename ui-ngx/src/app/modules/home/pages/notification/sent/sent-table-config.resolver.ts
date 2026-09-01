@@ -170,7 +170,7 @@ export class SentTableConfigResolver  {
       return '';
     }
     return `<div style="border-radius: 12px; height: 24px; line-height: 24px; padding: 0 10px; width: max-content; cursor: pointer;
-                        background-color: #D12730; color: #fff; font-weight: 500; margin-left: 8px" class="stats">
+                        background-color: #D12730; color: #FFF8CF; font-weight: 500; margin-left: 8px" class="stats">
                 ${this.translate.instant('notification.fails', {count: countError})} >
             </div>`;
   }

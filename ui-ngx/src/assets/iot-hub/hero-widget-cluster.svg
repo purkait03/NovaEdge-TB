@@ -42,16 +42,16 @@
 <stop offset="1" stop-color="#2C9755" stop-opacity="0.25"/>
 </linearGradient>
 <clipPath id="clip0_18326_153917">
-<rect width="68" height="68" fill="white" transform="translate(91.3919 16.5151) rotate(-12)"/>
+<rect width="68" height="68" fill="#FFF8CF" transform="translate(91.3919 16.5151) rotate(-12)"/>
 </clipPath>
 <clipPath id="clip1_18326_153917">
-<rect width="68" height="68" fill="white" transform="translate(852.686 2.37549) rotate(12)"/>
+<rect width="68" height="68" fill="#FFF8CF" transform="translate(852.686 2.37549) rotate(12)"/>
 </clipPath>
 <clipPath id="clip2_18326_153917">
-<rect width="68" height="68" fill="white" transform="translate(911.956 161.576) rotate(-12)"/>
+<rect width="68" height="68" fill="#FFF8CF" transform="translate(911.956 161.576) rotate(-12)"/>
 </clipPath>
 <clipPath id="clip3_18326_153917">
-<rect width="68" height="68" fill="white" transform="translate(32.5165 147.405) rotate(12)"/>
+<rect width="68" height="68" fill="#FFF8CF" transform="translate(32.5165 147.405) rotate(12)"/>
 </clipPath>
 </defs>
 </svg>

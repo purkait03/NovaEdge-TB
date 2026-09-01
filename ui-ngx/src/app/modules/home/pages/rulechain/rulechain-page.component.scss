@@ -86,7 +86,7 @@
       content: "";
       pointer-events: none;
       border-radius: 0 0 0 15px;
-      box-shadow: -10px 0px 0 0px #fff;
+      box-shadow: -10px 0px 0 0px #FFF8CF;
       border: none;
     }
     &:after {
@@ -98,7 +98,7 @@
       content: "";
       pointer-events: none;
       border-top-left-radius: 15px;
-      box-shadow: -10px 0px 0px 0px #fff;
+      box-shadow: -10px 0px 0px 0px #FFF8CF;
       border: none;
     }
   }
@@ -218,7 +218,7 @@
       .fc-nodeedit,
       .fc-nodedelete {
         box-sizing: content-box;
-        border: solid 2px #fff;
+        border: solid 2px #FFF8CF;
         background: #f83e05;
         outline: none;
       }
@@ -229,13 +229,13 @@
       position: absolute;
       top: 11px;
       right: 10px;
-      border: 1px solid #FFFFFF;
+      border: 1px solid #FFF8CF;
       border-radius: 4px;
       line-height: 18px;
       height: 22px;
       width: 22px;
       background: #886CB1;
-      color: #fff;
+      color: #FFF8CF;
       text-align: center;
       cursor: pointer;
       box-sizing: border-box;
@@ -293,7 +293,7 @@
       &.fc-selected {
         .fc-edge-label-text {
           span {
-            color: #fff !important;
+            color: #FFF8CF !important;
             background-color: #f00 !important;
             border: solid #f00 !important;
           }
@@ -305,7 +305,7 @@
         font-weight: 600 !important;
 
         span {
-          background-color: #fff !important;
+          background-color: #FFF8CF !important;
           color: #003a79 !important;
           border: solid 2px #003a79 !important;
         }

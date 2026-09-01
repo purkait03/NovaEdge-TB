@@ -1,90 +1,149 @@
-<!--
+<!-- Nova Edge Premium Login - Preserves ThingsBoard auth logic -->
+<div class="ne-login-page tb-dark">
+  <!-- Ambient background -->
+  <div class="ne-login-bg" aria-hidden="true">
+    <!-- Subtle glowing orange network lines -->
+    <svg class="ne-network-lines" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#E87918" stroke-opacity="0.08" stroke-width="0.7">
+        <path d="M0 120 L220 120 L260 160 L400 160" />
+        <path d="M0 260 L180 260 L220 300 L340 300" />
+        <path d="M0 420 L140 420 L180 460 L300 460" />
+        <path d="M1140 120 L1280 120 L1320 160 L1440 160" />
+        <path d="M1180 260 L1300 260 L1340 300 L1440 300" />
+        <path d="M1200 440 L1320 440 L1360 480 L1440 480" />
+        <path d="M0 700 L140 700 L180 740 L320 740" />
+        <path d="M1100 700 L1240 700 L1280 740 L1440 740" />
+      </g>
+      <g fill="#E87918">
+        <circle cx="260" cy="160" r="2.2" opacity="0.35" />
+        <circle cx="220" cy="300" r="1.8" opacity="0.28" />
+        <circle cx="180" cy="460" r="2" opacity="0.30" />
+        <circle cx="1320" cy="160" r="2" opacity="0.30" />
+        <circle cx="1340" cy="300" r="1.8" opacity="0.27" />
+        <circle cx="1360" cy="480" r="2" opacity="0.32" />
+        <circle cx="180" cy="740" r="1.8" opacity="0.28" />
+        <circle cx="1280" cy="740" r="2" opacity="0.30" />
+      </g>
+    </svg>
 
-    Copyright © 2016-2026 The Thingsboard Authors
+    <!-- Dotted world map -->
+    <div class="ne-world-map">
+      <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" class="ne-world-svg">
+        <defs>
+          <pattern id="ne-dots" x="0" y="0" width="7" height="7" patternUnits="userSpaceOnUse">
+            <circle cx="3.5" cy="3.5" r="1.05" fill="#E87918" />
+          </pattern>
+          <radialGradient id="ne-map-fade" cx="50%" cy="50%" r="70%">
+            <stop offset="55%" stop-color="white" stop-opacity="1" />
+            <stop offset="100%" stop-color="white" stop-opacity="0" />
+          </radialGradient>
+          <mask id="ne-map-mask">
+            <rect width="1000" height="500" fill="url(#ne-map-fade)" />
+          </mask>
+        </defs>
+        <!-- Dotted continents (filled with pattern) -->
+        <g mask="url(#ne-map-mask)" opacity="0.38">
+          <!-- North America -->
+          <path d="M110 95 L175 78 L205 88 L225 125 L215 165 L175 175 L135 155 L105 120 Z" fill="url(#ne-dots)" />
+          <!-- South America -->
+          <path d="M195 190 L235 200 L245 260 L225 310 L195 315 L175 260 L180 210 Z" fill="url(#ne-dots)" />
+          <!-- Greenland -->
+          <path d="M280 55 L310 50 L315 75 L285 80 Z" fill="url(#ne-dots)" opacity="0.7" />
+          <!-- Africa -->
+          <path d="M385 135 L425 125 L445 165 L440 230 L420 265 L385 255 L365 190 L375 145 Z" fill="url(#ne-dots)" />
+          <!-- Europe -->
+          <path d="M385 95 L445 85 L465 115 L445 145 L405 140 L380 115 Z" fill="url(#ne-dots)" />
+          <!-- Asia -->
+          <path d="M465 75 L585 65 L645 95 L665 145 L620 190 L540 175 L485 135 L460 105 Z" fill="url(#ne-dots)" />
+          <path d="M580 195 L610 185 L625 210 L595 225 Z" fill="url(#ne-dots)" opacity="0.85" />
+          <!-- Australia -->
+          <path d="M625 305 L675 295 L695 315 L685 345 L635 350 L615 325 Z" fill="url(#ne-dots)" />
+        </g>
+        <!-- Fine circuit hex patterns at edges -->
+        <g stroke="#E87918" stroke-opacity="0.10" fill="none" stroke-width="0.6">
+          <path d="M40 40 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
+          <path d="M70 70 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
+          <path d="M960 40 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
+          <path d="M930 70 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
+          <path d="M40 430 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
+          <path d="M960 430 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
+        </g>
+      </svg>
+    </div>
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+    <!-- Soft ambient glows -->
+    <div class="ne-glow ne-glow--top"></div>
+    <div class="ne-glow ne-glow--bottom"></div>
+    <div class="ne-glow ne-glow--card"></div>
+  </div>
 
-        http://www.apache.org/licenses/LICENSE-2.0
+  <!-- Upper-left Nova Edge logo -->
+  <div class="ne-header-logo" aria-label="Nova Edge">
+    <div class="ne-header-mark">
+      <span class="ne-hex"></span>
+      <span class="ne-hex ne-hex--small"></span>
+    </div>
+    <div class="ne-header-text">
+      <span class="ne-header-title">NOVA EDGE</span>
+      <span class="ne-header-subtitle">ThingsBoard</span>
+    </div>
+  </div>
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
--->
-<div class="tb-login-content mat-app-background tb-dark flex flex-1 items-center justify-center">
-  <mat-card appearance="raised" style="max-height: 80vh; overflow-y: auto;">
-    <mat-card-content class="!p-6">
-      <form class="tb-login-form flex flex-col" [formGroup]="loginFormGroup" (ngSubmit)="login()">
-        <div class="flex flex-col items-center justify-start" style="padding: 16px 0;">
-          <tb-logo link="https://www.seple.in/" target="_blank" class="login-logo"></tb-logo>
+  <!-- Centered login card -->
+  <mat-card appearance="raised" class="ne-login-card">
+    <mat-card-content class="!p-0">
+      <form class="ne-login-form flex flex-col" [formGroup]="loginFormGroup" (ngSubmit)="login()">
+        <!-- Card header -->
+        <div class="ne-card-brand">
+          <div class="ne-card-mark">
+            <span class="ne-card-hex"></span>
+          </div>
+          <span class="ne-card-brand-text">NOVA EDGE</span>
         </div>
+        <h1 class="ne-welcome">Welcome back!</h1>
+        <p class="ne-subtitle">Sign in to continue to your ThingsBoard account</p>
+
         @if (isLoading || (isLoading$ | async)) {
-          <mat-progress-bar color="warn" mode="indeterminate">
-          </mat-progress-bar>
+          <mat-progress-bar color="warn" mode="indeterminate" class="ne-progress"></mat-progress-bar>
+        } @else {
+          <span class="ne-progress-spacer"></span>
         }
-        @if (!isLoading && !(isLoading$ | async)) {
-          <span style="height: 4px;"></span>
-        }
-        <span tb-toast style="height: 20px;"></span>
-        <div class="flex flex-col">
-          @if(oauth2Clients?.length) {
-            <div class="oauth-container tb-default flex flex-col gap-4">
-              @if(oauth2Clients.length !== 1) {
-                <div class="title">{{ 'login.sign-in-with' | translate: {name: ''} }}</div>
-              }
-              <div class="login-button-container flex flex-wrap justify-center gap-4">
-                @for(oauth2Client of oauth2Clients; track oauth2Client.url) {
-                  <a mat-stroked-button class="login-with-button"
-                     [href]=getOAuth2Uri(oauth2Client)>
-                    <tb-icon matButtonIcon class="tb-mat-20">{{ oauth2Client.icon }}</tb-icon>
-                    @if(oauth2Clients.length === 1) {
-                      {{ 'login.sign-in-with' | translate: {name: oauth2Clients[0].name} }}
-                    } @else {
-                      {{ oauth2Client.name }}
-                    }
-                  </a>
-                }
-              </div>
-              <div class="container-divider">
-                <mat-divider class="tb-dark flex-1"></mat-divider>
-                <div class="text">{{ "login.or" | translate | uppercase }}</div>
-                <mat-divider class="tb-dark flex-1"></mat-divider>
-              </div>
-            </div>
-          } @else {
-            <div class="oauth-container flex flex-col">
-              <div class="title !mb-4" translate>login.sign-in-to-your-account</div>
-            </div>
-          }
-          <mat-form-field class="tb-autofilled" appearance="outline" hideRequiredMarker>
-            <mat-label translate>login.username</mat-label>
-            <input id="username-input" matInput type="email" autofocus formControlName="username" autocomplete="email"/>
-            <mat-icon matPrefix>email</mat-icon>
+        <span tb-toast class="ne-toast"></span>
+
+        <!-- Fields - preserve existing ids / formControls / validation -->
+        <div class="ne-fields flex flex-col">
+          <mat-form-field class="ne-field tb-autofilled" appearance="outline" hideRequiredMarker>
+            <mat-label>Username</mat-label>
+            <input id="username-input" matInput type="email" autofocus formControlName="username" autocomplete="email" placeholder="Enter your email" />
+            <mat-icon matPrefix class="ne-field-icon">mail</mat-icon>
             @if (loginFormGroup.get('username').invalid) {
               <mat-error>
                 {{ 'login.invalid-email-format' | translate }}
               </mat-error>
             }
           </mat-form-field>
-          <mat-form-field class="tb-autofilled" appearance="outline">
-            <mat-label translate>common.password</mat-label>
-            <input id="password-input" matInput type="password" formControlName="password" autocomplete="current-password"/>
+
+          <mat-form-field class="ne-field tb-autofilled" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input id="password-input" matInput type="password" formControlName="password" autocomplete="current-password" placeholder="Enter your password" />
+            <mat-icon matPrefix class="ne-field-icon">lock</mat-icon>
             <tb-toggle-password matSuffix></tb-toggle-password>
-            <mat-icon matPrefix>lock</mat-icon>
           </mat-form-field>
-          <button mat-flat-button color="accent" [disabled]="isLoading || (isLoading$ | async)"
-          class="tb-action-button" type="submit">{{ 'login.sign-in' | translate }}</button>
-          <div class="forgot-password flex items-center justify-end gap-5">
-            <button class="tb-reset-password" mat-button type="button" routerLink="/login/resetPasswordRequest">
+
+          <div class="ne-row">
+            <mat-checkbox color="primary" class="ne-remember">Remember me</mat-checkbox>
+            <button class="ne-forgot" mat-button type="button" routerLink="/login/resetPasswordRequest">
               {{ (passwordViolation ? 'login.reset-password' : 'login.forgot-password') | translate }}
             </button>
           </div>
+
+          <button mat-flat-button class="ne-signin" type="submit" [disabled]="isLoading || (isLoading$ | async)">
+            {{ 'login.sign-in' | translate }}
+          </button>
         </div>
       </form>
+
+      <div class="ne-card-footer">© 2026 Nova Edge. All rights reserved.</div>
     </mat-card-content>
   </mat-card>
 </div>

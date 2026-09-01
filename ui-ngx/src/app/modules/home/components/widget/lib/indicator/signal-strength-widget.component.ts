@@ -368,7 +368,7 @@ export class SignalStrengthWidgetComponent implements OnInit, OnDestroy, AfterVi
             size: '12px',
             leading: 1.333
           }
-        ).fill('#fff');
+        ).fill('#FFF8CF');
         const bounds = textElement.bbox();
         this.centerTextElement.rect(bounds.width + 16, bounds.height + 8)
         .move(bounds.x - 8, bounds.y - 4).radius(4).fill('#848484').insertBefore(textElement);

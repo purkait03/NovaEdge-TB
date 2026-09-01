@@ -12,14 +12,14 @@
   <linearGradient id="linearGradient6436" y2="-334.29" xlink:href="#linearGradient5528" gradientUnits="userSpaceOnUse" x2="913.4" gradientTransform="matrix(.78723 0 0 .78723 192.99 -72.172)" y1="-349.49" x1="913.38"/>
   <linearGradient id="linearGradient5528">
    <stop id="stop5530" stop-color="#3d3d3d" stop-opacity=".86275" offset="0"/>
-   <stop id="stop5532" stop-color="#fff" stop-opacity="0" offset="1"/>
+   <stop id="stop5532" stop-color="#FFF8CF" stop-opacity="0" offset="1"/>
   </linearGradient>
   <radialGradient id="radialGradient5502-17-9" xlink:href="#linearGradient5496" gradientUnits="userSpaceOnUse" cy="-341.87" cx="916.16" gradientTransform="matrix(4.5735 -.17574 .13786 3.5876 -3230.9 1043.7)" r="7.5588"/>
   <linearGradient id="linearGradient5496">
-   <stop id="stop5498" stop-color="#fff" stop-opacity="0" offset="0"/>
-   <stop id="stop5550" stop-color="#fff" stop-opacity=".10435" offset=".17494"/>
-   <stop id="stop5552" stop-color="#fff" stop-opacity=".92174" offset=".39279"/>
-   <stop id="stop5500" stop-color="#fff" offset="1"/>
+   <stop id="stop5498" stop-color="#FFF8CF" stop-opacity="0" offset="0"/>
+   <stop id="stop5550" stop-color="#FFF8CF" stop-opacity=".10435" offset=".17494"/>
+   <stop id="stop5552" stop-color="#FFF8CF" stop-opacity=".92174" offset=".39279"/>
+   <stop id="stop5500" stop-color="#FFF8CF" offset="1"/>
   </linearGradient>
  </defs>
  <g id="layer1" transform="translate(-126.73 -454.51)">

@@ -132,11 +132,11 @@ export const valueStepperButtonDefaultAppearance: ValueStepperButtonAppearance =
   iconSizeUnit: 'px',
 
   mainColorOn: '#3F52DD',
-  backgroundColorOn: '#FFFFFF',
+  backgroundColorOn: '#FFF8CF',
   mainColorOff: '#A2A2A2',
-  backgroundColorOff: '#FFFFFF',
+  backgroundColorOff: '#FFF8CF',
   mainColorDisabled: 'rgba(0,0,0,0.12)',
-  backgroundColorDisabled: '#FFFFFF',
+  backgroundColorDisabled: '#FFF8CF',
   customStyle: {
     enabled: null,
     hovered: null,
@@ -242,10 +242,10 @@ export const valueStepperDefaultSettings: ValueStepperWidgetSettings = {
   },
   background: {
     type: BackgroundType.color,
-    color: '#fff',
+    color: '#FFF8CF',
     overlay: {
       enabled: false,
-      color: 'rgba(255,255,255,0.72)',
+      color: 'rgba(255, 248, 207, 0.72)',
       blur: 3
     }
   },

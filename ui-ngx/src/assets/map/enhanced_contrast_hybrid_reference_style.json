@@ -860,7 +860,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -904,7 +904,7 @@
                 "icon-image": "Water point"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,50,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -946,7 +946,7 @@
                 "icon-image": "Water point"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -989,7 +989,7 @@
                 "icon-image": "Water point"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1031,7 +1031,7 @@
                 "icon-image": "Water point"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1106,7 +1106,7 @@
                 "icon-image": "Water point"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,50,0.8)",
                 "text-halo-width": 2
             }
@@ -1345,7 +1345,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,50,0.8)",
                 "text-halo-width": 2
             }
@@ -1373,7 +1373,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,50,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1508,7 +1508,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1540,7 +1540,7 @@
             },
             "paint": {
                 "text-opacity": 0.8,
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1571,7 +1571,7 @@
                 "text-field": "{_name}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1602,7 +1602,7 @@
                 "text-field": "{_name}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1649,7 +1649,7 @@
                 "text-field": "{_name}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1691,7 +1691,7 @@
                 "text-field": "{_name}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#007cb1",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1734,7 +1734,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2.5,
                 "text-halo-blur": 0.5
@@ -1766,7 +1766,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2.5,
                 "text-halo-blur": 0.5
@@ -1793,7 +1793,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1833,7 +1833,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1884,7 +1884,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1924,7 +1924,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -1964,7 +1964,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -2004,7 +2004,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -2044,7 +2044,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -2084,7 +2084,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -2124,14 +2124,14 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon brown white (Alt)",
+            "id": "Road/label/Rectangle hexagon brown #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2166,14 +2166,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon brown white/{_len}"
+                "icon-image": "Road/Rectangle hexagon brown #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon green white (Alt)",
+            "id": "Road/label/Rectangle hexagon green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2208,14 +2208,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon green white/{_len}"
+                "icon-image": "Road/Rectangle hexagon green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon red white (Alt)",
+            "id": "Road/label/Rectangle hexagon red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2250,14 +2250,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon red white/{_len}"
+                "icon-image": "Road/Rectangle hexagon red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon blue white (Alt)",
+            "id": "Road/label/Rectangle hexagon blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2292,14 +2292,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon blue white/{_len}"
+                "icon-image": "Road/Rectangle hexagon blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon brown white",
+            "id": "Road/label/Rectangle hexagon brown #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2334,14 +2334,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon brown white/{_len}"
+                "icon-image": "Road/Rectangle hexagon brown #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon green white",
+            "id": "Road/label/Rectangle hexagon green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2376,14 +2376,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon green white/{_len}"
+                "icon-image": "Road/Rectangle hexagon green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon red white",
+            "id": "Road/label/Rectangle hexagon red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2418,14 +2418,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon red white/{_len}"
+                "icon-image": "Road/Rectangle hexagon red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle hexagon blue white",
+            "id": "Road/label/Rectangle hexagon blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2460,14 +2460,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle hexagon blue white/{_len}"
+                "icon-image": "Road/Rectangle hexagon blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Octagon green white (Alt)",
+            "id": "Road/label/Octagon green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2504,10 +2504,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Octagon green white/{_len}"
+                "icon-image": "Road/Octagon green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -2550,11 +2550,11 @@
                 "icon-image": "Road/Hexagon orange black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon green white (Alt)",
+            "id": "Road/label/Hexagon green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2590,14 +2590,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon green white/{_len}"
+                "icon-image": "Road/Hexagon green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon red white (Alt)",
+            "id": "Road/label/Hexagon red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2633,14 +2633,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon red white/{_len}"
+                "icon-image": "Road/Hexagon red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon white black (Alt)",
+            "id": "Road/label/Hexagon #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2676,10 +2676,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon white black/{_len}"
+                "icon-image": "Road/Hexagon #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -2726,7 +2726,7 @@
             }
         },
         {
-            "id": "Road/label/Pentagon green white (Alt)",
+            "id": "Road/label/Pentagon green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2762,10 +2762,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon green white/{_len}"
+                "icon-image": "Road/Pentagon green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -2809,11 +2809,11 @@
                 "icon-image": "Road/Pentagon yellow black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon blue white (Alt)",
+            "id": "Road/label/Pentagon blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2850,14 +2850,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon blue white/{_len}"
+                "icon-image": "Road/Pentagon blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon white black (Alt)",
+            "id": "Road/label/Pentagon #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2893,14 +2893,14 @@
                     0.3
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon white black/{_len}"
+                "icon-image": "Road/Pentagon #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon inverse white black (Alt)",
+            "id": "Road/label/Pentagon inverse #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -2936,10 +2936,10 @@
                     0.3
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon inverse white black/{_len}"
+                "icon-image": "Road/Pentagon inverse #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -2986,7 +2986,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle green white (Alt)",
+            "id": "Road/label/Rectangle green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3023,10 +3023,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle green white (Alt)/{_len}"
+                "icon-image": "Road/Rectangle green #FFF8CF (Alt)/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -3070,11 +3070,11 @@
                 "icon-image": "Road/Rectangle yellow black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon blue white (Alt)",
+            "id": "Road/label/Hexagon blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3109,14 +3109,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon blue white/{_len}"
+                "icon-image": "Road/Hexagon blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle red white (Alt)",
+            "id": "Road/label/Rectangle red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3153,14 +3153,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle red white/{_len}"
+                "icon-image": "Road/Rectangle red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle blue white (Alt)",
+            "id": "Road/label/Rectangle blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3196,14 +3196,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle blue white/{_len}"
+                "icon-image": "Road/Rectangle blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle white black (Alt)",
+            "id": "Road/label/Rectangle #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3240,14 +3240,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle white black/{_len}"
+                "icon-image": "Road/Rectangle #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/V-shaped white black (Alt)",
+            "id": "Road/label/V-shaped #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3282,14 +3282,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/V-shaped white black/{_len}"
+                "icon-image": "Road/V-shaped #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/U-shaped blue white (Alt)",
+            "id": "Road/label/U-shaped blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3326,14 +3326,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped blue white/{_len}"
+                "icon-image": "Road/U-shaped blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/U-shaped red white (Alt)",
+            "id": "Road/label/U-shaped red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3369,10 +3369,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped red white/{_len}"
+                "icon-image": "Road/U-shaped red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -3416,7 +3416,7 @@
                 "icon-image": "Road/U-shaped yellow black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -3459,12 +3459,12 @@
             },
             "paint": {
                 "text-color": "#000001",
-                "text-halo-color": "#ffffff",
+                "text-halo-color": "#FFF8CF",
                 "text-halo-width": 1
             }
         },
         {
-            "id": "Road/label/U-shaped white green (Alt)",
+            "id": "Road/label/U-shaped #FFF8CF green (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3500,14 +3500,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped white green/{_len}"
+                "icon-image": "Road/U-shaped #FFF8CF green/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/U-shaped white black (Alt)",
+            "id": "Road/label/U-shaped #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3543,14 +3543,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped white black/{_len}"
+                "icon-image": "Road/U-shaped #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy red white (Alt)",
+            "id": "Road/label/Secondary Hwy red #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3584,14 +3584,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy red white/{_len}"
+                "icon-image": "Road/Secondary Hwy red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy green white (Alt)",
+            "id": "Road/label/Secondary Hwy green #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3627,14 +3627,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy green white (Alt)/{_len}"
+                "icon-image": "Road/Secondary Hwy green #FFF8CF (Alt)/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy white black (Alt)",
+            "id": "Road/label/Secondary Hwy #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3669,14 +3669,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy white black (Alt)/{_len}"
+                "icon-image": "Road/Secondary Hwy #FFF8CF black (Alt)/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Shield white black (Alt)",
+            "id": "Road/label/Shield #FFF8CF black (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3707,14 +3707,14 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-field": "{_name}",
-                "icon-image": "Road/Shield white black/{_len}"
+                "icon-image": "Road/Shield #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Shield blue white (Alt)",
+            "id": "Road/label/Shield blue #FFF8CF (Alt)",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3745,14 +3745,14 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-field": "{_name}",
-                "icon-image": "Road/Shield blue white/{_len}"
+                "icon-image": "Road/Shield blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Octagon green white",
+            "id": "Road/label/Octagon green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3789,10 +3789,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Octagon green white/{_len}"
+                "icon-image": "Road/Octagon green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -3835,11 +3835,11 @@
                 "icon-image": "Road/Hexagon orange black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon green white",
+            "id": "Road/label/Hexagon green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3875,14 +3875,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon green white/{_len}"
+                "icon-image": "Road/Hexagon green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon red white",
+            "id": "Road/label/Hexagon red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3918,14 +3918,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon red white/{_len}"
+                "icon-image": "Road/Hexagon red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon white black",
+            "id": "Road/label/Hexagon #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -3961,10 +3961,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon white black/{_len}"
+                "icon-image": "Road/Hexagon #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -4007,11 +4007,11 @@
                 "icon-image": "Road/Pentagon green yellow/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon green white",
+            "id": "Road/label/Pentagon green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4047,10 +4047,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon green white/{_len}"
+                "icon-image": "Road/Pentagon green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -4094,11 +4094,11 @@
                 "icon-image": "Road/Pentagon yellow black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon blue white",
+            "id": "Road/label/Pentagon blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4135,14 +4135,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon blue white/{_len}"
+                "icon-image": "Road/Pentagon blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon white black",
+            "id": "Road/label/Pentagon #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4178,14 +4178,14 @@
                     0.3
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon white black/{_len}"
+                "icon-image": "Road/Pentagon #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Pentagon inverse white black",
+            "id": "Road/label/Pentagon inverse #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4221,10 +4221,10 @@
                     0.3
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Pentagon inverse white black/{_len}"
+                "icon-image": "Road/Pentagon inverse #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -4271,7 +4271,7 @@
             }
         },
         {
-            "id": "Road/label/Rectangle green white",
+            "id": "Road/label/Rectangle green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4308,10 +4308,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle green white (Alt)/{_len}"
+                "icon-image": "Road/Rectangle green #FFF8CF (Alt)/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -4355,11 +4355,11 @@
                 "icon-image": "Road/Rectangle yellow black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Hexagon blue white",
+            "id": "Road/label/Hexagon blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4394,14 +4394,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Hexagon blue white/{_len}"
+                "icon-image": "Road/Hexagon blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle red white",
+            "id": "Road/label/Rectangle red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4438,14 +4438,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle red white/{_len}"
+                "icon-image": "Road/Rectangle red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle blue white",
+            "id": "Road/label/Rectangle blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4481,14 +4481,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle blue white/{_len}"
+                "icon-image": "Road/Rectangle blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Rectangle white black",
+            "id": "Road/label/Rectangle #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4525,14 +4525,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Rectangle white black/{_len}"
+                "icon-image": "Road/Rectangle #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/V-shaped white black",
+            "id": "Road/label/V-shaped #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4567,14 +4567,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/V-shaped white black/{_len}"
+                "icon-image": "Road/V-shaped #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/U-shaped blue white",
+            "id": "Road/label/U-shaped blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4611,14 +4611,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped blue white/{_len}"
+                "icon-image": "Road/U-shaped blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/U-shaped red white",
+            "id": "Road/label/U-shaped red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4654,10 +4654,10 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped red white/{_len}"
+                "icon-image": "Road/U-shaped red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -4701,7 +4701,7 @@
                 "icon-image": "Road/U-shaped yellow black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
@@ -4745,12 +4745,12 @@
             },
             "paint": {
                 "text-color": "#000001",
-                "text-halo-color": "#ffffff",
+                "text-halo-color": "#FFF8CF",
                 "text-halo-width": 1
             }
         },
         {
-            "id": "Road/label/U-shaped white green",
+            "id": "Road/label/U-shaped #FFF8CF green",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4786,14 +4786,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped white green/{_len}"
+                "icon-image": "Road/U-shaped #FFF8CF green/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/U-shaped white black",
+            "id": "Road/label/U-shaped #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4829,14 +4829,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/U-shaped white black/{_len}"
+                "icon-image": "Road/U-shaped #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy red white",
+            "id": "Road/label/Secondary Hwy red #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4871,14 +4871,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy red white/{_len}"
+                "icon-image": "Road/Secondary Hwy red #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy green white",
+            "id": "Road/label/Secondary Hwy green #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4913,14 +4913,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy green white/{_len}"
+                "icon-image": "Road/Secondary Hwy green #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Secondary Hwy white black",
+            "id": "Road/label/Secondary Hwy #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4955,14 +4955,14 @@
                     0.1
                 ],
                 "text-field": "{_name}",
-                "icon-image": "Road/Secondary Hwy white black/{_len}"
+                "icon-image": "Road/Secondary Hwy #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Shield white black",
+            "id": "Road/label/Shield #FFF8CF black",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -4993,14 +4993,14 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-field": "{_name}",
-                "icon-image": "Road/Shield white black/{_len}"
+                "icon-image": "Road/Shield #FFF8CF black/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff"
+                "text-color": "#FFF8CF"
             }
         },
         {
-            "id": "Road/label/Shield blue white",
+            "id": "Road/label/Shield blue #FFF8CF",
             "type": "symbol",
             "source": "esri",
             "source-layer": "Road/label",
@@ -5046,10 +5046,10 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-field": "{_name}",
-                "icon-image": "Road/Shield blue white/{_len}"
+                "icon-image": "Road/Shield blue #FFF8CF/{_len}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-width": 2
             }
         },
@@ -5071,7 +5071,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5111,7 +5111,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5152,7 +5152,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5204,7 +5204,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5244,7 +5244,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5284,7 +5284,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5324,7 +5324,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5364,7 +5364,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5404,7 +5404,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "#000005",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5428,7 +5428,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5452,7 +5452,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5476,7 +5476,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5500,7 +5500,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5524,7 +5524,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5548,7 +5548,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5572,7 +5572,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5596,7 +5596,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5620,7 +5620,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5645,7 +5645,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5669,7 +5669,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5693,7 +5693,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5717,7 +5717,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5741,7 +5741,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5765,7 +5765,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5800,7 +5800,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5826,7 +5826,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5867,7 +5867,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5891,7 +5891,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5915,7 +5915,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5956,7 +5956,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -5997,7 +5997,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -6022,7 +6022,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6077,7 +6077,7 @@
                 "text-field": "{_name_global}"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5
             }
@@ -6126,7 +6126,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5
             }
@@ -6175,7 +6175,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2
             }
@@ -6205,7 +6205,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6237,7 +6237,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6280,7 +6280,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6323,7 +6323,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6366,7 +6366,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6409,7 +6409,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6453,7 +6453,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6496,7 +6496,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6539,7 +6539,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6582,7 +6582,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6625,7 +6625,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -6668,7 +6668,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6711,7 +6711,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6754,7 +6754,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5
@@ -6795,7 +6795,7 @@
                 "icon-image": "Neighborhood"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -6841,7 +6841,7 @@
                 "icon-image": "City large scale"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -6887,7 +6887,7 @@
                 "icon-image": "City large scale"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -6930,7 +6930,7 @@
                 "icon-image": "City large scale"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -6973,7 +6973,7 @@
                 "icon-image": "City large scale"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7016,7 +7016,7 @@
                 "icon-image": "City large scale"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7058,7 +7058,7 @@
                 "icon-image": "City large scale"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7097,7 +7097,7 @@
                 "icon-image": "City small scale/town small non capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7136,7 +7136,7 @@
                 "icon-image": "City small scale/town large non capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7175,7 +7175,7 @@
                 "icon-image": "City small scale/small non capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7214,7 +7214,7 @@
                 "icon-image": "City small scale/medium non capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7253,7 +7253,7 @@
                 "icon-image": "City small scale/other capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7292,7 +7292,7 @@
                 "icon-image": "City small scale/town large other capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7331,7 +7331,7 @@
                 "icon-image": "City small scale/small other capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7370,7 +7370,7 @@
                 "icon-image": "City small scale/medium other capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7409,7 +7409,7 @@
                 "icon-image": "City small scale/town small admin0 capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7448,7 +7448,7 @@
                 "icon-image": "City small scale/town large admin0 capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7487,7 +7487,7 @@
                 "icon-image": "City small scale/small admin0 capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7526,7 +7526,7 @@
                 "icon-image": "City small scale/medium admin0 capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7565,7 +7565,7 @@
                 "icon-image": "City small scale/large other capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7604,7 +7604,7 @@
                 "icon-image": "City small scale/x large admin2 capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7643,7 +7643,7 @@
                 "icon-image": "City small scale/large non capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7682,7 +7682,7 @@
                 "icon-image": "City small scale/large admin0 capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7721,7 +7721,7 @@
                 "icon-image": "City small scale/x large non capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7760,7 +7760,7 @@
                 "icon-image": "City small scale/x large admin1 capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7799,7 +7799,7 @@
                 "icon-image": "City small scale/x large admin0 capital"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0.5
@@ -7837,7 +7837,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2.5
             }
@@ -7875,7 +7875,7 @@
                 "icon-image": "Disputed label point"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 2,
                 "text-halo-blur": 2
@@ -7927,7 +7927,7 @@
                 "text-transform": "uppercase"
             },
             "paint": {
-                "text-color": "#ffffff",
+                "text-color": "#FFF8CF",
                 "text-halo-color": "rgba(0,0,0,0.8)",
                 "text-halo-width": 1.5,
                 "text-halo-blur": 0.5

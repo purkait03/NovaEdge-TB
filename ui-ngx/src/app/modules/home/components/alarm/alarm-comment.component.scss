@@ -75,7 +75,7 @@ $border: 1px solid mat.m2-get-color-from-palette($tb-primary);
       z-index: 1;
       position: sticky;
       top: -24px;
-      background-color: white;
+      background-color: #FFF8CF;
 
       &.activity-only {
         top: 0;
@@ -148,7 +148,7 @@ $border: 1px solid mat.m2-get-color-from-palette($tb-primary);
       min-height: 28px;
       border-radius: 50%;
       font-weight: 700;
-      color: white;
+      color: #FFF8CF;
       font-size: 13px;
     }
 

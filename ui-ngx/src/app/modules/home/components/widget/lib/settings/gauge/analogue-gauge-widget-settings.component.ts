@@ -50,7 +50,7 @@ export class AnalogueGaugeWidgetSettingsComponent extends WidgetSettingsComponen
       valueBox: true,
       valueInt: 3,
       defaultColor: null,
-      colorPlate: '#fff',
+      colorPlate: '#FFF8CF',
       colorMajorTicks: '#444',
       colorMinorTicks: '#666',
       colorNeedle: null,

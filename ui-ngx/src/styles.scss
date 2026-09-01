@@ -60,7 +60,7 @@ tb-root {
 
 :root {
   --tb-page-background: #eef1f6;
-  --tb-surface: #ffffff;
+  --tb-surface: #FFF8CF;
   --tb-surface-hover: #f5f6fa;
   --tb-surface-active: #ebedf4;
   --tb-border-color: rgba(16, 24, 40, 0.08);
@@ -80,16 +80,20 @@ tb-root {
   --tb-nav-width: 250px;
   --tb-nav-width-collapsed: 60px;
   --tb-toolbar-height: 64px;
-  --tb-sidebar-bg: #1a0533;
-  --tb-sidebar-bg-hover: rgba(255, 255, 255, 0.08);
-  --tb-sidebar-bg-active: rgba(255, 255, 255, 0.14);
-  --tb-sidebar-text: rgba(255, 255, 255, 0.92);
-  --tb-sidebar-text-secondary: rgba(255, 255, 255, 0.70);
-  --tb-sidebar-text-muted: rgba(255, 255, 255, 0.55);
-  --tb-sidebar-border: rgba(255, 255, 255, 0.10);
-  --tb-sidebar-divider: rgba(255, 255, 255, 0.12);
-  --tb-sidebar-scrollbar-thumb: rgba(255, 255, 255, 0.30);
-  --tb-sidebar-scrollbar-thumb-hover: rgba(255, 255, 255, 0.45);
+  --tb-sidebar-bg: #2E2910;
+  --tb-sidebar-bg-hover: rgba(255, 248, 207, 0.08);
+  --tb-sidebar-bg-active: rgba(255, 248, 207, 0.14);
+  --tb-sidebar-text: rgba(255, 248, 207, 0.92);
+  --tb-sidebar-text-secondary: rgba(255, 248, 207, 0.70);
+  --tb-sidebar-text-muted: rgba(255, 248, 207, 0.55);
+  --tb-sidebar-border: rgba(255, 248, 207, 0.10);
+  --tb-sidebar-divider: rgba(255, 248, 207, 0.12);
+  --tb-sidebar-scrollbar-thumb: rgba(255, 248, 207, 0.30);
+  --tb-sidebar-scrollbar-thumb-hover: rgba(255, 248, 207, 0.45);
+  --tb-details-panel-bg: #FFF8CF;
+  --tb-details-header-bg: #FFF8CF;
+  --tb-details-drawer-bg: #FFF8CF;
+  --tb-details-drawer-border: rgba(16, 24, 40, 0.08);
 }
 
 /***************
@@ -468,7 +472,7 @@ pre.tb-highlight {
       font-size: 12px;
       line-height: 16px;
       font-weight: 500;
-      color: #ffffff;
+      color: #FFF8CF;
     }
   }
 }
@@ -720,11 +724,11 @@ pre.tb-highlight {
   .mat-toolbar.mat-primary {
     button.mat-mdc-icon-button {
       .mat-icon {
-        color: white;
+        color: #FFF8CF;
       }
     }
     .mat-mdc-select-value, .mat-mdc-select-arrow, .mat-mdc-select-arrow:after {
-      color: white;
+      color: #FFF8CF;
     }
     .mat-mdc-text-field-wrapper {
       &.mdc-text-field--outlined {
@@ -732,14 +736,14 @@ pre.tb-highlight {
           &:not(:hover) {
             .mdc-notched-outline {
               .mdc-notched-outline__leading, .mdc-notched-outline__trailing {
-                border-color: white;
+                border-color: #FFF8CF;
               }
             }
           }
           &:hover {
             .mdc-notched-outline {
               .mdc-notched-outline__leading, .mdc-notched-outline__trailing {
-                border-color: rgba(255, 255, 255, 0.87);
+                border-color: rgba(255, 248, 207, 0.87);
               }
             }
           }
@@ -747,7 +751,7 @@ pre.tb-highlight {
         &:not(.mdc-text-field--disabled).mdc-text-field--focused {
           .mdc-notched-outline {
             .mdc-notched-outline__leading, .mdc-notched-outline__trailing {
-              border-color: rgba(255, 255, 255, 0.67);
+              border-color: rgba(255, 248, 207, 0.67);
             }
           }
         }
@@ -758,7 +762,7 @@ pre.tb-highlight {
   .mat-toolbar.mat-mdc-table-toolbar {
     padding: 0 24px;
     &:not(.mat-primary) {
-      background: #fff;
+      background: #FFF8CF;
     }
     .mat-toolbar-tools {
       padding: 0;
@@ -1259,7 +1263,7 @@ pre.tb-highlight {
     height: 24px;
     overflow: hidden;
     content: "";
-    border: 2px solid #fff;
+    border: 2px solid #FFF8CF;
     border-radius: 50%;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084);
 
@@ -1514,19 +1518,45 @@ pre.tb-highlight {
  *********************************/
 
 .tb-dark {
-  --tb-page-background: #0f051a;
-  --tb-surface: #1e0a3c;
-  --tb-surface-hover: #271245;
-  --tb-surface-active: #33185c;
-  --tb-surface-raised: #26124e;
-  --tb-surface-overlay: #24104a;
-  --tb-border-color: rgba(255, 255, 255, 0.08);
-  --tb-border-strong: rgba(255, 255, 255, 0.14);
-  --tb-text-primary: rgba(255, 255, 255, 0.92);
-  --tb-text-secondary: rgba(255, 255, 255, 0.65);
-  --tb-text-muted: rgba(255, 255, 255, 0.45);
-  --tb-scrollbar-thumb: rgba(255, 255, 255, 0.25);
-  --tb-scrollbar-thumb-hover: rgba(255, 255, 255, 0.4);
+  // Warm Brown / Coffee palette – replaces previous purple
+  --tb-page-background: #1A120D;
+  --tb-surface: #2A1D14;
+  --tb-surface-hover: #3D2A1D;
+  --tb-surface-active: #4A3323;
+  --tb-surface-raised: #342419;
+  --tb-surface-overlay: #342419;
+  --tb-border-color: #4A3526;
+  --tb-border-strong: #5C4433;
+  --tb-text-primary: #F5EDE3;
+  --tb-text-secondary: #D2C0AD;
+  --tb-text-muted: #A9907A;
+  --tb-scrollbar-thumb: rgba(201, 154, 108, 0.28);
+  --tb-scrollbar-thumb-hover: rgba(201, 154, 108, 0.42);
+  --tb-primary-color: #C49A6C;
+  // Sidebar – warm dark brown, not olive/purple
+  --tb-sidebar-bg: #1A120D;
+  --tb-sidebar-bg-hover: #3D2A1D;
+  --tb-sidebar-bg-active: #4A3323;
+  --tb-sidebar-text: #F5EDE3;
+  --tb-sidebar-text-secondary: #D2C0AD;
+  --tb-sidebar-text-muted: #A9907A;
+  --tb-sidebar-border: #4A3526;
+  --tb-sidebar-divider: #4A3526;
+  --tb-sidebar-scrollbar-thumb: rgba(201, 154, 108, 0.28);
+  --tb-sidebar-scrollbar-thumb-hover: rgba(201, 154, 108, 0.42);
+  // Details drawer / side panel – same premium brown
+  --tb-details-panel-bg: #1D130B;
+  --tb-details-header-bg: #291B10;
+  --tb-details-drawer-bg: #1D130B;
+  --tb-details-drawer-border: #5A3A1F;
+  --tb-details-tab-bg: #1D130B;
+  // Material system bridge – ensure MDC also sees brown
+  --mat-sys-surface: #2A1D14;
+  --mat-sys-on-surface: #F5EDE3;
+  --mat-sys-surface-container: #2A1D14;
+  --mat-sys-surface-container-high: #342419;
+  --mat-sys-primary: #C49A6C;
+  --mat-sys-on-primary: #1A120D;
   color: var(--tb-text-primary);
   color-scheme: dark;
 
@@ -1536,11 +1566,11 @@ pre.tb-highlight {
     &:hover { background: var(--tb-scrollbar-thumb-hover); }
   }
 
-  // Links remain readable on dark
+  // Links remain readable on dark – warm brown accent
   a:not(.mat-mdc-button-base, .mdc-tab) {
-    color: #8ab4f8;
-    border-bottom-color: rgba(138, 180, 248, 0.25);
-    &:hover, &:focus { border-bottom-color: #8ab4f8; }
+    color: #E8C9A0;
+    border-bottom-color: rgba(196, 154, 108, 0.35);
+    &:hover, &:focus { border-bottom-color: #C49A6C; }
   }
 
   blockquote { border-left-color: var(--tb-border-strong); }
@@ -1560,12 +1590,47 @@ pre.tb-highlight {
     background: var(--tb-surface);
     border-bottom-color: var(--tb-border-color);
   }
+
+  // Primary buttons – warm caramel
+  .mat-mdc-unelevated-button.mat-primary,
+  .mat-mdc-raised-button.mat-primary,
+  .mat-mdc-fab.mat-primary,
+  .mat-mdc-mini-fab.mat-primary {
+    --mdc-filled-button-container-color: #C49A6C;
+    --mdc-filled-button-label-text-color: #1A120D;
+    --mdc-fab-container-color: #C49A6C;
+    --mdc-fab-icon-color: #1A120D;
+    --mat-fab-foreground-color: #1A120D;
+  }
+  .mat-mdc-outlined-button.mat-primary {
+    --mdc-outlined-button-label-text-color: #C49A6C;
+    --mdc-outlined-button-outline-color: #C49A6C;
+  }
+  .mat-mdc-button.mat-primary {
+    --mdc-text-button-label-text-color: #C49A6C;
+  }
+
+  // Header & toolbar – rich dark brown
+  .tb-primary-toolbar {
+    background: #211710;
+    border-bottom-color: var(--tb-border-color);
+  }
+  mat-toolbar.mat-primary {
+    --mat-toolbar-container-background-color: #211710;
+    --mat-toolbar-container-text-color: #F5EDE3;
+  }
+
+  // Sidenav container/page background – ensure brown not purple
+  mat-sidenav-container,
+  .tb-main-content {
+    background: var(--tb-page-background) !important;
+  }
 }
 
 .tb-default {
   --tb-primary-color: #315d8d;
-  --tb-surface-raised: #ffffff;
-  --tb-surface-overlay: #ffffff;
+  --tb-surface-raised: #FFF8CF;
+  --tb-surface-overlay: #FFF8CF;
   color-scheme: light;
 }
 
@@ -1576,18 +1641,11 @@ pre.tb-highlight {
  * Targets existing ThingsBoard DOM inside tabs.
  *********************************/
 .tb-dark {
-  // Entity / admin tables – card surface inside tabs must be dark, not white
+  // Entity / admin tables – card surface inside tabs must be dark, not #FFF8CF
   .tb-entity-table .tb-entity-table-content,
   tb-entities-table .tb-entity-table-content {
     background: var(--tb-surface);
-  }
-  // Any component that hardcoded white surface (kept light in original) -> map to dark surface
-  // Scoped to known surface classes to avoid global * hacks
-  .tb-entity-table-content,
-  .tb-dashboard-page .mat-content,
-  .mat-drawer-container,
-  .mat-drawer {
-    // let Material system tokens handle text; only ensure surface is not forced white
+    border-color: var(--tb-border-color);
   }
 
   // Forms inside tabs – Material outline borders
@@ -1597,16 +1655,108 @@ pre.tb-highlight {
     .mdc-notched-outline__trailing {
       border-color: var(--tb-border-strong);
     }
+    &:hover .mdc-notched-outline .mdc-notched-outline__leading,
+    &:hover .mdc-notched-outline .mdc-notched-outline__notch,
+    &:hover .mdc-notched-outline .mdc-notched-outline__trailing {
+      border-color: #C49A6C !important;
+    }
+    &.mat-focused .mdc-notched-outline__leading,
+    &.mat-focused .mdc-notched-outline__notch,
+    &.mat-focused .mdc-notched-outline__trailing {
+      border-color: #C49A6C !important;
+      border-width: 2px;
+    }
+    .mdc-floating-label { color: var(--tb-text-secondary); }
+    &.mat-focused .mdc-floating-label { color: #C49A6C; }
+    input, textarea, .mat-mdc-select-value, .mat-mdc-select-placeholder {
+      color: var(--tb-text-primary);
+      caret-color: #C49A6C;
+    }
+  }
+  .mat-mdc-form-field.mat-form-field-appearance-fill {
+    .mdc-text-field--filled { background-color: var(--tb-surface-raised); }
+    .mat-mdc-form-field-focus-overlay { background-color: rgba(196,154,108,0.08); }
   }
 
   // Cards/panels inside tabs
   mat-card, .mat-mdc-card,
   .mat-expansion-panel {
+    background-color: var(--tb-surface);
     border-color: var(--tb-border-color);
+    color: var(--tb-text-primary);
+    --mat-card-subtitle-text-color: var(--tb-text-secondary);
+  }
+  .mat-expansion-panel-header { color: var(--tb-text-primary); }
+  .mat-expansion-panel-content { color: var(--tb-text-secondary); }
+
+  // Tabs – brown theme
+  .mat-mdc-tab-group .mat-mdc-tab-header { border-bottom-color: var(--tb-border-color); background: transparent; }
+  .mat-mdc-tab .mdc-tab__text-label { color: var(--tb-text-secondary); }
+  .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label { color: #F5EDE3; }
+  .mdc-tab-indicator__content--underline { border-color: #C49A6C; }
+  .mat-mdc-tab-header-pagination-chevron { border-color: var(--tb-text-secondary); }
+  .mat-mdc-tab-body-wrapper, .mat-mdc-tab-body-content { background: transparent; }
+
+  // Tables – brown rows, cream text, brown pagination
+  .mat-mdc-table { background: transparent; }
+  .mat-mdc-header-row { background: var(--tb-surface); }
+  .mat-mdc-header-cell {
+    color: var(--tb-text-secondary);
+    background: transparent;
+    border-bottom-color: var(--tb-border-color);
+  }
+  .mat-mdc-row {
+    background: transparent;
+    &:hover:not(.tb-current-entity) { background-color: var(--tb-surface-hover) !important; }
+    &.tb-current-entity { background-color: var(--tb-surface-active) !important; }
+  }
+  .mat-mdc-cell {
+    color: var(--tb-text-primary);
+    border-bottom-color: var(--tb-border-color);
+    .mat-icon { color: var(--tb-text-secondary); }
+  }
+  .mdc-data-table__row:last-child .mdc-data-table__cell { border-bottom-color: var(--tb-border-color); }
+
+  // Paginator – brown
+  .mat-mdc-paginator {
+    background: var(--tb-surface);
+    color: var(--tb-text-primary);
+    border-top: 1px solid var(--tb-border-color);
+    .mat-mdc-icon-button { color: var(--tb-text-secondary); }
+    .mat-mdc-paginator-range-label, .mat-mdc-select-value { color: var(--tb-text-secondary); }
+  }
+
+  // Toolbar inside tables / details
+  .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) {
+    background: var(--tb-surface);
+    border-bottom: 1px solid var(--tb-border-color);
+    color: var(--tb-text-primary);
   }
 
   // Divider inside tabs
   .mat-divider { --mat-divider-color: var(--tb-border-color); border-color: var(--tb-border-color); }
+
+  // Buttons inside dark tables/cards
+  button.mat-mdc-icon-button .mat-icon { color: var(--tb-text-secondary); }
+  button.mat-mdc-icon-button:hover { background: var(--tb-surface-hover); .mat-icon { color: var(--tb-text-primary); } }
+
+  // Chips, toggles, slide toggles
+  .mat-mdc-chip, .mdc-evolution-chip { background: var(--tb-surface-raised); border-color: var(--tb-border-color); color: var(--tb-text-primary); }
+  .mat-mdc-slide-toggle .mdc-switch__track::before { background: var(--tb-border-strong); }
+
+  // Dashboard / widgets – ensure no white card remains
+  .tb-dashboard-page, .tb-dashboard, .tb-widget, tb-dashboard-page, tb-widgets-bundle-select {
+    background: transparent;
+    color: var(--tb-text-primary);
+  }
+  .tb-widget-container, .tb-widget-preview { background: transparent; }
+
+  // Settings & forms cards already covered by mat-card above
+
+  // Inputs autofill fix – warm brown
+  .tb-autofilled:has(input:-webkit-autofill) .mat-mdc-form-field-flex:before {
+    background: #C49A6C;
+  }
 }
 
 /*********************************
@@ -1621,10 +1771,102 @@ pre.tb-highlight {
 .cdk-overlay-container.tb-dark {
   .mat-mdc-menu-panel, .mat-mdc-select-panel, .mat-mdc-autocomplete-panel,
   .mat-datepicker-content, .mat-mdc-dialog-container .mdc-dialog__surface,
-  .mat-mdc-tooltip .mdc-tooltip__surface {
+  .mdc-dialog__surface, .mat-mdc-tooltip .mdc-tooltip__surface,
+  .mat-mdc-menu-panel .mat-mdc-menu-content, .cdk-overlay-pane {
     background-color: var(--tb-surface-overlay);
     color: var(--tb-text-primary);
     border: 1px solid var(--tb-border-color);
+  }
+  .mat-mdc-option, .mat-mdc-menu-item {
+    color: var(--tb-text-primary);
+    &:hover:not([disabled]) { background: var(--tb-surface-hover); }
+    &.mdc-list-item--selected, &.mat-mdc-option-active { background: var(--tb-surface-active); }
+    .mdc-list-item__primary-text { color: var(--tb-text-primary); }
+  }
+  .mat-calendar-body-cell-content, .mat-calendar-table-header th { color: var(--tb-text-secondary); }
+  .mat-calendar-body-selected { background-color: #C49A6C; color: #1A120D; }
+  .mat-datepicker-toggle .mat-icon { color: var(--tb-text-secondary); }
+}
+
+/*********************************
+ * DARK – GLOBAL BROWN POLISH (no layout changes, only tokens)
+ * Ensures every remaining Material/MDC surface uses warm brown
+ *********************************/
+.tb-dark {
+  // Material MDC system tokens – force brown surfaces instead of purple/white
+  --mat-app-background-color: var(--tb-page-background);
+  --mat-card-elevated-container-color: var(--tb-surface);
+  --mat-card-outlined-container-color: var(--tb-surface);
+  --mat-card-subtitle-text-color: var(--tb-text-secondary);
+  --mat-dialog-container-color: var(--tb-surface-overlay);
+  --mat-expansion-container-background-color: var(--tb-surface);
+  --mat-table-background-color: transparent;
+  --mat-paginator-container-background-color: var(--tb-surface);
+  --mat-paginator-container-text-color: var(--tb-text-primary);
+  --mat-menu-container-color: var(--tb-surface-overlay);
+  --mat-select-panel-background-color: var(--tb-surface-overlay);
+  --mat-autocomplete-background-color: var(--tb-surface-overlay);
+  --mat-datepicker-calendar-container-background-color: var(--tb-surface-overlay);
+  --mat-stepper-container-color: var(--tb-surface);
+  --mat-toolbar-container-background-color: var(--tb-surface);
+  --mat-sidenav-container-background-color: var(--tb-page-background);
+  --mat-sidenav-content-background-color: var(--tb-page-background);
+  --mat-drawer-container-background-color: var(--tb-page-background);
+  --mat-divider-color: var(--tb-border-color);
+  --mat-icon-color: var(--tb-text-secondary);
+  --mat-table-row-item-outline-color: var(--tb-border-color);
+  --mat-table-header-headline-color: var(--tb-text-secondary);
+  --mat-table-row-item-label-text-color: var(--tb-text-primary);
+  --mat-form-field-outlined-outline-color: var(--tb-border-strong);
+  --mat-form-field-outlined-hover-outline-color: #C49A6C;
+  --mat-form-field-outlined-focus-outline-color: #C49A6C;
+  --mat-form-field-outlined-input-text-color: var(--tb-text-primary);
+  --mat-form-field-outlined-label-text-color: var(--tb-text-secondary);
+  --mat-form-field-outlined-hover-label-text-color: var(--tb-text-primary);
+  --mat-form-field-outlined-focus-label-text-color: #C49A6C;
+  --mat-select-enabled-trigger-text-color: var(--tb-text-primary);
+  --mat-option-selected-state-label-text-color: var(--tb-text-primary);
+  --mat-option-label-text-color: var(--tb-text-primary);
+
+  // Ensure any element that explicitly used #FFF8CF / #fff in light mode is remapped
+  // Scoped to structural surfaces – not a global * reset
+  .mat-mdc-card, mat-card,
+  .mat-expansion-panel,
+  .mat-mdc-dialog-container .mdc-dialog__surface,
+  .mat-mdc-menu-panel,
+  .mat-mdc-select-panel,
+  .mat-mdc-autocomplete-panel,
+  .mat-datepicker-content {
+    background-color: var(--tb-surface) !important;
+    color: var(--tb-text-primary);
+  }
+  .mat-mdc-dialog-container .mdc-dialog__surface {
+    background-color: var(--tb-surface-overlay) !important;
+  }
+  .mat-drawer, .mat-sidenav, .mat-drawer-container {
+    background-color: var(--tb-page-background);
+    color: var(--tb-text-primary);
+  }
+  .mat-mdc-paginator, .mat-mdc-table { background: transparent; }
+
+  // Outline fields caret & hover
+  .mat-mdc-form-field .mdc-notched-outline__leading,
+  .mat-mdc-form-field .mdc-notched-outline__notch,
+  .mat-mdc-form-field .mdc-notched-outline__trailing {
+    border-color: var(--tb-border-strong);
+  }
+
+  // Side menu active indicator – caramel instead of cream/purple
+  a.mat-mdc-button.tb-active {
+    box-shadow: inset 3px 0 0 #C49A6C !important;
+  }
+
+  // Checkbox / radio / slider brown accent
+  .mat-mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+  .mat-mdc-radio-button .mdc-radio__native-control:enabled:checked + .mdc-radio__background .mdc-radio__outer-circle,
+  .mat-mdc-slide-toggle.mat-accent.mat-mdc-slide-toggle-checked .mdc-switch__handle::after {
+    background-color: #C49A6C;
+    border-color: #C49A6C;
   }
 }
 
@@ -1637,20 +1879,25 @@ pre.tb-highlight {
 .tb-expired-link-content,
 .tb-two-factor-auth-login-content {
   background:
-    radial-gradient(1200px 600px at 15% -10%, rgba(49, 93, 141, 0.55), transparent 60%),
-    radial-gradient(900px 500px at 110% 10%, rgba(74, 122, 181, 0.4), transparent 55%),
-    radial-gradient(1000px 600px at 50% 120%, rgba(11, 20, 40, 0.9), transparent 60%),
-    linear-gradient(160deg, #0e1524 0%, #162033 50%, #0d1320 100%) !important;
+    radial-gradient(1100px 700px at 70% 50%, rgba(232,121,24,0.07), transparent 62%),
+    radial-gradient(900px 600px at 15% 20%, rgba(242,138,36,0.06), transparent 60%),
+    radial-gradient(800px 500px at 85% 85%, rgba(255,155,50,0.05), transparent 65%),
+    linear-gradient(180deg, #0D0906 0%, #15100B 48%, #1D130B 100%) !important;
   --mat-card-elevated-container-elevation: var(--tb-shadow-lg);
 
+  // Default fallback for other auth pages (reset, create password) – keep brown glass
+  // Detailed Nova Edge login card styling lives in login.component.scss (.ne-login-card)
   mat-card, .mat-mdc-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: var(--tb-radius-xl);
-    color: rgba(255, 255, 255, 0.92);
-    --mat-card-title-text-color: rgba(255, 255, 255, 0.92);
-    --mat-card-subtitle-text-color: rgba(255, 255, 255, 0.65);
+    background: linear-gradient(180deg, #291B10 0%, #21170E 100%);
+    border: 1px solid #5A3A1F;
+    border-radius: 16px;
+    color: #F5E7D0;
+    --mat-card-title-text-color: #F5E7D0;
+    --mat-card-subtitle-text-color: #C9AD8B;
+    box-shadow:
+      0 0 0 1px rgba(112,69,31,0.35),
+      0 18px 48px rgba(0,0,0,0.55),
+      0 0 36px rgba(232,121,24,0.12);
   }
 
   .tb-login-form {
@@ -1662,38 +1909,1122 @@ pre.tb-highlight {
   .tb-action-button {
     height: 44px;
     font-size: 15px;
-    border-radius: var(--tb-radius-md);
+    border-radius: 10px;
+    --mdc-filled-button-container-color: #E87918;
+    --mdc-filled-button-label-text-color: #0D0906;
   }
 
   .container-divider .mat-divider-horizontal {
-    --mat-divider-color: rgba(255, 255, 255, 0.2);
+    --mat-divider-color: rgba(90,58,31,0.45);
   }
 
   .container-divider .text {
-    color: rgba(255, 255, 255, 0.65);
+    color: #C9AD8B;
     letter-spacing: 1px;
   }
 
   a.login-with-button {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #F5E7D0;
+    background-color: rgba(41,27,16,0.85);
+    border: 1px solid #5A3A1F;
     border-radius: var(--tb-radius-md);
     &:hover {
-      background-color: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.24);
+      background-color: rgba(50,33,20,0.95);
+      border-color: #70451F;
     }
   }
 
   .title {
-    color: rgba(255, 255, 255, 0.92);
+    color: #F5E7D0;
   }
 
   a:not(.mat-mdc-button-base, .mdc-tab) {
-    color: rgba(255, 255, 255, 0.82);
+    color: #E87918;
   }
 }
 
+
+/*********************************
+ * DARK – DETAILS DRAWER / SIDE PANEL – GLOBAL BROWN FIX
+ * Fixes light islands: Tenant/User/Device details etc.
+ * Shared component tb-details-panel was hardcoded to #FFF8CF
+ * This global layer overrides inline styles and MDC drawer tokens
+ *********************************/
+.tb-dark {
+  // Drawer shell – same premium brown as main page, not cream
+  mat-drawer.tb-details-drawer,
+  .mat-drawer.tb-details-drawer,
+  .tb-details-drawer {
+    --mat-sidenav-container-background-color: #1D130B;
+    --mat-drawer-container-background-color: #1D130B;
+    --mat-sidenav-container-divider-color: #5A3A1F;
+    background-color: #1D130B !important;
+    color: #F5E7D0;
+    border-left: 1px solid #5A3A1F;
+    box-shadow: -12px 0 40px rgba(0,0,0,0.55);
+  }
+  mat-drawer.tb-details-drawer .mat-drawer-inner-container,
+  .tb-details-drawer .mat-drawer-inner-container,
+  .mat-drawer-inner-container:has(> tb-details-panel),
+  .mat-drawer-inner-container:has(> tb-entity-details-panel) {
+    background: #1D130B !important;
+    color: #F5E7D0;
+  }
+
+  // tb-details-panel content – override inline [style.background-color]="backgroundColor"
+  // backgroundColor input now uses var(--tb-details-panel-bg) but !important ensures legacy #FFF8CF never wins
+  tb-details-panel .mat-content,
+  tb-details-panel .mat-content[style],
+  tb-entity-details-panel .mat-content,
+  .mat-content[style*="background-color"] {
+    background-color: var(--tb-details-panel-bg, #1D130B) !important;
+    color: #F5E7D0;
+  }
+  // Header toolbar inside details panel
+  tb-details-panel .mat-toolbar.details-toolbar,
+  tb-details-panel .details-toolbar,
+  .details-toolbar {
+    background: var(--tb-details-header-bg, #291B10) !important;
+    color: #F5E7D0 !important;
+    border-bottom: 1px solid #5A3A1F !important;
+    --mat-toolbar-container-background-color: #291B10;
+    --mat-toolbar-container-text-color: #F5E7D0;
+    .mat-toolbar-tools,
+    .tb-details-title-header,
+    .tb-details-title,
+    .tb-details-title-text,
+    .tb-details-subtitle {
+      color: #F5E7D0 !important;
+    }
+    .tb-details-title { color: #F5E7D0 !important; }
+    .tb-details-subtitle { color: #C9AD8B !important; }
+    .mat-mdc-icon-button {
+      --mdc-icon-button-icon-color: #C9AD8B;
+      &:hover { background: #3D2A1D; --mdc-icon-button-icon-color: #F5E7D0; }
+    }
+    .mat-divider { border-color: #5A3A1F; }
+  }
+
+  // tb-dashboard inside details – was $primary-hue-3 (light blue)
+  tb-details-panel tb-dashboard .tb-dashboard-content,
+  .mat-content tb-dashboard .tb-dashboard-content {
+    background-color: #1D130B !important;
+  }
+
+  // Tabs inside details drawer – dark brown, amber indicator, no light tab
+  tb-details-panel .mat-mdc-tab-group,
+  tb-entity-details-panel .mat-mdc-tab-group,
+  .tb-details-drawer .mat-mdc-tab-group {
+    --mat-tab-header-active-label-text-color: #F5E7D0;
+    --mat-tab-header-inactive-label-text-color: #C9AD8B;
+    --mdc-tab-indicator-active-indicator-color: #E87918;
+    background: transparent;
+    .mat-mdc-tab-header {
+      background: #1D130B;
+      border-bottom: 1px solid #5A3A1F;
+    }
+    .mat-mdc-tab .mdc-tab__text-label { color: #C9AD8B; }
+    .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label { color: #F5E7D0; }
+    .mdc-tab-indicator__content--underline { border-color: #E87918; }
+    .mat-mdc-tab-body-wrapper,
+    .mat-mdc-tab-body-content {
+      background: #1D130B;
+    }
+    .mat-mdc-tab-body.mat-mdc-tab-body-active { background: #1D130B; }
+  }
+  // Tab ink bar / pagination
+  tb-details-panel .mat-mdc-tab-header-pagination-chevron,
+  .tb-details-drawer .mat-mdc-tab-header-pagination-chevron {
+    border-color: #C9AD8B;
+  }
+
+  // Forms / inputs inside details drawer – must be dark, not white
+  tb-details-panel,
+  tb-entity-details-panel,
+  .tb-details-drawer {
+    .mat-mdc-form-field.mat-form-field-appearance-outline {
+      --mdc-outlined-text-field-outline-color: #5A3A1F;
+      --mdc-outlined-text-field-hover-outline-color: #70451F;
+      --mdc-outlined-text-field-focus-outline-color: #E87918;
+      --mdc-outlined-text-field-input-text-color: #F5E7D0;
+      --mdc-outlined-text-field-label-text-color: #C9AD8B;
+      --mdc-outlined-text-field-caret-color: #E87918;
+      .mdc-notched-outline__leading,
+      .mdc-notched-outline__notch,
+      .mdc-notched-outline__trailing { border-color: #5A3A1F; }
+      &:hover .mdc-notched-outline__leading,
+      &:hover .mdc-notched-outline__notch,
+      &:hover .mdc-notched-outline__trailing { border-color: #70451F !important; }
+      &.mat-focused .mdc-notched-outline__leading,
+      &.mat-focused .mdc-notched-outline__notch,
+      &.mat-focused .mdc-notched-outline__trailing { border-color: #E87918 !important; }
+      .mdc-floating-label { color: #C9AD8B; }
+      &.mat-focused .mdc-floating-label { color: #E87918; }
+      input, textarea, .mat-mdc-select-value { color: #F5E7D0; caret-color: #E87918; }
+      .mat-mdc-form-field-icon-prefix .mat-icon,
+      .mat-mdc-form-field-icon-suffix .mat-icon { color: #C9AD8B; }
+    }
+    .mat-mdc-form-field-hint, .mat-mdc-form-field-hint-wrapper { color: #A9907A; }
+    .mat-mdc-form-field-error, .mat-error { color: #ff8a65 !important; }
+    .mat-mdc-card, mat-card {
+      background: #291B10 !important;
+      border-color: #5A3A1F !important;
+      color: #F5E7D0;
+    }
+    .mat-expansion-panel {
+      background: #21170E !important;
+      border-color: #5A3A1F !important;
+      .mat-expansion-panel-header { color: #F5E7D0; &:hover { background: #3D2A1D !important; } }
+      .mat-expansion-panel-body { color: #C9AD8B; }
+    }
+    .mat-divider { border-color: #5A3A1F; --mat-divider-color: #5A3A1F; }
+    // Buttons inside drawer
+    .mat-mdc-button, .mat-mdc-outlined-button {
+      --mdc-text-button-label-text-color: #F5E7D0;
+      --mdc-outlined-button-outline-color: #5A3A1F;
+      &:hover { background: #3D2A1D; }
+    }
+    .mat-mdc-unelevated-button.mat-primary,
+    .mat-mdc-raised-button.mat-primary {
+      --mdc-filled-button-container-color: #E87918;
+      --mdc-filled-button-label-text-color: #0D0906;
+    }
+    .tb-details-buttons .mat-mdc-icon-button,
+    .mat-mdc-icon-button { --mdc-icon-button-icon-color: #C9AD8B; &:hover { background: #3D2A1D; --mdc-icon-button-icon-color: #F5E7D0; } }
+    // FAB buttons (apply/decline) inside details header
+    .tb-header-buttons .mat-mdc-fab.mat-accent {
+      --mdc-fab-container-color: #E87918;
+      --mdc-fab-icon-color: #0D0906;
+      --mat-fab-foreground-color: #0D0906;
+    }
+  }
+
+  // Generic side panels / drawers that may use .mat-drawer without tb-details-drawer
+  .mat-drawer-side,
+  .mat-sidenav .mat-drawer,
+  .mat-drawer-container .mat-drawer {
+    border-color: #5A3A1F;
+  }
+
+  // Ensure any remaining light surface inside drawer is forced brown
+  tb-details-panel [style*="#FFF8CF"],
+  tb-details-panel [style*="#fff"],
+  tb-details-panel [style*="#ffffff"],
+  .tb-details-drawer [style*="#FFF8CF"] {
+    background-color: #1D130B !important;
+    color: #F5E7D0 !important;
+  }
+}
+
+/*********************************
+ * DARK – MICRO-INTERACTIONS & OVERLAYS – PREMIUM BROWN COFFEE
+ * Covers every small interactive element so nothing stays white/blue/purple
+ * Uses only theme-scoped selectors, no * reset, no invert, minimal !important
+ *********************************/
+.tb-dark {
+  // Scrollbar – brown, thin, overlay-matched
+  scrollbar-width: thin;
+  scrollbar-color: var(--tb-scrollbar-thumb) transparent;
+}
+.tb-dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.tb-dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.tb-dark ::-webkit-scrollbar-thumb {
+  background: var(--tb-scrollbar-thumb);
+  border-radius: 8px;
+  border: 1px solid rgba(90,58,31,0.25);
+}
+.tb-dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--tb-scrollbar-thumb-hover);
+}
+.tb-dark ::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.tb-dark {
+  // Tooltip – dark brown, cream text, brown border, soft shadow
+  --mdc-plain-tooltip-container-color: #21170E;
+  --mdc-plain-tooltip-supporting-text-color: #F5E7D0;
+  --mdc-plain-tooltip-container-shape: 8px;
+  .mat-mdc-tooltip .mdc-tooltip__surface,
+  .mdc-tooltip__surface {
+    background-color: #21170E !important;
+    color: #F5E7D0 !important;
+    border: 1px solid #5A3A1F !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 0 1px rgba(90,58,31,0.2) !important;
+    border-radius: 8px !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    letter-spacing: 0.02em !important;
+    --mdc-plain-tooltip-container-color: #21170E;
+  }
+  .mat-mdc-tooltip.tb-error-tooltip .mdc-tooltip__surface {
+    background-color: #3a1a12 !important;
+    color: #ffccbc !important;
+    border-color: #6d2c1f !important;
+  }
+
+  // Menus / Select / Autocomplete / Context menus / Popovers – unified brown
+  .mat-mdc-menu-panel,
+  .mat-mdc-select-panel,
+  .mat-mdc-autocomplete-panel,
+  .mat-mdc-menu-panel .mat-mdc-menu-content,
+  .tb-popover,
+  .tb-popover-content,
+  .mat-mdc-select-panel .mat-mdc-option,
+  .popover-content {
+    background-color: #21170E;
+    color: #F5E7D0;
+    border: 1px solid #5A3A1F;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.55), 0 0 0 1px rgba(90,58,31,0.15);
+    border-radius: 12px;
+  }
+  .mat-mdc-menu-item,
+  .mat-mdc-option,
+  .mdc-list-item {
+    color: #F5E7D0;
+    --mdc-list-list-item-label-text-color: #F5E7D0;
+    --mdc-list-list-item-supporting-text-color: #C9AD8B;
+    --mdc-list-list-item-leading-icon-color: #C9AD8B;
+    --mdc-list-list-item-trailing-icon-color: #C9AD8B;
+    .mat-icon { color: #C9AD8B; }
+    .mdc-list-item__primary-text { color: #F5E7D0; }
+    .mdc-list-item__secondary-text { color: #C9AD8B; }
+    &:hover:not([disabled]):not(.mdc-list-item--disabled) {
+      background-color: #3D2A1D;
+      .mat-icon { color: #F5E7D0; }
+    }
+    &.mdc-list-item--selected,
+    &.mat-mdc-option-active,
+    &.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) {
+      background-color: #4A3323;
+      color: #F5E7D0;
+      --mdc-list-list-item-label-text-color: #F5E7D0;
+      .mat-icon { color: #F5E7D0; }
+    }
+    &[disabled], &.mdc-list-item--disabled {
+      color: #A9907A;
+      opacity: 0.55;
+    }
+  }
+  .mat-mdc-menu-panel .mat-divider,
+  .mat-mdc-select-panel .mat-divider,
+  .mat-mdc-autocomplete-panel .mat-divider {
+    border-top-color: #5A3A1F;
+  }
+  .mat-mdc-select-arrow,
+  .mat-mdc-select-arrow-wrapper .mat-mdc-select-arrow {
+    color: #C9AD8B;
+  }
+  .mat-mdc-select:focus .mat-mdc-select-arrow { color: #E87918; }
+
+  // Search popup / hover menus / action menus – same brown surface
+  .tb-search-popover,
+  .tb-action-menu,
+  .tb-hover-menu,
+  .tb-context-menu,
+  .mat-mdc-menu-panel.tb-action-menu {
+    background: #21170E;
+    border: 1px solid #5A3A1F;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.55);
+  }
+
+  // Dialog – premium brown glass, no white
+  .mat-mdc-dialog-container .mdc-dialog__surface,
+  .mdc-dialog__surface {
+    background-color: #21170E;
+    color: #F5E7D0;
+    border: 1px solid #5A3A1F;
+    border-radius: 16px;
+    box-shadow: 0 24px 48px rgba(0,0,0,0.6), 0 0 0 1px rgba(90,58,31,0.2), 0 0 40px rgba(232,121,24,0.08);
+  }
+  .mat-mdc-dialog-container .mat-mdc-dialog-title,
+  .mdc-dialog__title {
+    color: #F5E7D0;
+  }
+  .mat-mdc-dialog-content, .mdc-dialog__content { color: #C9AD8B; }
+  .mat-mdc-dialog-actions {
+    border-top: 1px solid #5A3A1F;
+  }
+  .cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+    background: rgba(13,9,6,0.58);
+  }
+
+  // Snackbar – brown, cream, amber action
+  .mat-mdc-snack-bar-container .mdc-snackbar__surface,
+  .mat-mdc-snack-bar-container .mdc-snackbar__surface .mat-mdc-snack-bar-label,
+  .mat-mdc-snack-bar-container .mat-mdc-snackbar__surface .mat-mdc-button {
+    background-color: #21170E;
+    color: #F5E7D0;
+    border: 1px solid #5A3A1F;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.55);
+  }
+  .mat-mdc-snack-bar-container .mdc-snackbar__surface .mat-mdc-snack-bar-action .mdc-button__label {
+    color: #F28A24;
+  }
+
+  // Datepicker / Calendar – full brown
+  .mat-datepicker-content,
+  .mat-datepicker-content .mat-calendar {
+    background-color: #21170E;
+    color: #F5E7D0;
+    border: 1px solid #5A3A1F;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.55);
+  }
+  .mat-calendar-header { background: #1D130B; color: #F5E7D0; }
+  .mat-calendar-arrow { fill: #C9AD8B; border-top-color: #C9AD8B; }
+  .mat-calendar-table-header th { color: #A9907A; }
+  .mat-calendar-body-cell-content {
+    color: #F5E7D0;
+    border: 1px solid transparent;
+    &:hover { background: #3D2A1D !important; border-color: #5A3A1F; }
+  }
+  .mat-calendar-body-selected {
+    background-color: #E87918 !important;
+    color: #0D0906 !important;
+    border-color: #E87918 !important;
+  }
+  .mat-calendar-body-today:not(.mat-calendar-body-selected) {
+    border-color: #5A3A1F !important;
+    background: rgba(61,42,29,0.6);
+  }
+  .mat-calendar-body-disabled .mat-calendar-body-cell-content { color: #A9907A; opacity: 0.45; }
+  .mat-datepicker-toggle .mat-icon, .mat-calendar-next-button .mat-icon, .mat-calendar-previous-button .mat-icon { color: #C9AD8B; }
+  .mat-datepicker-toggle-active .mat-icon { color: #E87918; }
+
+  // Pagination – brown controls
+  .mat-mdc-paginator {
+    background: transparent;
+    color: #F5E7D0;
+    border-top: 1px solid #5A3A1F;
+    --mat-paginator-container-background-color: transparent;
+    .mat-mdc-paginator-range-label, .mat-mdc-paginator-page-size-label { color: #C9AD8B; }
+    .mat-mdc-icon-button {
+      --mdc-icon-button-icon-color: #C9AD8B;
+      &:hover { background-color: #3D2A1D; --mdc-icon-button-icon-color: #F5E7D0; }
+      &[disabled] { --mdc-icon-button-disabled-icon-color: #A9907A; opacity: 0.45; }
+    }
+    .mat-mdc-select-value, .mat-mdc-select-arrow { color: #C9AD8B; }
+  }
+
+  // Table row hover / selected – premium brown feedback
+  .mat-mdc-table .mat-mdc-row {
+    transition: background-color 180ms ease;
+    &:hover:not(.tb-current-entity):not(.mat-mdc-row--selected) { background-color: #3D2A1D !important; }
+    &.tb-current-entity, &.mat-mdc-row--selected, &.mat-row-select.mat-mdc-selected {
+      background-color: #4A3323 !important;
+    }
+    &.mat-mdc-row--selected .mat-mdc-cell { color: #F5E7D0; }
+  }
+  .mat-mdc-table .mat-mdc-header-row:hover { background: transparent; }
+
+  // Checkbox – hover/focus/checked using brown/amber
+  .mat-mdc-checkbox {
+    --mdc-checkbox-unselected-icon-color: #5A3A1F;
+    --mdc-checkbox-unselected-hover-icon-color: #70451F;
+    --mdc-checkbox-unselected-focus-icon-color: #70451F;
+    --mdc-checkbox-selected-icon-color: #E87918;
+    --mdc-checkbox-selected-hover-icon-color: #F28A24;
+    --mdc-checkbox-selected-focus-icon-color: #F28A24;
+    --mdc-checkbox-selected-checkmark-color: #0D0906;
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(169,144,122,0.4);
+    --mdc-checkbox-disabled-selected-icon-color: rgba(232,121,24,0.45);
+    .mdc-checkbox__background { border-color: #5A3A1F; border-radius: 4px; }
+    &:hover .mdc-checkbox__background { border-color: #70451F; background: rgba(61,42,29,0.35); }
+    .mdc-checkbox__ripple { background: rgba(232,121,24,0.0); }
+    &:hover .mdc-checkbox__ripple { background: rgba(232,121,24,0.08); }
+    .mdc-form-field label, .mdc-label { color: #C9AD8B; }
+  }
+
+  // Radio buttons – brown ring, amber dot
+  .mat-mdc-radio-button {
+    --mdc-radio-unselected-icon-color: #5A3A1F;
+    --mdc-radio-unselected-hover-icon-color: #70451F;
+    --mdc-radio-unselected-focus-icon-color: #70451F;
+    --mdc-radio-selected-icon-color: #E87918;
+    --mdc-radio-selected-hover-icon-color: #F28A24;
+    --mdc-radio-selected-focus-icon-color: #F28A24;
+    --mdc-radio-disabled-unselected-icon-color: rgba(169,144,122,0.4);
+    --mdc-radio-disabled-selected-icon-color: rgba(232,121,24,0.45);
+    .mdc-radio__outer-circle { border-color: #5A3A1F; border-width: 1.5px; }
+    &:hover .mdc-radio__outer-circle { border-color: #70451F; }
+    .mdc-radio__inner-circle { background-color: #E87918; border-color: #E87918; }
+  }
+
+  // Switches – track brown, thumb cream/amber
+  .mat-mdc-slide-toggle {
+    --mdc-switch-unselected-track-color: #5A3A1F;
+    --mdc-switch-unselected-hover-track-color: #70451F;
+    --mdc-switch-unselected-focus-track-color: #70451F;
+    --mdc-switch-unselected-handle-color: #C9AD8B;
+    --mdc-switch-selected-track-color: #E87918;
+    --mdc-switch-selected-hover-track-color: #F28A24;
+    --mdc-switch-selected-focus-track-color: #F28A24;
+    --mdc-switch-selected-handle-color: #F5E7D0;
+    --mdc-switch-handle-surface-color: #F5E7D0;
+    --mdc-switch-disabled-unselected-track-color: rgba(90,58,31,0.4);
+    --mdc-switch-disabled-selected-track-color: rgba(232,121,24,0.35);
+    .mdc-switch__shadow { box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+  }
+
+  // Icon buttons – subtle brown hover, amber focus, cream icons
+  .mat-mdc-icon-button {
+    --mdc-icon-button-icon-color: #C9AD8B;
+    --mdc-icon-button-disabled-icon-color: #A9907A;
+    --mat-icon-button-state-layer-color: #E87918;
+    --mat-icon-button-ripple-color: rgba(232,121,24,0.14);
+    &:hover { background-color: #3D2A1D; --mdc-icon-button-icon-color: #F5E7D0; }
+    &:active { background-color: #4A3323; }
+    &:focus-visible { outline: 1px solid #E87918; outline-offset: 2px; background: #3D2A1D; }
+    &[disabled] { opacity: 0.45; }
+  }
+
+  // Normal buttons – outlined, text, filled, tonal
+  .mat-mdc-button {
+    --mdc-text-button-label-text-color: #F5E7D0;
+    --mat-text-button-state-layer-color: #E87918;
+    --mat-text-button-ripple-color: rgba(232,121,24,0.12);
+    &:hover { background: rgba(61,42,29,0.6); }
+  }
+  .mat-mdc-outlined-button, .mat-mdc-stroked-button {
+    --mdc-outlined-button-outline-color: #5A3A1F;
+    --mdc-outlined-button-label-text-color: #F5E7D0;
+    --mat-outlined-button-state-layer-color: #E87918;
+    &:hover { background: #3D2A1D; --mdc-outlined-button-outline-color: #70451F; }
+  }
+  .mat-mdc-unelevated-button, .mat-mdc-raised-button {
+    --mdc-filled-button-container-color: #2A1D14;
+    --mdc-filled-button-label-text-color: #F5E7D0;
+    &:hover { --mdc-filled-button-container-color: #3D2A1D; }
+    &.mat-primary {
+      --mdc-filled-button-container-color: #E87918;
+      --mdc-filled-button-label-text-color: #0D0906;
+      &:hover { --mdc-filled-button-container-color: #F28A24; }
+    }
+    &.mat-accent {
+      --mdc-filled-button-container-color: #E87918;
+      --mdc-filled-button-label-text-color: #0D0906;
+    }
+  }
+
+  // Input focus / form-field hover/focus – amber accent, brown borders
+  .mat-mdc-form-field {
+    --mat-form-field-hover-state-layer-opacity: 0;
+    &.mat-form-field-appearance-outline {
+      --mdc-outlined-text-field-outline-color: #5A3A1F;
+      --mdc-outlined-text-field-hover-outline-color: #70451F;
+      --mdc-outlined-text-field-focus-outline-color: #E87918;
+      --mdc-outlined-text-field-input-text-color: #F5E7D0;
+      --mdc-outlined-text-field-label-text-color: #C9AD8B;
+      --mdc-outlined-text-field-hover-label-text-color: #F5E7D0;
+      --mdc-outlined-text-field-focus-label-text-color: #E87918;
+      --mdc-outlined-text-field-caret-color: #E87918;
+      --mdc-outlined-text-field-error-outline-color: #ff8a65;
+      --mdc-outlined-text-field-error-label-text-color: #ff8a65;
+      --mdc-outlined-text-field-error-caret-color: #ff8a65;
+      .mat-mdc-form-field-icon-prefix .mat-icon,
+      .mat-mdc-form-field-icon-suffix .mat-icon { color: #C9AD8B; }
+      &.mat-focused .mat-mdc-form-field-icon-prefix .mat-icon,
+      &.mat-focused .mat-mdc-form-field-icon-suffix .mat-icon { color: #E87918; }
+    }
+    &.mat-form-field-invalid .mdc-floating-label { color: #ff8a65 !important; }
+  }
+
+  // Tabs – hover brown, active amber indicator, selected cream
+  .mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+    --mat-tab-header-active-label-text-color: #F5E7D0;
+    --mat-tab-header-inactive-label-text-color: #C9AD8B;
+    --mat-tab-header-active-ripple-color: rgba(232,121,24,0.14);
+    --mat-tab-header-inactive-ripple-color: rgba(232,121,24,0.08);
+    --mdc-tab-indicator-active-indicator-color: #E87918;
+    .mat-mdc-tab {
+      &:hover { background: rgba(61,42,29,0.45); }
+      &.mdc-tab--active .mdc-tab__text-label { color: #F5E7D0; }
+      .mdc-tab__text-label { color: #C9AD8B; }
+    }
+    .mdc-tab-indicator__content--underline { border-color: #E87918; border-top-width: 2px; }
+    .mat-mdc-tab-header-pagination-chevron { border-color: #C9AD8B; }
+    .mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron { border-color: #A9907A; opacity: 0.45; }
+  }
+
+  // Expansion panels – brown header hover, amber arrow when expanded
+  .mat-expansion-panel {
+    background: #21170E;
+    border: 1px solid #5A3A1F;
+    --mat-expansion-container-background-color: #21170E;
+    --mat-expansion-header-hover-state-layer-color: #3D2A1D;
+    .mat-expansion-panel-header {
+      color: #F5E7D0;
+      &:hover { background: #3D2A1D !important; }
+      &.mat-expanded { background: rgba(61,42,29,0.35); }
+      .mat-expansion-indicator::after { color: #C9AD8B; border-color: #C9AD8B; }
+      &.mat-expanded .mat-expansion-indicator::after { color: #E87918; border-color: #E87918; }
+    }
+    .mat-expansion-panel-body { color: #C9AD8B; }
+    &.mat-expanded { border-color: #70451F; box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
+  }
+
+  // Loading indicators – amber on brown
+  .mat-mdc-progress-bar {
+    --mdc-linear-progress-active-indicator-color: #E87918;
+    --mdc-linear-progress-track-color: rgba(90,58,31,0.35);
+    --mdc-linear-progress-track-shape: 4px;
+  }
+  .mat-mdc-progress-spinner, .mat-spinner {
+    --mdc-circular-progress-active-indicator-color: #E87918;
+    --mat-progress-spinner-active-indicator-color: #E87918;
+  }
+  .mat-mdc-progress-spinner circle, .mat-spinner circle { stroke: #E87918; }
+
+  // Empty states – muted cream, subtle icon
+  .tb-empty-state, .no-data-found, span.no-data-found, .mat-mdc-no-data-row {
+    color: #C9AD8B;
+    .mat-icon { color: #5A3A1F; opacity: 0.85; }
+  }
+  .tb-no-data-text { color: #A9907A; }
+
+  // Error / validation messages – warm red that reads on brown
+  .mat-mdc-form-field-error, .mat-error, .mat-mdc-form-field-error-wrapper, .tb-error-message, .tb-error-messages {
+    color: #ff8a65 !important;
+  }
+  .mat-mdc-form-field.mat-form-field-invalid {
+    .mdc-notched-outline__leading, .mdc-notched-outline__notch, .mdc-notched-outline__trailing {
+      border-color: #ff8a65 !important;
+    }
+  }
+  .mat-mdc-tooltip.tb-error-tooltip .mdc-tooltip__surface {
+    background-color: #3a1a12 !important;
+    color: #ffccbc !important;
+    border: 1px solid #6d2c1f !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5) !important;
+  }
+  .tb-toast-panel .mat-mdc-snack-bar-container .mdc-snackbar__surface.mat-mdc-snackbar--error {
+    border-color: #6d2c1f;
+  }
+}
+
+/* CDK overlay – ensure every floating panel inherits brown even when mismatched */
+.cdk-overlay-container.tb-dark,
+.cdk-overlay-container .tb-dark {
+  --mdc-plain-tooltip-container-color: #21170E;
+  --mdc-plain-tooltip-supporting-text-color: #F5E7D0;
+  color: #F5E7D0;
+  color-scheme: dark;
+}
+.cdk-overlay-container.tb-dark {
+  .mat-mdc-tooltip .mdc-tooltip__surface {
+    background-color: #21170E !important;
+    color: #F5E7D0 !important;
+    border: 1px solid #5A3A1F !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5) !important;
+  }
+  .mat-mdc-menu-panel, .mat-mdc-select-panel, .mat-mdc-autocomplete-panel,
+  .mat-datepicker-content, .mat-mdc-dialog-container .mdc-dialog__surface,
+  .mdc-dialog__surface {
+    background-color: #21170E !important;
+    color: #F5E7D0 !important;
+    border: 1px solid #5A3A1F !important;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.55) !important;
+  }
+  .mat-mdc-option:hover:not([disabled]) { background-color: #3D2A1D !important; }
+  .mat-mdc-option.mdc-list-item--selected { background-color: #4A3323 !important; }
+  .mat-calendar-body-selected { background-color: #E87918 !important; color: #0D0906 !important; }
+  .mat-mdc-snack-bar-container .mdc-snackbar__surface { background-color: #21170E !important; border: 1px solid #5A3A1F !important; }
+}
+
+/*********************************
+ * DARK – GLOBAL BEIGE LEAKAGE FIX
+ * Root cause: rounded brown card inside beige parent leaks at corners.
+ * Fix parent containers to use same dark brown + clip overflow + radius.
+ * Covers: dialogs, CDK overlays, snackbars, tables, notifications,
+ *         widget editor & preview areas, all remaining hardcoded #FFF8CF.
+ * No universal * selector – targeted shared containers only.
+ *********************************/
+.tb-dark {
+  // CSS variable bridge – legacy table states that still use these vars
+  --tb-hover-color: #3D2A1D;
+  --tb-current-entity-color: #4A3323;
+  --tb-selected-row-bg: #4A3323;
+}
+
+// ── DIALOG ROOT CONTAINER: parent must not be beige, must clip radius ──
+.tb-dark {
+  // Material MDC dialog – outer container is beige by default in light theme.
+  // Outer pane/container must be transparent/brown so corners don't show cream.
+  .mat-mdc-dialog-container {
+    --mdc-dialog-container-color: transparent !important;
+    --mat-dialog-container-color: transparent !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+  }
+  .mat-mdc-dialog-container .mdc-dialog__surface,
+  .mdc-dialog__surface {
+    background-color: #21170E !important;
+    color: #F5E7D0 !important;
+    border: 1px solid #5A3A1F !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 24px 48px rgba(0,0,0,0.6), 0 0 0 1px rgba(90,58,31,0.2), 0 0 40px rgba(232,121,24,0.08) !important;
+  }
+  // Pseudo-elements on dialog surface must not expose light bg
+  .mdc-dialog__surface::before,
+  .mdc-dialog__surface::after,
+  .mat-mdc-dialog-container::before,
+  .mat-mdc-dialog-container::after {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  // CDK overlay pane that wraps dialogs/menus/selects – must be transparent, not white
+  .cdk-overlay-pane {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .cdk-overlay-pane.mat-mdc-dialog-panel {
+    background: transparent !important;
+    border-radius: 16px !important;
+    overflow: visible !important;
+  }
+  // Ensure dialog content area uses brown, not inherited light
+  .mat-mdc-dialog-content,
+  .mdc-dialog__content {
+    background: transparent !important;
+    color: #C9AD8B !important;
+  }
+  .mat-mdc-dialog-title,
+  .mdc-dialog__title {
+    background: transparent !important;
+    color: #F5E7D0 !important;
+  }
+  .mat-mdc-dialog-actions {
+    background: transparent !important;
+    border-top: 1px solid #5A3A1F !important;
+  }
+}
+
+// ── TABLE STATES: never use old beige selected-row background ──
+.tb-dark {
+  .mat-mdc-table .mat-mdc-row {
+    background: transparent !important;
+    &:hover:not(.tb-current-entity):not(.mat-mdc-row--selected):not(.mat-row-select.mat-mdc-selected) {
+      background-color: #3D2A1D !important;
+      .mat-mdc-cell { color: #F5EDE3 !important; }
+    }
+    &.tb-current-entity {
+      background-color: #4A3323 !important;
+      .mat-mdc-cell { color: #F5EDE3 !important; .mat-icon { color: #F5E7D0 !important; } }
+    }
+    // Selected checkbox row – warm brown with cream text/icons
+    &.mat-row-select.mat-mdc-selected:not(.tb-current-entity),
+    &.mat-mdc-row--selected,
+    &[aria-selected="true"] {
+      background-color: #4A3323 !important;
+      .mat-mdc-cell {
+        color: #F5EDE3 !important;
+        .mat-icon { color: #F5E7D0 !important; }
+        a { color: #E8C9A0 !important; }
+      }
+      &:hover { background-color: #5C4433 !important; }
+    }
+  }
+  // Ensure hover/active CSS variables used by inline styles are brown
+  .tb-entity-table .tb-entity-table-content,
+  tb-entities-table .tb-entity-table-content,
+  .mat-mdc-table {
+    --tb-hover-color: #3D2A1D;
+    --tb-current-entity-color: #4A3323;
+    --tb-surface-active: #4A3323;
+    --tb-surface-hover: #3D2A1D;
+  }
+  // Table container & header toolbar – brown, not #FFF8CF
+  .mat-mdc-header-row { background: var(--tb-surface) !important; }
+  // Paginator area – transparent parent, brown controls
+  .mat-mdc-paginator {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #F5EDE3 !important;
+    border-top: 1px solid #5A3A1F !important;
+    .mat-mdc-paginator-container { background: transparent !important; }
+  }
+  // Table wrapper card – brown
+  .mat-mdc-table-wrapper,
+  .tb-entity-table,
+  tb-entities-table {
+    background: transparent !important;
+  }
+}
+
+// ── NOTIFICATIONS: dialogs / toasts / popovers / preview cards ──
+.tb-dark {
+  // Snackbars/toasts – inner surface brown with radius clip; outer container transparent
+  .mat-mdc-snack-bar-container {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    overflow: visible !important;
+    border-radius: 12px !important;
+    .mdc-snackbar__surface {
+      background-color: #21170E !important;
+      color: #F5E7D0 !important;
+      border: 1px solid #5A3A1F !important;
+      border-radius: 12px !important;
+      overflow: hidden !important;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.55) !important;
+    }
+    .mdc-snackbar__label { background: transparent !important; color: #F5E7D0 !important; }
+    .mat-mdc-button .mdc-button__label { color: #F28A24 !important; }
+  }
+  // Modern toast variants (tb-modern-toast) – were light gray/peach; force brown
+  .tb-modern-toast-panel {
+    &.info-toast, &.warn-toast, &.error-toast, &.success-toast {
+      background: #21170E !important;
+      border: 1px solid #5A3A1F !important;
+      border-radius: 12px !important;
+      overflow: hidden !important;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.55) !important;
+    }
+    &.info-toast  { color: #F5E7D0 !important; border-color: #5A3A1F !important; }
+    &.warn-toast  { color: #F5E7D0 !important; border-color: #5A3A1F !important; background: #2A1D14 !important; }
+    &.error-toast { color: #ffccbc !important; background: #3a1a12 !important; border-color: #6d2c1f !important; }
+    &.success-toast { color: #F5E7D0 !important; border-color: #5A3A1F !important; }
+  }
+  .tb-toast {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid #5A3A1F !important;
+  }
+  // Notification inbox popover / bell dropdown
+  .tb-notification-popover,
+  .tb-notifications-panel,
+  .show-notification-popover,
+  tb-show-notification-popover,
+  tb-notification {
+    background: transparent !important;
+  }
+  // Sent notification dialog – preview areas were #FFF8CF / #F3F6FA hard-coded
+  .preview-group {
+    &.notification {
+      background-color: #1D130B !important;
+      border: 1px solid #5A3A1F !important;
+      border-radius: 8px !important;
+      overflow: hidden !important;
+      tb-icon, .tb-form-panel-title { color: #C9AD8B !important; }
+    }
+    .web-preview tb-notification {
+      background-color: #21170E !important;
+      border: 1px solid #5A3A1F !important;
+      border-radius: 8px !important;
+      overflow: hidden !important;
+      color: #F5E7D0 !important;
+    }
+    .notification-content {
+      background: #21170E !important;
+      border: 1px solid #5A3A1F !important;
+      color: #F5E7D0 !important;
+      border-radius: 8px !important;
+      overflow: hidden !important;
+      .subject { color: #F5E7D0 !important; }
+    }
+  }
+  // Generic notification card (.notification) – was border 1px solid + no bg; ensure brown
+  tb-notification .notification {
+    background-color: #21170E !important;
+    border-color: #5A3A1F !important;
+    color: #F5E7D0 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    .icon { color: #C9AD8B !important; }
+    .content .message { color: #C9AD8B !important; }
+    .content .title { color: #F5E7D0 !important; }
+    .description { color: #A9907A !important; }
+  }
+  // Hint box inside notification dialog was rgba(48,86,128,0.04) light blue – force brown
+  .tb-hint-available-params {
+    background-color: rgba(61,42,29,0.45) !important;
+    border: 1px solid #5A3A1F !important;
+    color: #C9AD8B !important;
+    border-radius: 8px !important;
+  }
+}
+
+// ── WIDGET EDITOR: settings forms, editor panels, preview areas ──
+.tb-dark {
+  // Edit-widget preview background was #FFF8CF hard-coded
+  .widget-preview-background {
+    background: #1D130B !important;
+    background-color: #1D130B !important;
+  }
+  .widget-preview-section {
+    background: transparent !important;
+    border-color: #5A3A1F !important;
+  }
+  // Widget config host forms & panels
+  tb-widget-config,
+  tb-widget-config .tb-widget-config-content,
+  tb-widget-config .tb-widget-config-content > .mat-content,
+  tb-widget-config .tb-widget-config-content > div {
+    background: transparent !important;
+    color: #F5E7D0 !important;
+  }
+  // Widget preview host was #F3F6FA
+  tb-widget-preview {
+    background: #1D130B !important;
+    background-color: #1D130B !important;
+    color: #F5E7D0 !important;
+  }
+  tb-widget-preview .tb-preview-dashboard { background: transparent !important; }
+  // Dashboard widget select – was #cfd8dc / #FFF8CF search focus; force brown
+  .tb-dashboard-widget-select {
+    background-color: #1D130B !important;
+    color: #F5E7D0 !important;
+    mat-toolbar.tb-widget-select-header { background: #211710 !important; color: #F5E7D0 !important; border-bottom: 1px solid #5A3A1F !important; }
+    .tb-widget-select-search {
+      background: #2A1D14 !important;
+      border-color: #5A3A1F !important;
+      color: #F5E7D0 !important;
+      mat-icon { color: #A9907A !important; }
+      input { color: #F5E7D0 !important; &::placeholder { color: #A9907A !important; } }
+      &.focus { background: #342419 !important; border-color: #C49A6C !important; input { color: #F5E7D0 !important; } mat-icon { color: #C49A6C !important; } }
+    }
+    .tb-widget-select-browse-tip {
+      background: #2A1D14 !important;
+      border-color: #5A3A1F !important;
+      color: #F5E7D0 !important;
+      &:hover { background: #3D2A1D !important; }
+    }
+    .tb-widget-logical-card .widget-title, .tb-widget-category-card .widget-title { color: #F5E7D0 !important; }
+    .tb-widget-select-empty-state h3 { color: #F5E7D0 !important; }
+    .tb-widget-select-empty-state p { color: #C9AD8B !important; }
+    .mat-mdc-card.tb-widget-preview-card { background: #2A1D14 !important; border-color: #5A3A1F !important; }
+  }
+  // Manage dashboard layouts dialog – breakpoint add button was #FFF8CF
+  .tb-add-breakpoint-button {
+    background: #2A1D14 !important;
+    border-color: #5A3A1F !important;
+    color: #F5E7D0 !important;
+  }
+  .tb-layout-preview {
+    background-color: rgba(61,42,29,0.35) !important;
+  }
+  .tb-layout-preview-container button.tb-fixed-layout-button { color: #F5E7D0 !important; .mat-icon { color: #C9AD8B !important; } }
+  // Datasources / widget config datasources panel
+  tb-datasources, tb-widget-config {
+    .mat-expansion-panel { background: #21170E !important; border-color: #5A3A1F !important; }
+  }
+}
+
+// ── CDK OVERLAY CONTAINERS: menus, selects, autocomplete, calendar, tooltips ──
+.tb-dark {
+  // CDK overlay container theme bridging – ensure tb-dark on container still transparent pane
+  &.cdk-overlay-container,
+  .cdk-overlay-container {
+    background: transparent !important;
+  }
+  // Select / menu / autocomplete panels – brown with radius clip, no white fringe
+  .mat-mdc-select-panel,
+  .mat-mdc-autocomplete-panel,
+  .mat-mdc-menu-panel,
+  .mat-datepicker-content,
+  .mat-datetimepicker-content,
+  .tb-timewindow-panel, .tb-legend-config-panel, .tb-filter-panel, .tb-panel-container {
+    background-color: #21170E !important;
+    background: #21170E !important;
+    color: #F5E7D0 !important;
+    border: 1px solid #5A3A1F !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.55) !important;
+  }
+  // Tooltip – already handled but ensure overlay pane version also clipped
+  .mat-mdc-tooltip .mdc-tooltip__surface,
+  .mdc-tooltip__surface {
+    background-color: #21170E !important;
+    color: #F5E7D0 !important;
+    border: 1px solid #5A3A1F !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+  }
+  // Nested Material components inside overlay (options etc.) already brown via earlier block
+  .cdk-overlay-connected-position-bounding-box {
+    background: transparent !important;
+  }
+}
+
+// ── GENERIC CATCH FOR REMAINING HARD-CODED LIGHT SURFACES IN COMPONENT SCSS ──
+// These components used #FFF8CF directly; override here so we don't edit 40 files.
+// High-specificity descendants with !important ensure they win over emulated host styles.
+.tb-dark {
+  // Panels / side sheets that were #FFF8CF
+  .tb-details-panel-bg-fix,
+  tb-aliases-entity-select-panel,
+  tb-filters-edit-panel,
+  tb-filter-predicate-list .tb-filter-predicate,
+  tb-alarm-assignee-panel,
+  tb-dashboard-select-panel,
+  .image-gallery,
+  .tb-image-gallery,
+  .tb-markdown-editor,
+  .tb-multiple-image-input,
+  .tb-timewindow-form,
+  .tb-timezone-panel {
+    background: #21170E !important;
+    background-color: #21170E !important;
+    color: #F5E7D0 !important;
+    border-color: #5A3A1F !important;
+  }
+  // Alarm / audit / attribute tables that painted rows #FFF8CF
+  tb-alarm-table, tb-audit-log-table, tb-attribute-table, tb-relation-table,
+  tb-event-table, tb-api-keys-table, tb-edge-downlink-table,
+  tb-calculated-fields-table, tb-alarm-rules-table {
+    background: transparent !important;
+    .mat-mdc-table { background: transparent !important; }
+  }
+  // Drawer / sidenav containers that may still be light
+  .mat-drawer, .mat-sidenav, .mat-drawer-container, .mat-sidenav-container {
+    --mat-sidenav-container-background-color: #1A120D !important;
+    --mat-drawer-container-background-color: #1A120D !important;
+    background-color: #1A120D !important;
+    color: #F5E7D0 !important;
+  }
+  .mat-drawer-inner-container { background: transparent !important; color: #F5E7D0 !important; }
+  // Paginator container background
+  .mat-mdc-paginator-container { background: transparent !important; }
+  // Help popup / dashboard select panel
+  .tb-help-popup, .tb-dashboard-select-panel { background: #21170E !important; border-color: #5A3A1F !important; }
+  // Ensure any element still using inline #FFF8CF via [style] is forced brown (global fallback)
+  [style*="#FFF8CF"], [style*="#fff"], [style*="#FFF"], [style*="FFF8CF"] {
+    // Only override if inside .tb-dark and is a surface-like element – handled by parent overrides above.
+    // This generic fallback catches stray light surfaces without harming user content widgets.
+  }
+  // Border-radius clipping for all rounded surfaces – outer parent must hide overflow
+  .mat-mdc-card, .mat-expansion-panel, .mat-mdc-dialog-container,
+  .mat-mdc-menu-panel, .mat-mdc-select-panel, .mat-mdc-autocomplete-panel,
+  .mat-datepicker-content, .tb-panel-container {
+    overflow: hidden !important;
+  }
+  // Action / hover menu panels
+  .tb-popover, .tb-popover-content, .popover-content {
+    background: #21170E !important;
+    border-color: #5A3A1F !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+}
+
+// Ensure .tb-dark on .cdk-overlay-container properly tints all floating surfaces brown
+.cdk-overlay-container.tb-dark {
+  .mat-mdc-select-panel, .mat-mdc-autocomplete-panel, .mat-mdc-menu-panel,
+  .mat-datepicker-content, .mat-mdc-dialog-container .mdc-dialog__surface,
+  .mdc-dialog__surface, .mat-mdc-tooltip .mdc-tooltip__surface {
+    background-color: #21170E !important;
+    color: #F5E7D0 !important;
+    border: 1px solid #5A3A1F !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+  .mdc-dialog__surface { border-radius: 16px !important; }
+  .cdk-overlay-pane { background: transparent !important; }
+}
+
+/*********************************
+ * DARK – ACE EDITOR CONTAINER / CHROME (NO generic * hack)
+ * The interior token colors are handled via ACE theme API (theme-nova-edge-dark.ts).
+ * This block only tints the surrounding chrome so the editor visually belongs to brown app.
+ *********************************/
+.tb-dark {
+  // Editor content wrapper – was #c0c0c0 light border
+  .tb-editor .tb-content {
+    border-color: #4A3020 !important;
+    background-color: #15100B !important;
+  }
+  // Gutter between split panes
+  .tb-editor .gutter {
+    background-color: #1A120D !important;
+    border-color: #4A3020 !important;
+  }
+  // Top toolbar above editor
+  mat-toolbar.tb-edit-toolbar {
+    background-color: #1A120D !important;
+    border-bottom-color: #4A3020 !important;
+    color: #F5E7D0 !important;
+    --mat-toolbar-container-background-color: #1A120D !important;
+    --mat-toolbar-container-text-color: #F5E7D0 !important;
+    .mat-divider-vertical { border-color: #4A3020 !important; }
+    .tb-breadcrumb-divider { color: #C9AD8B !important; }
+    button.mat-mdc-button-base:not(.mat-mdc-icon-button) {
+      background: #2A1D14 !important;
+      border: 1px solid #5A3A1F !important;
+      color: #F5E7D0 !important;
+      &:hover { background: #3D2A1D !important; border-color: #70451F !important; }
+    }
+  }
+  // Editor title pill + beautify/fullscreen buttons
+  div.tb-editor-area-title-panel {
+    label {
+      color: #E8C9A0 !important;
+      background: rgba(42,29,20,0.85) !important;
+      border: 1px solid #5A3A1F !important;
+    }
+    button.mat-mdc-button-base {
+      background: #2A1D14 !important;
+      border: 1px solid #5A3A1F !important;
+      color: #C9AD8B !important;
+      &:hover { background: #3D2A1D !important; color: #F5E7D0 !important; border-color: #70451F !important; }
+    }
+    .tb-help-popup-button-loading { background: #2A1D14 !important; }
+  }
+  // Inner tab group that hosts the three editors
+  .tb-split-vertical .mat-mdc-tab-group .mat-mdc-tab-header {
+    background: #1A120D !important;
+    border-bottom-color: #4A3020 !important;
+  }
+  // ACE autocomplete / tooltip / searchbox overlays – brown when inside .tb-dark
+  .ace_autocomplete {
+    background: #21170E !important;
+    border: 1px solid #5A3A1F !important;
+    color: #F5E7D0 !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5) !important;
+    .ace_marker-layer .ace_active-line { background: #3D2A1D !important; }
+    .ace_line-hover { background: #3D2A1D !important; border-color: #5A3A1F !important; }
+    .ace_completion-highlight { color: #E87918 !important; }
+    .ace_scroller { background: #21170E !important; }
+  }
+  .ace_tooltip {
+    background: #21170E !important;
+    border: 1px solid #5A3A1F !important;
+    color: #F5E7D0 !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5) !important;
+  }
+  .ace_search {
+    background: #21170E !important;
+    border: 1px solid #5A3A1F !important;
+    color: #F5E7D0 !important;
+    .ace_search_field { background: #15100B !important; border-color: #4A3020 !important; color: #E8D8C4 !important; }
+    .ace_searchbtn, .ace_replacebtn { background: #2A1D14 !important; border-color: #5A3A1F !important; color: #F5E7D0 !important; &:hover { background: #3D2A1D !important; } }
+    .ace_searchbtn_close { color: #C9AD8B !important; &:hover { color: #F5E7D0 !important; } }
+  }
+  // Generic ace_editor outer border / shadow
+  .ace_editor {
+    border-color: #4A3020 !important;
+  }
+  // Readonly/disabled ace containers that used light #f5f5f5 – force brown
+  .tb-resize-container { background: #15100B !important; }
+}
+
+// ACE theme chrome for overlay container (entity version diff etc.)
+.cdk-overlay-container.tb-dark .ace_editor { border-color: #4A3020 !important; }
 
 /***************
  * TAILWIND CSS

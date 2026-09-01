@@ -1,17 +1,6 @@
 /**
- * Copyright © 2016-2026 The Thingsboard Authors
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Nova Edge Premium Login – Deep Chocolate / Amber Futuristic IoT
+ * Preserves ThingsBoard auth logic, only visual layer.
  */
 @import '../../../../../scss/constants';
 @import '../../../../../theme';
@@ -19,81 +8,454 @@
 :host {
   display: flex;
   flex: 1 1 0;
-  .tb-login-content {
-    margin-top: 36px;
-    margin-bottom: 76px;
-    .tb-login-form {
-      @media #{$mat-gt-xs} {
-        width: 460px !important;
-      }
+  min-height: 100vh;
+}
 
-      .forgot-password {
-        --mat-button-text-horizontal-padding: 0;
-        --mat-button-text-container-height: 20px;
-      }
+// Full-screen page
+.ne-login-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(1100px 700px at 70% 50%, rgba(232,121,24,0.07), transparent 62%),
+    radial-gradient(900px 600px at 15% 20%, rgba(242,138,36,0.06), transparent 60%),
+    radial-gradient(800px 500px at 85% 85%, rgba(255,155,50,0.05), transparent 65%),
+    linear-gradient(180deg, #0D0906 0%, #15100B 48%, #1D130B 100%);
+  isolation: isolate;
+}
 
-      .tb-action-button{
-        margin: 20px 0 16px;
-      }
-    }
+// Ambient layers
+.ne-login-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
 
-    .container-divider {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      margin-bottom: 16px;
+.ne-network-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
 
-      .text {
-        padding-right: 8px;
-        padding-left: 8px;
-        font-size: 13px;
-        line-height: 24px;
-      }
-    }
+.ne-world-map {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  // subtle vignette so map stays behind card
+}
 
-    .oauth-container{
-      .title {
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: .1px;
-        text-align: center;
-        margin-bottom: 4px;
-      }
+.ne-world-svg {
+  width: min(1120px, 88vw);
+  height: auto;
+  max-height: 64vh;
+  filter: drop-shadow(0 0 10px rgba(232,121,24,0.18));
+}
 
-      .material-icons{
-        width: 20px;
-        min-width: 20px;
-      }
-
-      .login-button-container {
-        a.login-with-button {
-          max-width: 170px;
-          min-width: 60px;
-          flex-grow: 1;
-          flex-basis: 130px;
-
-          .tb-mat-20 {
-            margin-right: 12px;
-          }
-        }
-
-        &:has(> :nth-child(1):last-child) {
-          a.login-with-button {
-            max-width: 100%;
-          }
-        }
-
-        &:has(> :nth-child(2):last-child),
-        &:has(> :nth-child(4):last-child) {
-          a.login-with-button {
-            max-width: 100%;
-            flex-basis: 180px;
-          }
-        }
-      }
-    }
+.ne-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  &--top {
+    width: 520px;
+    height: 520px;
+    left: -80px;
+    top: -120px;
+    background: radial-gradient(circle, rgba(232,121,24,0.13) 0%, transparent 70%);
+    opacity: 0.8;
+  }
+  &--bottom {
+    width: 640px;
+    height: 640px;
+    right: -120px;
+    bottom: -180px;
+    background: radial-gradient(circle, rgba(242,138,36,0.10) 0%, transparent 72%);
+  }
+  &--card {
+    width: 720px;
+    height: 520px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(232,121,24,0.16) 0%, rgba(232,121,24,0.06) 32%, transparent 68%);
+    filter: blur(8px);
   }
 }
 
+// Upper-left logo
+.ne-header-logo {
+  position: absolute;
+  top: 22px;
+  left: 26px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.ne-header-mark {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  .ne-hex {
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(135deg, #E87918, #FF9B32);
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    box-shadow: 0 0 12px rgba(232,121,24,0.55);
+    display: block;
+  }
+  .ne-hex--small {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    right: -2px;
+    bottom: -2px;
+    opacity: 0.9;
+    background: #FF9B32;
+  }
+}
+
+.ne-header-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  .ne-header-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #F5E7D0;
+  }
+  .ne-header-subtitle {
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    color: #C9AD8B;
+    opacity: 0.95;
+  }
+}
+
+// Card
+.ne-login-card {
+  position: relative;
+  z-index: 2;
+  width: min(440px, calc(100vw - 32px));
+  max-height: 88vh;
+  overflow: visible;
+  background: linear-gradient(180deg, #291B10 0%, #21170E 100%) !important;
+  border: 1px solid #5A3A1F !important;
+  border-radius: 16px !important;
+  box-shadow:
+    0 0 0 1px rgba(112,69,31,0.45),
+    0 18px 48px rgba(0,0,0,0.55),
+    0 8px 20px rgba(0,0,0,0.45),
+    0 0 36px rgba(232,121,24,0.18),
+    0 0 72px rgba(232,121,24,0.09) !important;
+  backdrop-filter: blur(6px);
+  --mat-card-elevated-container-elevation: none;
+
+  // thin warm highlight top edge
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(255,155,50,0.28), rgba(90,58,31,0.0) 42%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.9;
+  }
+
+  .mat-mdc-card-content,
+  .mdc-card__primary-action {
+    padding: 0 !important;
+  }
+}
+
+.ne-login-form {
+  padding: 28px 28px 18px;
+  @media #{$mat-gt-xs} {
+    width: 100% !important;
+  }
+}
+
+.ne-card-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.ne-card-mark {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  .ne-card-hex {
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, #E87918, #FF9B32);
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    box-shadow: 0 0 10px rgba(232,121,24,0.55);
+    display: block;
+  }
+}
+
+.ne-card-brand-text {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #F5E7D0;
+}
+
+.ne-welcome {
+  margin: 0 0 6px !important;
+  text-align: center;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+  color: #F5E7D0 !important;
+}
+
+.ne-subtitle {
+  margin: 0 0 18px !important;
+  text-align: center;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  color: #C9AD8B !important;
+}
+
+.ne-progress {
+  margin-bottom: 8px;
+  --mdc-linear-progress-active-indicator-color: #E87918;
+  --mdc-linear-progress-track-color: rgba(90,58,31,0.35);
+  border-radius: 999px;
+  overflow: hidden;
+  height: 2px !important;
+}
+
+.ne-progress-spacer {
+  display: block;
+  height: 2px;
+  margin-bottom: 8px;
+}
+
+.ne-toast {
+  display: block;
+  min-height: 14px;
+  margin-bottom: 2px;
+}
+
+// Fields
+.ne-fields {
+  gap: 2px;
+}
+
+.ne-field {
+  --mdc-outlined-text-field-outline-color: #5A3A1F;
+  --mdc-outlined-text-field-hover-outline-color: #70451F;
+  --mdc-outlined-text-field-focus-outline-color: #E87918;
+  --mdc-outlined-text-field-label-text-color: #C9AD8B;
+  --mdc-outlined-text-field-hover-label-text-color: #F5E7D0;
+  --mdc-outlined-text-field-focus-label-text-color: #E87918;
+  --mdc-outlined-text-field-input-text-color: #F5E7D0;
+  --mdc-outlined-text-field-input-text-placeholder-color: rgba(201,173,139,0.55);
+  --mdc-outlined-text-field-caret-color: #E87918;
+  --mat-form-field-outlined-outline-color: #5A3A1F;
+  --mat-form-field-outlined-hover-outline-color: #70451F;
+  --mat-form-field-outlined-focus-outline-color: #E87918;
+  width: 100%;
+
+  .mdc-notched-outline__leading,
+  .mdc-notched-outline__notch,
+  .mdc-notched-outline__trailing {
+    border-color: #5A3A1F !important;
+    border-width: 1px !important;
+  }
+  &:hover .mdc-notched-outline__leading,
+  &:hover .mdc-notched-outline__notch,
+  &:hover .mdc-notched-outline__trailing {
+    border-color: #70451F !important;
+  }
+  &.mat-focused .mdc-notched-outline__leading,
+  &.mat-focused .mdc-notched-outline__notch,
+  &.mat-focused .mdc-notched-outline__trailing {
+    border-color: #E87918 !important;
+    border-width: 1.5px !important;
+  }
+  .mdc-floating-label {
+    color: #C9AD8B !important;
+    font-size: 14px !important;
+  }
+  &.mat-focused .mdc-floating-label {
+    color: #E87918 !important;
+  }
+  .mat-mdc-form-field-infix input {
+    color: #F5E7D0 !important;
+    caret-color: #E87918 !important;
+    font-size: 14px !important;
+    &::placeholder {
+      color: rgba(201,173,139,0.48) !important;
+    }
+  }
+  .ne-field-icon {
+    color: #C9AD8B !important;
+    opacity: 0.95;
+    font-size: 18px !important;
+    width: 18px !important;
+    height: 18px !important;
+  }
+  &.mat-focused .ne-field-icon {
+    color: #E87918 !important;
+  }
+  .mat-mdc-form-field-icon-prefix {
+    padding-right: 8px;
+  }
+  .mat-mdc-icon-button {
+    --mdc-icon-button-icon-color: #C9AD8B;
+    &:hover { --mdc-icon-button-icon-color: #F5E7D0; }
+  }
+
+  // Material outline radius - keep refined
+  .mdc-notched-outline {
+    border-radius: 10px;
+  }
+  .mdc-text-field--outlined {
+    border-radius: 10px;
+    background: rgba(13,9,6,0.28);
+  }
+}
+
+// Remember + Forgot row
+.ne-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 6px 0 14px;
+}
+
+.ne-remember {
+  --mdc-checkbox-unselected-icon-color: #5A3A1F;
+  --mdc-checkbox-unselected-hover-icon-color: #70451F;
+  --mdc-checkbox-selected-icon-color: #E87918;
+  --mdc-checkbox-selected-hover-icon-color: #F28A24;
+  --mdc-checkbox-selected-checkmark-color: #0D0906;
+  --mdc-form-field-label-text-color: #C9AD8B;
+  --mdc-form-field-label-text-size: 13px;
+  --mdc-form-field-label-text-weight: 400;
+  .mdc-label {
+    color: #C9AD8B !important;
+  }
+  .mdc-checkbox__background {
+    border-radius: 4px !important;
+  }
+}
+
+.ne-forgot {
+  --mdc-text-button-label-text-color: #E87918;
+  --mat-button-text-label-text-color: #E87918;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  padding: 0 4px !important;
+  min-width: auto !important;
+  height: 32px !important;
+  &:hover {
+    --mdc-text-button-label-text-color: #FF9B32;
+    background: rgba(232,121,24,0.08) !important;
+  }
+}
+
+// Large amber Sign in button
+.ne-signin {
+  width: 100%;
+  height: 44px !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+  --mdc-filled-button-container-color: #E87918 !important;
+  --mdc-filled-button-label-text-color: #0D0906 !important;
+  --mdc-filled-button-container-shape: 10px;
+  box-shadow: 0 6px 18px rgba(232,121,24,0.28), 0 2px 6px rgba(0,0,0,0.35) !important;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.12s ease !important;
+  &:hover {
+    --mdc-filled-button-container-color: #F28A24 !important;
+    box-shadow: 0 8px 22px rgba(232,121,24,0.34), 0 3px 8px rgba(0,0,0,0.4) !important;
+  }
+  &:active {
+    transform: translateY(1px);
+    --mdc-filled-button-container-color: #E87918 !important;
+  }
+  &:disabled {
+    opacity: 0.55;
+    box-shadow: none !important;
+  }
+}
+
+// Footer
+.ne-card-footer {
+  text-align: center;
+  padding: 14px 20px 18px;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: rgba(201,173,139,0.75);
+  border-top: 1px solid rgba(90,58,31,0.35);
+  margin-top: 6px;
+}
+
+// Responsive
+@media (max-width: 480px) {
+  .ne-header-logo {
+    left: 16px;
+    top: 16px;
+  }
+  .ne-login-card {
+    width: calc(100vw - 20px);
+    border-radius: 14px !important;
+  }
+  .ne-login-form {
+    padding: 22px 18px 14px;
+  }
+  .ne-world-svg {
+    width: 96vw;
+  }
+}
+
+// Ensure toast errors are readable on dark amber theme
+:host ::ng-deep .mat-mdc-form-field-error {
+  color: #FF8A65 !important;
+  font-size: 12px !important;
+}
+
+// Hide any leftover SSO dividers if OAuth data exists (per spec NO SSO)
+:host ::ng-deep .oauth-container,
+:host ::ng-deep .container-divider,
+:host ::ng-deep .login-with-button {
+  display: none !important;
+}

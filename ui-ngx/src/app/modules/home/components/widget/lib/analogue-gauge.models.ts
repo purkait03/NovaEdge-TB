@@ -253,7 +253,7 @@ export abstract class TbAnalogueGauge<S extends AnalogueGaugeSettings, O extends
       colorValueTextShadow: settings.valueFont && settings.valueFont.shadowColor ? settings.valueFont.shadowColor : 'rgba(0,0,0,0.3)',
 
       // colors
-      colorPlate: settings.colorPlate || '#fff',
+      colorPlate: settings.colorPlate || '#FFF8CF',
       colorMajorTicks: settings.colorMajorTicks || '#444',
       colorMinorTicks: settings.colorMinorTicks || '#666',
       colorNeedle: settings.colorNeedle || keyColor,

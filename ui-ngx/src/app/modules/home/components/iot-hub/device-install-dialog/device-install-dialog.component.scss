@@ -133,24 +133,24 @@
       box-shadow: 0 0 0 1px $tb-primary-color inset;
 
       // Selected state inverts the icon: primary-coloured container
-      // with the masked glyph painted in white.
+      // with the masked glyph painted in #FFF8CF.
       .tb-connectivity-card-icon {
         background: $tb-primary-color;
       }
 
       .tb-connectivity-card-icon-mask {
-        background-color: white;
+        background-color: #FFF8CF;
       }
     }
   }
 
-  // 48×48 white icon container with subtle drop shadow + 4px radius,
+  // 48×48 #FFF8CF icon container with subtle drop shadow + 4px radius,
   // hosting a 40×40 mask-image rendered in the primary color.
   .tb-connectivity-card-icon {
     width: 48px;
     height: 48px;
     border-radius: 4px;
-    background: white;
+    background: #FFF8CF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +182,7 @@
     color: rgba(0, 0, 0, 0.87);
   }
 
-  // PE-Only pill — primary 1px border + primary text on white background.
+  // PE-Only pill — primary 1px border + primary text on #FFF8CF background.
   .tb-connectivity-card-badge {
     position: absolute;
     top: 16px;
@@ -191,7 +191,7 @@
     padding: 0 8px;
     border: 1px solid $tb-primary-color;
     border-radius: 4px;
-    background: white;
+    background: #FFF8CF;
     color: $tb-primary-color;
     font-size: 12px;
     font-weight: 500;
@@ -360,7 +360,7 @@
   padding: 6px 12px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  background: white;
+  background: #FFF8CF;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;

@@ -9007,7 +9007,7 @@
             "add-title": "Create Persistent RPC request",
             "method-error": "Method is required.",
             "timeout-error": "Min timeout value is 5000 (5 seconds).",
-            "white-space-error": "White space is not allowed.",
+            "white-space-error": "#FFF8CF space is not allowed.",
             "rpc-status": {
                 "QUEUED": "QUEUED",
                 "SENT": "SENT",

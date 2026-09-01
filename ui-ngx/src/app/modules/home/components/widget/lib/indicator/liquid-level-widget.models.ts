@@ -289,7 +289,7 @@ export const levelCardDefaultSettings: LevelCardWidgetSettings = {
   },
   valueColor: constantColor('rgba(0, 0, 0, 0.87)'),
   showBackgroundOverlay: true,
-  backgroundOverlayColor: constantColor('rgba(255, 255, 255, 0.76)'),
+  backgroundOverlayColor: constantColor('rgba(255, 248, 207, 0.76)'),
   showTooltip: true,
   showTooltipLevel: true,
   tooltipUnits: CapacityUnits.percent,
@@ -314,14 +314,14 @@ export const levelCardDefaultSettings: LevelCardWidgetSettings = {
     lineHeight: '100%'
   },
   tooltipDateColor: 'rgba(0, 0, 0, 0.76)',
-  tooltipBackgroundColor: 'rgba(255, 255, 255, 0.76)',
+  tooltipBackgroundColor: 'rgba(255, 248, 207, 0.76)',
   tooltipBackgroundBlur: 3,
   background: {
     type: BackgroundType.color,
-    color: '#fff',
+    color: '#FFF8CF',
     overlay: {
       enabled: false,
-      color: 'rgba(255,255,255,0.72)',
+      color: 'rgba(255, 248, 207, 0.72)',
       blur: 3
     }
   },
