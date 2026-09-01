@@ -3026,6 +3026,122 @@ pre.tb-highlight {
 // ACE theme chrome for overlay container (entity version diff etc.)
 .cdk-overlay-container.tb-dark .ace_editor { border-color: #4A3020 !important; }
 
+/*********************************
+ * GLOBAL OVERLAY ROOT FIX – ROOT CAUSE
+ * All CDK overlay surfaces must inherit dark brown when body is dark.
+ * Previous fixes were component-specific; this ensures EVERY overlay:
+ *  mat-menu, mat-select, mat-autocomplete, mat-dialog, mat-tooltip, snackbar, popover
+ * uses brown when .tb-dark is on body OR on .cdk-overlay-container.
+ * Do NOT add page-specific rules – this is the single source of truth.
+ *********************************/
+
+/* Define dark surface tokens with !important so they beat light defaults */
+.tb-dark {
+  --mat-menu-container-color: #21170E !important;
+  --mat-select-panel-background-color: #21170E !important;
+  --mat-autocomplete-background-color: #21170E !important;
+  --mat-dialog-container-color: #21170E !important;
+  --mat-tooltip-container-color: #21170E !important;
+  --mat-select-panel-background-color: #21170E !important;
+}
+
+.cdk-overlay-container.tb-dark,
+.cdk-overlay-container .tb-dark {
+  --mat-menu-container-color: #21170E !important;
+  --mat-select-panel-background-color: #21170E !important;
+  --mat-autocomplete-background-color: #21170E !important;
+  --mat-dialog-container-color: #21170E !important;
+}
+
+/* Every overlay panel – brown surface, cream text, brown border, rounded, clipped */
+.tb-dark .mat-mdc-menu-panel,
+.cdk-overlay-container.tb-dark .mat-mdc-menu-panel,
+.cdk-overlay-container .tb-dark .mat-mdc-menu-panel,
+.tb-dark .mat-menu-panel,
+.cdk-overlay-container.tb-dark .mat-menu-panel,
+.tb-dark .mat-mdc-select-panel,
+.cdk-overlay-container.tb-dark .mat-mdc-select-panel,
+.cdk-overlay-container .tb-dark .mat-mdc-select-panel,
+.tb-dark .mat-mdc-autocomplete-panel,
+.cdk-overlay-container.tb-dark .mat-mdc-autocomplete-panel,
+.cdk-overlay-container .tb-dark .mat-mdc-autocomplete-panel,
+.tb-dark .mat-datepicker-content,
+.cdk-overlay-container.tb-dark .mat-datepicker-content,
+.tb-dark .mat-datetimepicker-content,
+.cdk-overlay-container.tb-dark .mat-datetimepicker-content,
+.tb-dark .mat-mdc-dialog-container .mdc-dialog__surface,
+.cdk-overlay-container.tb-dark .mat-mdc-dialog-container .mdc-dialog__surface,
+.tb-dark .mdc-dialog__surface,
+.cdk-overlay-container.tb-dark .mdc-dialog__surface,
+.tb-dark .mat-mdc-tooltip .mdc-tooltip__surface,
+.cdk-overlay-container.tb-dark .mat-mdc-tooltip .mdc-tooltip__surface {
+  background-color: #21170E !important;
+  background: #21170E !important;
+  color: #F5EDE3 !important;
+  border: 1px solid #5A3A1F !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.55), 0 0 0 1px rgba(90,58,31,0.15) !important;
+}
+
+/* Dialog specific radius */
+.tb-dark .mdc-dialog__surface,
+.cdk-overlay-container.tb-dark .mdc-dialog__surface {
+  border-radius: 16px !important;
+}
+
+/* Tooltip – smaller radius */
+.tb-dark .mat-mdc-tooltip .mdc-tooltip__surface,
+.cdk-overlay-container.tb-dark .mat-mdc-tooltip .mdc-tooltip__surface {
+  border-radius: 8px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5) !important;
+}
+
+/* Menu / select / autocomplete items – cream text, brown hover/active */
+.tb-dark .mat-mdc-menu-item,
+.cdk-overlay-container.tb-dark .mat-mdc-menu-item,
+.cdk-overlay-container .tb-dark .mat-mdc-menu-item,
+.tb-dark .mat-mdc-option,
+.cdk-overlay-container.tb-dark .mat-mdc-option,
+.tb-dark .mat-menu-item,
+.cdk-overlay-container.tb-dark .mat-menu-item {
+  color: #F5EDE3 !important;
+  --mdc-list-list-item-label-text-color: #F5EDE3 !important;
+  .mdc-list-item__primary-text { color: #F5EDE3 !important; }
+  .mat-icon { color: #D2C0AD !important; }
+  &:hover:not([disabled]):not(.mdc-list-item--disabled) {
+    background-color: #3D2A1D !important;
+    color: #F5EDE3 !important;
+    .mat-icon { color: #F5EDE3 !important; }
+  }
+  &.mdc-list-item--selected,
+  &.mat-mdc-option-active,
+  &.mat-mdc-option.mdc-list-item--selected {
+    background-color: #4A3323 !important;
+    color: #F5EDE3 !important;
+    box-shadow: inset 3px 0 0 #E87918 !important;
+    .mat-icon { color: #E87918 !important; }
+  }
+  &[disabled], &.mdc-list-item--disabled { color: #A9907A !important; opacity: 0.55 !important; }
+}
+
+/* Ensure overlay pane itself is transparent so cream doesn't leak at rounded corners */
+.tb-dark .cdk-overlay-pane,
+.cdk-overlay-container.tb-dark .cdk-overlay-pane,
+.cdk-overlay-container .tb-dark .cdk-overlay-pane {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Snackbar – same brown (already handled but ensure overlay variant) */
+.tb-dark .mat-mdc-snack-bar-container .mdc-snackbar__surface,
+.cdk-overlay-container.tb-dark .mat-mdc-snack-bar-container .mdc-snackbar__surface {
+  background-color: #21170E !important;
+  color: #F5EDE3 !important;
+  border: 1px solid #5A3A1F !important;
+  border-radius: 12px !important;
+}
+
 /***************
  * TAILWIND CSS
  ***************/

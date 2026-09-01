@@ -1,0 +1,42 @@
+<div class="tb-iot-loading"
+     [class.tb-iot-loading--fullscreen]="fullscreen"
+     role="status"
+     aria-label="Loading">
+  <div class="tb-iot-loading__center">
+    <!-- orbit + cloud -->
+    <div class="tb-iot-loading__orbit-wrap" aria-hidden="true">
+      <!-- orbit ring -->
+      <svg class="tb-iot-loading__orbit" viewBox="0 0 120 120" width="120" height="120">
+        <circle class="tb-iot-loading__track" cx="60" cy="60" r="46" />
+        <!-- animated progress arc -->
+        <circle class="tb-iot-loading__progress" cx="60" cy="60" r="46" />
+      </svg>
+
+      <!-- static small blue dots on orbit -->
+      <span class="tb-iot-loading__dot tb-iot-loading__dot--s1"></span>
+      <span class="tb-iot-loading__dot tb-iot-loading__dot--s2"></span>
+      <span class="tb-iot-loading__dot tb-iot-loading__dot--s3"></span>
+      <span class="tb-iot-loading__dot tb-iot-loading__dot--s4"></span>
+
+      <!-- traveling glowing dot -->
+      <span class="tb-iot-loading__traveler">
+        <span class="tb-iot-loading__traveler-core"></span>
+      </span>
+
+      <!-- centered cloud -->
+      <div class="tb-iot-loading__cloud">
+        <svg viewBox="0 0 48 28" width="48" height="28" aria-hidden="true" focusable="false">
+          <path d="M16.5 22.5H33.2c4.6 0 8.3-3.6 8.3-8.1 0-3.7-2.6-6.9-6.2-7.8-0.8-4.2-4.6-7.3-9.1-7.3-3.9 0-7.3 2.4-8.8 5.8-0.8-0.4-1.7-0.6-2.6-0.6-3.6 0-6.5 2.9-6.5 6.5 0 3.1 2.2 5.7 5.2 6.4H16.5Z"
+                fill="none" stroke="#5B7DBF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M16.5 22.5H33.2c4.6 0 8.3-3.6 8.3-8.1 0-3.7-2.6-6.9-6.2-7.8-0.8-4.2-4.6-7.3-9.1-7.3-3.9 0-7.3 2.4-8.8 5.8-0.8-0.4-1.7-0.6-2.6-0.6-3.6 0-6.5 2.9-6.5 6.5 0 3.1 2.2 5.7 5.2 6.4"
+                fill="#EFF4FF" stroke="none"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- bottom 3 dots sequential -->
+    <div class="tb-iot-loading__bottom-dots" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</div>

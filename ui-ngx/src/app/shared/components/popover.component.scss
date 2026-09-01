@@ -18,7 +18,7 @@
 $popover-arrow-width: 6;
 $popover-distance: $popover-arrow-width + 4;
 $zindex-popover: 1030;
-$popover-bg: #FFF8CF;
+$popover-bg: var(--tb-surface-overlay, #FFF8CF);
 $border-radius-base: 6px;
 $popover-close-button-size: 30px;
 $box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
@@ -251,5 +251,62 @@ $box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0,
       }
     }
   }
+}
+
+/* Dark brown theme – ensure popover uses same brown surface (global, not page-specific) */
+.tb-dark .tb-popover-inner,
+.cdk-overlay-container.tb-dark .tb-popover-inner {
+  background-color: #21170E !important;
+  background: #21170E !important;
+  border: 1px solid #5A3A1F !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.55), 0 0 0 1px rgba(90,58,31,0.15) !important;
+}
+
+.tb-dark .tb-popover-inner-content,
+.cdk-overlay-container.tb-dark .tb-popover-inner-content {
+  color: #F5EDE3 !important;
+}
+
+.tb-dark .tb-popover .tb-popover-arrow,
+.cdk-overlay-container.tb-dark .tb-popover-arrow {
+  /* arrow inherits popover bg via border colors – $popover-bg already uses var(--tb-surface-overlay) */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+}
+
+/* Popover menu content – brown with cream text, hover/active states */
+.tb-dark .tb-toggle-menu-items,
+.cdk-overlay-container.tb-dark .tb-toggle-menu-items {
+  background: #21170E !important;
+  color: #F5EDE3 !important;
+}
+
+.tb-dark .tb-toggle-menu-items .tb-menu-toggle-header,
+.cdk-overlay-container.tb-dark .tb-toggle-menu-items .tb-menu-toggle-header {
+  color: #F5EDE3 !important;
+  border-bottom-color: #5A3A1F !important;
+  background: #21170E !important;
+}
+
+.tb-dark .tb-toggle-menu-items a.mat-mdc-button,
+.cdk-overlay-container.tb-dark .tb-toggle-menu-items a.mat-mdc-button {
+  --mat-button-text-label-text-color: #F5EDE3 !important;
+  color: #F5EDE3 !important;
+  &:hover {
+    background-color: #3D2A1D !important;
+    color: #F5EDE3 !important;
+  }
+  &.tb-active {
+    background-color: #4A3323 !important;
+    color: #F5EDE3 !important;
+    box-shadow: inset 3px 0 0 #E87918 !important;
+  }
+  .mat-icon { color: #D2C0AD !important; }
+  &:hover .mat-icon { color: #F5EDE3 !important; }
+}
+
+.tb-dark .tb-popover-close-button,
+.cdk-overlay-container.tb-dark .tb-popover-close-button {
+  color: #A9907A !important;
+  &:hover { color: #F5EDE3 !important; }
 }
 

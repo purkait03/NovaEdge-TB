@@ -32,77 +32,151 @@
     body, html {
       height: 100%;
       overflow: hidden;
-      background-color: var(--tb-page-background, #eef1f6);
+      background-color: var(--tb-page-background, #F7F9FC);
     }
 
+    /* IoT Loader – minimalist cloud + orbit (replaces old 3-dot bounce) */
     .tb-loading-spinner {
-      margin: auto;
-      z-index: 1;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F7F9FC;
+      overflow: hidden;
+    }
+    .tb-loading-spinner__center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+    .tb-iot-orbit-wrap {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tb-iot-orbit {
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 136px;
-      height: 30px;
-      text-align: center;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
     }
-
-    .tb-loading-spinner > div {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      background-color: rgb(43,160,199);
-
-      border-radius: 100%;
-      display: inline-block;
-      -webkit-animation: tb-bouncedelay 1.4s infinite ease-in-out both;
-      -moz-animation: tb-bouncedelay 1.4s infinite ease-in-out both;
-      animation: tb-bouncedelay 1.4s infinite ease-in-out both;
+    .tb-iot-orbit .tb-iot-track {
+      fill: none;
+      stroke: #E1E8F5;
+      stroke-width: 1.5;
     }
-
-    .tb-loading-spinner .tb-bounce1 {
-      -webkit-animation-delay: -0.32s;
-      -moz-animation-delay: -0.32s;
-      animation-delay: -0.32s;
+    .tb-iot-orbit .tb-iot-progress {
+      fill: none;
+      stroke: #1976D2;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-dasharray: 72 217;
+      opacity: 0.95;
+      animation: tb-iot-progress-rotate 1.4s linear infinite;
+      transform-origin: 60px 60px;
     }
-
-    .tb-loading-spinner .tb-bounce2 {
-      -webkit-animation-delay: -0.16s;
-      -moz-animation-delay: -0.16s;
-      animation-delay: -0.16s;
+    .tb-iot-cloud {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
-    @-webkit-keyframes tb-bouncedelay {
-      0%, 80%, 100% { -webkit-transform: scale(0) }
-      40% { -webkit-transform: scale(1.0) }
+    .tb-iot-dot {
+      position: absolute;
+      border-radius: 50%;
+      background: #1976D2;
+      box-shadow: 0 0 0 3px rgba(25,118,210,0.12);
     }
-
-    @-moz-keyframes tb-bouncedelay {
-      0%, 80%, 100% { -moz-transform: scale(0) }
-      40% { -moz-transform: scale(1.0) }
+    .tb-iot-dot--s1 { top: 6px; left: 50%; width: 5px; height: 5px; margin-left: -2.5px; opacity: 0.65; }
+    .tb-iot-dot--s2 { right: 10px; top: 50%; width: 5px; height: 5px; margin-top: -2.5px; opacity: 0.5; }
+    .tb-iot-dot--s3 { bottom: 12px; left: 18px; width: 4px; height: 4px; opacity: 0.45; }
+    .tb-iot-dot--s4 { left: 8px; top: 28px; width: 3px; height: 3px; opacity: 0.35; }
+    .tb-iot-traveler {
+      position: absolute;
+      inset: 0;
+      animation: tb-iot-orbit-rotate 1.4s linear infinite;
+      transform-origin: 60px 60px;
     }
-
-    @keyframes tb-bouncedelay {
-      0%, 80%, 100% {
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        transform: scale(0);
-      } 40% {
-          -webkit-transform: scale(1.0);
-          -moz-transform: scale(1.0);
-          transform: scale(1.0);
-        }
+    .tb-iot-traveler-core {
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      margin-left: -5px;
+      border-radius: 50%;
+      background: #1976D2;
+      box-shadow: 0 0 0 6px rgba(25,118,210,0.12), 0 0 12px rgba(25,118,210,0.35);
+    }
+    @keyframes tb-iot-orbit-rotate { to { transform: rotate(360deg); } }
+    @keyframes tb-iot-progress-rotate { to { transform: rotate(360deg); } }
+    .tb-iot-bottom-dots {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+    .tb-iot-bottom-dots span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #1976D2;
+      opacity: 0.28;
+      transform: scale(0.85);
+      animation: tb-iot-bounce 1.5s ease-in-out infinite both;
+    }
+    .tb-iot-bottom-dots span:nth-child(2) { animation-delay: 0.18s; }
+    .tb-iot-bottom-dots span:nth-child(3) { animation-delay: 0.36s; }
+    @keyframes tb-iot-bounce {
+      0%, 80%, 100% { opacity: 0.28; transform: scale(0.85); }
+      40% { opacity: 1; transform: scale(1); }
+    }
+    @media (max-width: 600px) {
+      .tb-iot-orbit-wrap { width: 100px; height: 100px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .tb-iot-traveler, .tb-iot-orbit .tb-iot-progress { animation: none !important; }
+      .tb-iot-traveler { transform: rotate(28deg); }
+      .tb-iot-bottom-dots span { animation: tb-iot-pulse 2.2s ease-in-out infinite both !important; }
+      @keyframes tb-iot-pulse {
+        0%, 100% { opacity: 0.35; transform: scale(0.92); }
+        50% { opacity: 0.75; transform: scale(1); }
+      }
     }
 
   </style>
 </head>
 <body class="tb-default">
   <tb-root></tb-root>
-  <div id="tb-loading-spinner" class="tb-loading-spinner">
-    <div class="tb-bounce1"></div>
-    <div class="tb-bounce2"></div>
-    <div class="tb-bounce3"></div>
+  <div id="tb-loading-spinner" class="tb-loading-spinner" role="status" aria-label="Loading">
+    <div class="tb-loading-spinner__center">
+      <div class="tb-iot-orbit-wrap" aria-hidden="true">
+        <svg class="tb-iot-orbit" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true" focusable="false">
+          <circle class="tb-iot-track" cx="60" cy="60" r="46"></circle>
+          <circle class="tb-iot-progress" cx="60" cy="60" r="46"></circle>
+        </svg>
+        <span class="tb-iot-dot tb-iot-dot--s1"></span>
+        <span class="tb-iot-dot tb-iot-dot--s2"></span>
+        <span class="tb-iot-dot tb-iot-dot--s3"></span>
+        <span class="tb-iot-dot tb-iot-dot--s4"></span>
+        <span class="tb-iot-traveler"><span class="tb-iot-traveler-core"></span></span>
+        <div class="tb-iot-cloud">
+          <svg viewBox="0 0 48 28" width="48" height="28" aria-hidden="true" focusable="false">
+            <path d="M16.5 22.5H33.2c4.6 0 8.3-3.6 8.3-8.1 0-3.7-2.6-6.9-6.2-7.8-0.8-4.2-4.6-7.3-9.1-7.3-3.9 0-7.3 2.4-8.8 5.8-0.8-0.4-1.7-0.6-2.6-0.6-3.6 0-6.5 2.9-6.5 6.5 0 3.1 2.2 5.7 5.2 6.4" fill="#EFF4FF" stroke="none"></path>
+            <path d="M16.5 22.5H33.2c4.6 0 8.3-3.6 8.3-8.1 0-3.7-2.6-6.9-6.2-7.8-0.8-4.2-4.6-7.3-9.1-7.3-3.9 0-7.3 2.4-8.8 5.8-0.8-0.4-1.7-0.6-2.6-0.6-3.6 0-6.5 2.9-6.5 6.5 0 3.1 2.2 5.7 5.2 6.4H16.5Z" fill="none" stroke="#5B7DBF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="tb-iot-bottom-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
   </div>
 </body>
 </html>

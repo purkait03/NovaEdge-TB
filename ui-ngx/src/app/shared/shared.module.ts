@@ -246,6 +246,7 @@ import { PhotoSwipeGalleryDirective } from '@shared/directives/photoswipe-galler
 import {
   AutocompleteAutoScrollRepositionDirective
 } from '@shared/directives/autocomplete-auto-scroll-reposition.directive';
+import { IotLoadingComponent } from '@shared/components/iot-loading/iot-loading.component';
 
 export function MarkedOptionsFactory(markedOptionsService: MarkedOptionsService) {
   return markedOptionsService;
@@ -476,7 +477,8 @@ export function MarkedOptionsFactory(markedOptionsService: MarkedOptionsService)
     StringPatternAutocompleteComponent,
     RgbaInputComponent,
     HslaInputComponent,
-    InputChangeDirective
+    InputChangeDirective,
+    IotLoadingComponent
   ],
   imports: [
     CommonModule,
@@ -749,7 +751,8 @@ export function MarkedOptionsFactory(markedOptionsService: MarkedOptionsService)
     PasswordRequirementsTooltipComponent,
     TimeUnitInputComponent,
     StringPatternAutocompleteComponent,
-    DynamicMatDialogModule
+    DynamicMatDialogModule,
+    IotLoadingComponent
   ]
 })
 export class SharedModule { }
