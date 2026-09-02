@@ -1459,6 +1459,10 @@ pre.tb-highlight {
   --mat-autocomplete-background-color: #21170E;
   --mat-dialog-container-color: #21170E;
   --mat-tooltip-container-color: #21170E;
+  --mdc-plain-tooltip-container-color: #21170E;
+  --mdc-plain-tooltip-supporting-text-color: #F5EDE3;
+  --mdc-chip-elevated-container-color: var(--tb-surface-raised);
+  --mdc-chip-label-text-color: var(--tb-text-primary);
   --mdc-list-list-item-label-text-color: #F5EDE3;
   --mdc-list-list-item-supporting-text-color: #D2C0AD;
   --mdc-list-list-item-leading-icon-color: #D2C0AD;
@@ -1473,6 +1477,13 @@ pre.tb-highlight {
   --tb-current-entity-color: var(--tb-surface-active);
   --mat-paginator-container-background-color: #2A1D14;
   --mat-card-elevated-container-color: #2A1D14;
+  --mat-icon-color: var(--tb-text-secondary);
+  --mdc-icon-button-icon-color: var(--tb-text-secondary);
+  --mat-icon-button-icon-color: var(--tb-text-secondary);
+  --mat-icon-button-state-layer-color: var(--tb-text-primary);
+  --mdc-checkbox-unselected-icon-color: var(--tb-border-strong);
+  --mdc-checkbox-selected-icon-color: var(--tb-primary-color);
+  --mdc-checkbox-disabled-unselected-icon-color: rgba(143,122,96,0.45);
   // Disabled – muted brown, readable
   --mdc-list-list-item-disabled-container-color: #2A1D14;
   --mdc-list-list-item-disabled-label-text-color: #8F7A60;
@@ -1490,7 +1501,14 @@ pre.tb-highlight {
   --mat-autocomplete-background-color: #21170E;
   --mat-dialog-container-color: #21170E;
   --mat-tooltip-container-color: #21170E;
+  --mdc-plain-tooltip-container-color: #21170E;
+  --mdc-plain-tooltip-supporting-text-color: #F5EDE3;
+  --mdc-chip-elevated-container-color: var(--tb-surface-raised);
+  --mdc-chip-label-text-color: var(--tb-text-primary);
   --mdc-list-list-item-disabled-container-color: #2A1D14;
+  --mat-icon-color: var(--tb-text-secondary);
+  --mdc-icon-button-icon-color: var(--tb-text-secondary);
+  --mdc-list-list-item-leading-icon-color: var(--tb-text-secondary);
   color: var(--tb-text-primary);
   color-scheme: dark;
 }
@@ -1596,9 +1614,11 @@ pre.tb-highlight {
   --mat-toolbar-container-text-color: var(--tb-text-primary);
   border-bottom: 1px solid var(--tb-border-color);
 }
-.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) .mat-icon,
-.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) .mat-mdc-icon-button .mat-icon {
-  color: var(--tb-text-secondary);
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) {
+  color: var(--tb-text-primary);
+}
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) .mat-icon {
+  color: currentColor;
 }
 // Ensure entity-table content card also dark (was var(--tb-surface) in light, but overridden by #fff in some contexts)
 .tb-dark .tb-entity-table .tb-entity-table-content {
@@ -1696,93 +1716,80 @@ pre.tb-highlight {
   overflow: visible;
 }
 
-// ── Widget/Table toolbar – was white via .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) {background:#fff} ──
-.tb-dark .mat-toolbar.mat-mdc-table-toolbar {
-  background: var(--tb-surface);
-  color: var(--tb-text-primary);
-  border-bottom: 1px solid var(--tb-border-color);
-}
-.tb-dark .mat-toolbar.mat-mdc-table-toolbar .mat-icon,
-.tb-dark .mat-toolbar.mat-mdc-table-toolbar .mat-mdc-icon-button .mat-icon {
-  color: var(--tb-text-secondary);
-}
-.tb-dark .mat-toolbar.mat-mdc-table-toolbar .mat-mdc-icon-button:hover .mat-icon {
-  color: var(--tb-text-primary);
-}
+// Ensure overlay panels use variable (no direct background !important needed)
+// Popover already uses var(--tb-surface-overlay) via $popover-bg
 
-// ── Table – header, rows, cells, hover/selected, sort, paginator, checkbox ──
-.tb-dark {
-  --mat-table-background-color: var(--tb-surface);
-  --mat-table-row-item-outline-color: var(--tb-border-color);
-  --mat-table-header-headline-color: var(--tb-text-secondary);
-  --mat-table-row-item-label-text-color: var(--tb-text-primary);
-  --mat-paginator-container-background-color: var(--tb-surface);
-  --mat-paginator-container-text-color: var(--tb-text-primary);
-  --mat-paginator-enabled-icon-color: var(--tb-text-secondary);
-  --mdc-checkbox-unselected-icon-color: var(--tb-border-strong);
-  --mdc-checkbox-selected-icon-color: var(--tb-primary-color);
+/*********************************
+ * GLOBAL ICON STANDARD – root cause of inconsistency
+ * Previously global dark CSS forced .mat-icon {color: ... !important} and
+ * overrode font-size/line-height/width/height, causing filled vs outlined,
+ * dark vs light, small vs large mismatches across sidebar/toolbar/table/menu.
+ * This single standard restores Material's icon system consistently.
+ *********************************/
+.mat-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1;
+  flex-shrink: 0;
+  overflow: hidden;
+  user-select: none;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
 }
-
-.tb-dark .mat-mdc-table {
-  background: var(--tb-surface);
+.mat-icon svg,
+.mat-icon img {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
-.tb-dark .mat-mdc-header-row {
-  background: var(--tb-surface);
+.mat-mdc-icon-button .mat-icon {
+  line-height: 1;
 }
-.tb-dark .mat-mdc-header-cell {
-  background: var(--tb-surface);
-  color: var(--tb-text-secondary);
-}
-.tb-dark .mat-mdc-cell {
-  color: var(--tb-text-primary);
-  border-bottom-color: var(--tb-border-color);
-}
-.tb-dark .mat-mdc-cell .mat-icon,
-.tb-dark .mat-mdc-header-cell .mat-icon,
-.tb-dark .mat-mdc-row .mat-icon {
-  color: var(--tb-text-secondary);
-}
-.tb-dark .mat-mdc-cell .mat-mdc-icon-button .mat-icon,
-.tb-dark .mat-mdc-header-cell .mat-mdc-icon-button .mat-icon {
-  color: var(--tb-text-secondary);
-}
-.tb-dark .mat-mdc-cell .mat-mdc-icon-button:hover .mat-icon,
-.tb-dark .mat-mdc-header-cell .mat-mdc-icon-button:hover .mat-icon {
-  color: var(--tb-text-primary);
+// Dark theme: icons inherit parent color, not forced global color
+.tb-dark .mat-icon {
+  color: currentColor;
 }
 .tb-dark .tb-entity-table-title {
   color: var(--tb-text-primary);
 }
-.tb-dark .mat-mdc-table .mat-mdc-row {
-  background: var(--tb-surface);
+
+/* Global tooltip – NovaEdge dark, compact, not black, single source */
+.tb-dark {
+  --mdc-plain-tooltip-container-color: #2A1D14;
+  --mdc-plain-tooltip-supporting-text-color: #F5EDE3;
 }
-.tb-dark .mat-mdc-table .mat-mdc-row:hover {
-  background: var(--tb-surface-hover);
+.cdk-overlay-container.tb-dark,
+.cdk-overlay-container .tb-dark {
+  --mdc-plain-tooltip-container-color: #2A1D14;
+  --mdc-plain-tooltip-supporting-text-color: #F5EDE3;
 }
-.tb-dark .mat-mdc-table .mat-mdc-row.mdc-data-table__row--selected,
-.tb-dark .mat-mdc-table .mat-mdc-row.mat-mdc-selected,
-.tb-dark .mat-mdc-table .mat-mdc-row.tb-current-entity {
-  background: var(--tb-surface-active);
-  color: var(--tb-text-primary);
-}
-.tb-dark .mat-sort-header-arrow,
-.tb-dark .mat-sort-header-sorted .mat-sort-header-arrow {
-  color: var(--tb-primary-color);
-}
-.tb-dark .mat-mdc-paginator {
-  background: var(--tb-surface);
-  color: var(--tb-text-primary);
-  border-top: 1px solid var(--tb-border-color);
-}
-.tb-dark .mat-mdc-paginator .mat-mdc-icon-button .mat-icon {
-  color: var(--tb-text-secondary);
-}
-.tb-dark .mat-mdc-checkbox .mdc-checkbox__background {
-  border-color: var(--tb-border-strong);
+.cdk-overlay-container.tb-dark .mat-mdc-tooltip .mdc-tooltip__surface,
+.cdk-overlay-container .tb-dark .mat-mdc-tooltip .mdc-tooltip__surface {
+  background-color: var(--mdc-plain-tooltip-container-color);
+  color: var(--mdc-plain-tooltip-supporting-text-color);
+  border: 1px solid var(--tb-border-color);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.32);
 }
 
-// Ensure overlay panels use variable (no direct background !important needed)
-// Popover already uses var(--tb-surface-overlay) via $popover-bg
+/* Icon hover – subtle compact, matches Search/Fullscreen/Theme/Notification */
+.tb-dark .mat-mdc-icon-button {
+  --mdc-icon-button-state-layer-size: 34px;
+  --mat-icon-button-state-layer-size: 34px;
+}
 
 /***************
  * TAILWIND CSS
