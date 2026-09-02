@@ -1536,9 +1536,61 @@ pre.tb-highlight {
   color: var(--tb-text-primary);
 }
 
-// Table header – was white via default Material, now brown (match original :not(.mat-primary) specificity)
-.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) {
+// ── JavaScript Editor Dialog (Test script function) – complete dark surround ──
+.tb-dark .tb-node-script-test-dialog {
+  background: var(--tb-surface-overlay);
+  color: var(--tb-text-primary);
+}
+.tb-dark .tb-node-script-test-dialog .mat-toolbar.tb-dialog-header {
+  background: var(--tb-surface-overlay);
+  color: var(--tb-text-primary);
+  border-bottom: 1px solid var(--tb-border-color);
+}
+.tb-dark .tb-node-script-test-dialog .tb-content {
   background: var(--tb-surface);
+  border-color: var(--tb-border-color);
+}
+.tb-dark .tb-node-script-test-dialog .gutter {
+  background: var(--tb-surface-raised);
+}
+.tb-dark .tb-node-script-test-dialog div.tb-editor-area-title-panel label {
+  background: var(--tb-surface-raised);
+  color: var(--tb-text-secondary);
+  border: 1px solid var(--tb-border-color);
+}
+.tb-dark .tb-node-script-test-dialog .mat-dialog-actions {
+  background: var(--tb-surface-overlay);
+  border-top: 1px solid var(--tb-border-color);
+}
+.tb-dark .tb-json-content .tb-json-content-panel {
+  border-color: var(--tb-border-color);
+  background: var(--tb-surface);
+}
+.tb-dark .tb-json-content .tb-json-content-toolbar button.mat-mdc-button-base {
+  background: var(--tb-surface-raised);
+  color: var(--tb-text-secondary);
+  border: 1px solid var(--tb-border-color);
+}
+.tb-dark tb-key-val-map .tb-form-panel,
+.tb-dark .tb-form-panel,
+.tb-dark .tb-form-panel.stroked,
+.tb-dark .mat-expansion-panel {
+  background: var(--tb-surface);
+  border-color: var(--tb-border-color);
+  color: var(--tb-text-primary);
+}
+.tb-dark .tb-form-panel-title,
+.tb-dark .mat-expansion-panel-header {
+  color: var(--tb-text-primary);
+  background: transparent;
+}
+.tb-dark .mat-expansion-panel-header:hover {
+  background: var(--tb-surface-hover);
+}
+
+// Table header/toolbar – original was inside .tb-default,.tb-dark {background:#fff} (light wins), override for dark with same specificity + source order
+.tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) {
+  background: var(--tb-surface) !important;
   color: var(--tb-text-primary);
   --mat-toolbar-container-background-color: var(--tb-surface);
   --mat-toolbar-container-text-color: var(--tb-text-primary);
@@ -1547,6 +1599,11 @@ pre.tb-highlight {
 .tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) .mat-icon,
 .tb-dark .mat-toolbar.mat-mdc-table-toolbar:not(.mat-primary) .mat-mdc-icon-button .mat-icon {
   color: var(--tb-text-secondary);
+}
+// Ensure entity-table content card also dark (was var(--tb-surface) in light, but overridden by #fff in some contexts)
+.tb-dark .tb-entity-table .tb-entity-table-content {
+  background: var(--tb-surface) !important;
+  border-color: var(--tb-border-color);
 }
 .tb-dark .mat-card,
 .tb-dark .mat-mdc-card {
@@ -1562,17 +1619,39 @@ pre.tb-highlight {
   --mat-table-header-headline-color: var(--tb-text-secondary);
 }
 
-// Table rows – hover/selected was white, now brown
+// Table rows – hover/selected was white (#ededed/#fff) via .tb-default,.tb-dark {background:#ededed} – override for dark
 .tb-dark .mat-mdc-table .mat-mdc-row {
   transition: background-color 180ms;
 }
 .tb-dark .mat-mdc-table .mat-mdc-row:hover {
-  background: var(--tb-surface-hover);
+  background: var(--tb-surface-hover) !important;
 }
 .tb-dark .mat-mdc-table .mat-mdc-row.cdk-row--selected,
 .tb-dark .mat-mdc-table .mat-mdc-row.mat-mdc-selected,
-.tb-dark .mat-mdc-table .mat-mdc-row.tb-current-entity {
-  background: var(--tb-surface-active);
+.tb-dark .mat-mdc-table .mat-mdc-row.tb-current-entity,
+.tb-dark .mat-mdc-table .mat-mdc-row.mdc-data-table__row--selected {
+  background: var(--tb-surface-active) !important;
+  color: var(--tb-text-primary);
+}
+
+// Chips – Buttons/Alarm widgets/Count widgets/Tables were white via --mdc-chip-elevated-container-color #fff
+.tb-dark {
+  --mdc-chip-elevated-container-color: var(--tb-surface-raised);
+  --mdc-chip-label-text-color: var(--tb-text-primary);
+  --mdc-chip-with-icon-icon-color: var(--tb-text-secondary);
+  --mdc-chip-elevated-disabled-container-color: var(--tb-surface-raised);
+}
+.tb-dark .mat-mdc-chip,
+.tb-dark .mat-mdc-standard-chip,
+.tb-dark .mdc-evolution-chip {
+  --mdc-chip-elevated-container-color: var(--tb-surface-raised);
+  background: var(--tb-surface-raised) !important;
+  color: var(--tb-text-primary);
+  border-color: var(--tb-border-color);
+}
+.tb-dark .mat-mdc-chip .mdc-evolution-chip__text-label,
+.tb-dark .mdc-evolution-chip__text-label {
+  color: var(--tb-text-primary);
 }
 
 // Paginator, sort, checkbox – ensure dark readable
@@ -1657,6 +1736,22 @@ pre.tb-highlight {
 .tb-dark .mat-mdc-cell {
   color: var(--tb-text-primary);
   border-bottom-color: var(--tb-border-color);
+}
+.tb-dark .mat-mdc-cell .mat-icon,
+.tb-dark .mat-mdc-header-cell .mat-icon,
+.tb-dark .mat-mdc-row .mat-icon {
+  color: var(--tb-text-secondary);
+}
+.tb-dark .mat-mdc-cell .mat-mdc-icon-button .mat-icon,
+.tb-dark .mat-mdc-header-cell .mat-mdc-icon-button .mat-icon {
+  color: var(--tb-text-secondary);
+}
+.tb-dark .mat-mdc-cell .mat-mdc-icon-button:hover .mat-icon,
+.tb-dark .mat-mdc-header-cell .mat-mdc-icon-button:hover .mat-icon {
+  color: var(--tb-text-primary);
+}
+.tb-dark .tb-entity-table-title {
+  color: var(--tb-text-primary);
 }
 .tb-dark .mat-mdc-table .mat-mdc-row {
   background: var(--tb-surface);

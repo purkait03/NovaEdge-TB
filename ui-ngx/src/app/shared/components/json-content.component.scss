@@ -60,3 +60,15 @@
     }
   }
 }
+
+:host-context(.tb-dark) {
+  .tb-json-content-panel {
+    border-color: var(--tb-border-color);
+    background: var(--tb-surface);
+  }
+  .tb-json-content-toolbar button.mat-mdc-button-base {
+    background: var(--tb-surface-raised);
+    color: var(--tb-text-secondary);
+    border: 1px solid var(--tb-border-color);
+  }
+}
