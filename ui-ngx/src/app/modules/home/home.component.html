@@ -82,10 +82,20 @@
             </button>
           }
           <button
-            class="lt-md:!hidden"
-            mat-icon-button [matTooltip]="(darkMode() ? 'common.dark-mode' : 'common.light-mode') | translate"
+            class="tb-theme-toggle lt-md:!hidden"
+            type="button"
+            [class.tb-dark-active]="darkMode()"
+            [attr.aria-label]="(darkMode() ? 'common.dark-mode' : 'common.light-mode') | translate"
+            [attr.aria-pressed]="darkMode()"
+            [matTooltip]="(darkMode() ? 'common.dark-mode' : 'common.light-mode') | translate"
             (click)="toggleTheme()">
-            <mat-icon>{{ darkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon>
+            <span class="tb-toggle-track">
+              <mat-icon class="tb-toggle-icon tb-icon-sun">light_mode</mat-icon>
+              <mat-icon class="tb-toggle-icon tb-icon-moon">dark_mode</mat-icon>
+              <span class="tb-toggle-thumb" aria-hidden="true">
+                <mat-icon class="tb-thumb-icon">{{ darkMode() ? 'dark_mode' : 'light_mode' }}</mat-icon>
+              </span>
+            </span>
           </button>
           <tb-notification-bell></tb-notification-bell>
           @if (forceFullscreen) {

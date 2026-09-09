@@ -1785,10 +1785,64 @@ pre.tb-highlight {
   box-shadow: 0 4px 12px rgba(0,0,0,0.32);
 }
 
-/* Icon hover – subtle compact, matches Search/Fullscreen/Theme/Notification */
-.tb-dark .mat-mdc-icon-button {
-  --mdc-icon-button-state-layer-size: 34px;
-  --mat-icon-button-state-layer-size: 34px;
+/* ─────────────────────────────────────────────────────────
+ * Layout Stability — icons fixed coordinates across Light/Dark
+ * Theme must change ONLY colors; no size/margin/padding/position shift
+ * ───────────────────────────────────────────────────────── */
+.tb-primary-toolbar,
+.mat-toolbar.mat-mdc-table-toolbar,
+.mat-toolbar .mat-toolbar-tools,
+.tb-details-panel .mat-toolbar,
+.tb-entity-table .mat-toolbar {
+  box-sizing: border-box;
+}
+/* Fixed 40×40 for all header/page action icon buttons — same in both themes */
+.mat-mdc-icon-button,
+.mat-mdc-icon-button.tb-mat-32,
+.mat-mdc-icon-button.tb-mat-40 {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.tb-primary-toolbar .mat-mdc-icon-button,
+.mat-toolbar.mat-mdc-table-toolbar .mat-mdc-icon-button,
+.tb-entity-table .mat-mdc-icon-button {
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0 !important;
+  --mdc-icon-button-state-layer-size: 40px;
+  --mat-icon-button-state-layer-size: 40px;
+  border: 1px solid transparent; /* reserve border width so dark border-color doesn't shift */
+  box-sizing: border-box;
+}
+/* Dark must NOT shrink state-layer — keep 40px identical to light */
+.tb-dark .mat-mdc-icon-button:not(.tb-theme-toggle),
+.cdk-overlay-container.tb-dark .mat-mdc-icon-button:not(.tb-theme-toggle) {
+  --mdc-icon-button-state-layer-size: 40px;
+  --mat-icon-button-state-layer-size: 40px;
+}
+/* Hover/active must not change box size — use inset shadow, not border width */
+.mat-mdc-icon-button:hover,
+.mat-mdc-icon-button:active {
+  border-color: transparent;
+}
+/* Sidebar width locked — border-box so 1px border doesn't add to 250px */
+mat-sidenav.tb-site-sidenav,
+mat-sidenav-container mat-sidenav.tb-site-sidenav {
+  box-sizing: border-box;
+}
+/* Reserve border so filter/popover panels don't grow 1px in dark */
+.tb-filter-panel,
+.tb-entity-filter,
+.tb-popover-inner {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tb-theme-toggle, .tb-theme-toggle .tb-toggle-thumb, .tb-theme-toggle .tb-toggle-icon {
+    transition: none !important;
+  }
 }
 
 /***************
