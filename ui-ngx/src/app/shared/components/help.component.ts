@@ -15,7 +15,7 @@
 ///
 
 import { Component, Input } from '@angular/core';
-import { HelpLinks } from '@shared/models/constants';
+import { HELP_PAGE_URL } from '@shared/models/constants';
 
 @Component({
     selector: '[tb-help]',
@@ -27,14 +27,10 @@ export class HelpComponent {
   @Input('tb-help') helpLinkId: string;
 
   gotoHelpPage(): void {
-    let helpUrl = HelpLinks.linksMap[this.helpLinkId];
-    if (!helpUrl && this.helpLinkId &&
-      (this.helpLinkId.startsWith('http://') || this.helpLinkId.startsWith('https://'))) {
-      helpUrl = this.helpLinkId;
-    }
-    if (helpUrl) {
-      window.open(helpUrl, '_blank');
-    }
+    // Centralized Help page navigation - always open the exact base URL in a new tab
+    // Do not append current route, path, query or hash. Leave current page unchanged.
+    // HELP_PAGE_URL is the single source of truth (defined in @shared/models/constants)
+    window.open(HELP_PAGE_URL, '_blank');
   }
 
 }
