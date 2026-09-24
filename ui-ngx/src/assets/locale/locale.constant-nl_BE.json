@@ -4531,7 +4531,7 @@
         "invalid-target-rulechain": "Kan doelregelketen niet oplossen!",
         "test-script-function": "Test script functie",
         "script-lang-java-script": "Java-schrift",
-        "script-lang-tbel": "TBEL",
+        "script-lang-tbel": "NovaEL",
         "message": "Bericht",
         "message-type": "Soort bericht",
         "select-message-type": "Selecteer berichttype",

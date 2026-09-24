@@ -4508,7 +4508,7 @@
         "invalid-target-rulechain": "Nie można rozwiązać docelowego łańcucha reguł!",
         "test-script-function": "Funkcja skryptu testowego",
         "script-lang-java-script": "Java Script",
-        "script-lang-tbel": "TBEL",
+        "script-lang-tbel": "NovaEL",
         "message": "Wiadomość",
         "message-type": "Typ wiadomości",
         "select-message-type": "Wybierz typ wiadomości",

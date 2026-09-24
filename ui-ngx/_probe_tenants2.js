@@ -52,9 +52,9 @@ const sleep = ms => new Promise(r=>setTimeout(r,ms));
     };
   });
   console.log('LIGHT', JSON.stringify(light, null, 2));
-  // switch to dark
+  // switch to dark (storage key is NovaEdge 'ne-dark-mode'; theme classes are Material '.tb-default'/'.tb-dark' from theme.scss)
   await page.evaluate(()=>{
-    localStorage.setItem('tb-dark-mode','true');
+    localStorage.setItem('ne-dark-mode','true');
     document.body.classList.remove('tb-default');
     document.body.classList.add('tb-dark');
     const o=document.querySelector('.cdk-overlay-container');
@@ -93,7 +93,7 @@ const sleep = ms => new Promise(r=>setTimeout(r,ms));
   console.log('DARK', JSON.stringify(dark, null, 2));
   // switch back to light to confirm not destroyed
   await page.evaluate(()=>{
-    localStorage.setItem('tb-dark-mode','false');
+    localStorage.setItem('ne-dark-mode','false');
     document.body.classList.remove('tb-dark');
     document.body.classList.add('tb-default');
     const o=document.querySelector('.cdk-overlay-container');

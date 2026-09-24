@@ -204,6 +204,9 @@ export function registerNovaEdgeDarkTheme(ace: any): void {
 
 export function isDarkMode(): boolean {
   if (typeof document === 'undefined') return false;
+  // Must match HomeComponent.applyTheme(), which toggles the Material
+  // `.tb-dark` class (defined in theme.scss). Do NOT check `ne-dark` — no
+  // such rule exists, so the ACE theme would desync from the app theme.
   return document.body.classList.contains('tb-dark');
 }
 

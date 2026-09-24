@@ -46,6 +46,47 @@ import { FormBuilder } from '@angular/forms';
 import { ActionPreferencesPutUserSettings } from '@core/auth/auth.actions';
 import { HomeService } from '@core/services/home.service';
 
+// NovaEdge dark-mode preference. Stored as a plain 'true'/'false' string via
+// direct localStorage access (NOT via LocalStorageService, which JSON-encodes
+// and prefixes keys with 'NE-'). Upstream ThingsBoard used 'tb-dark-mode';
+// NovaEdge uses 'ne-dark-mode'. The legacy key is only consulted once for
+// migration and is never the source of truth afterwards.
+const DARK_MODE_KEY = 'ne-dark-mode';
+const LEGACY_DARK_MODE_KEY = 'tb-dark-mode';
+
+function readDarkModePreference(): boolean {
+  try {
+    const current = localStorage.getItem(DARK_MODE_KEY);
+    if (current !== null) {
+      // Canonical key wins; drop any stale legacy key so only one source remains.
+      try {
+        if (localStorage.getItem(LEGACY_DARK_MODE_KEY) !== null) {
+          localStorage.removeItem(LEGACY_DARK_MODE_KEY);
+        }
+      } catch {
+        // ignore cleanup errors
+      }
+      return current === 'true';
+    }
+    // One-time migration from upstream key; then canonicalize to the new key
+    // so there are never two conflicting sources.
+    const legacy = localStorage.getItem(LEGACY_DARK_MODE_KEY);
+    if (legacy !== null) {
+      const migrated = legacy === 'true';
+      try {
+        localStorage.setItem(DARK_MODE_KEY, migrated ? 'true' : 'false');
+        localStorage.removeItem(LEGACY_DARK_MODE_KEY);
+      } catch {
+        // ignore quota / privacy-mode errors; caller still gets correct value
+      }
+      return migrated;
+    }
+  } catch {
+    // localStorage unavailable (e.g. privacy mode) -> fall back to light mode
+  }
+  return false;
+}
+
 @Component({
     selector: 'tb-home',
     templateUrl: './home.component.html',
@@ -101,7 +142,7 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
 
   ngOnInit() {
 
-    const savedDarkMode = localStorage.getItem('tb-dark-mode') === 'true';
+    const savedDarkMode = readDarkModePreference();
     this.darkMode.set(savedDarkMode);
     this.applyTheme(savedDarkMode);
 
@@ -175,15 +216,18 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   toggleTheme() {
     const dark = !this.darkMode();
     this.darkMode.set(dark);
-    localStorage.setItem('tb-dark-mode', dark ? 'true' : 'false');
+    localStorage.setItem(DARK_MODE_KEY, dark ? 'true' : 'false');
     this.applyTheme(dark);
   }
 
   private applyTheme(dark: boolean) {
     const body = this.window.document.body;
-    // Tailwind is configured with important: ".tb-default" so utilities are scoped to .tb-default.
+    // Material + Tailwind theme is scoped to ".tb-default" (see tailwind.config.js
+    // `important: ".tb-default"` and theme.scss `.tb-default` / `.tb-dark`).
     // Keep tb-default always so layout utilities (flex, etc) continue to work in dark mode,
     // and toggle tb-dark as an additional theme layer.
+    // NOTE: do NOT rename these to ne-* — no `.ne-default`/`.ne-dark` rules exist,
+    // so doing so silently disables the dark theme even when storage says true.
     this.renderer.addClass(body, 'tb-default');
     if (dark) {
       this.renderer.addClass(body, 'tb-dark');
