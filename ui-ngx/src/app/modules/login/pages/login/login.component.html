@@ -1,4 +1,4 @@
-<!-- Nova Edge Premium Login - Preserves ThingsBoard auth logic -->
+<!-- NovaEdge Premium Login - Preserves auth logic (visual branding only) -->
 <div class="ne-login-page tb-dark">
   <!-- Ambient background -->
   <div class="ne-login-bg" aria-hidden="true">
@@ -77,12 +77,8 @@
     <div class="ne-glow ne-glow--card"></div>
   </div>
 
-  <!-- Upper-left Nova Edge logo -->
-  <div class="ne-header-logo" aria-label="Nova Edge">
-    <div class="ne-header-mark">
-      <span class="ne-hex"></span>
-      <span class="ne-hex ne-hex--small"></span>
-    </div>
+  <!-- Upper-left subtle brand mark (text only, card holds primary logo) -->
+  <div class="ne-header-logo" aria-label="NovaEdge">
     <div class="ne-header-text">
       <span class="ne-header-title">NOVA EDGE</span>
       <span class="ne-header-subtitle">Swatch360</span>
@@ -93,15 +89,12 @@
   <mat-card appearance="raised" class="ne-login-card">
     <mat-card-content class="!p-0">
       <form class="ne-login-form flex flex-col" [formGroup]="loginFormGroup" (ngSubmit)="login()">
-        <!-- Card header -->
+        <!-- Card header - primary NovaEdge brand (native transparent logo, no container) -->
         <div class="ne-card-brand">
-          <div class="ne-card-mark">
-            <span class="ne-card-hex"></span>
-          </div>
-          <span class="ne-card-brand-text">NOVA EDGE</span>
+          <img class="ne-card-logo-img" src="assets/logo_title_white.png" alt="NovaEdge" />
         </div>
         <h1 class="ne-welcome">Welcome back!</h1>
-        <p class="ne-subtitle">Sign in to continue to your Swatch360 account</p>
+        <p class="ne-subtitle">Sign in to continue to your NovaEdge account</p>
 
         @if (isLoading || (isLoading$ | async)) {
           <mat-progress-bar color="warn" mode="indeterminate" class="ne-progress"></mat-progress-bar>
