@@ -1,100 +1,88 @@
-<!-- NovaEdge Premium Login - Preserves auth logic (visual branding only) -->
+<!-- ============================================================
+     NovaEdge / Swatch360 — Premium Enterprise IoT Login
+     Visual redesign only. All authentication bindings, form
+     controls, validation, routing and i18n keys are preserved.
+     ============================================================ -->
 <div class="ne-login-page tb-dark">
-  <!-- Ambient background -->
+  <!-- ================= Ambient background ================= -->
   <div class="ne-login-bg" aria-hidden="true">
-    <!-- Subtle glowing orange network lines -->
-    <svg class="ne-network-lines" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" stroke="#E87918" stroke-opacity="0.08" stroke-width="0.7">
-        <path d="M0 120 L220 120 L260 160 L400 160" />
-        <path d="M0 260 L180 260 L220 300 L340 300" />
-        <path d="M0 420 L140 420 L180 460 L300 460" />
-        <path d="M1140 120 L1280 120 L1320 160 L1440 160" />
-        <path d="M1180 260 L1300 260 L1340 300 L1440 300" />
-        <path d="M1200 440 L1320 440 L1360 480 L1440 480" />
-        <path d="M0 700 L140 700 L180 740 L320 740" />
-        <path d="M1100 700 L1240 700 L1280 740 L1440 740" />
+    <!-- Layer 1: technical grid -->
+    <div class="ne-grid"></div>
+
+    <!-- Layer 2: IoT network nodes + constellation links -->
+    <svg class="ne-nodes" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g class="ne-links" fill="none" stroke-width="1" stroke-linecap="round">
+        <path d="M84 186 L238 118 L372 208" />
+        <path d="M238 118 L296 64" />
+        <path d="M1054 132 L1226 200 L1352 118" />
+        <path d="M1226 200 L1288 296" />
+        <path d="M96 628 L246 738 L412 690" />
+        <path d="M1008 742 L1188 660 L1330 762" />
+        <path d="M372 208 L412 690" />
+        <path d="M64 470 L84 186" />
+        <path d="M1352 118 L1386 470" />
+        <path d="M64 470 L96 628" />
+        <path d="M1386 470 L1330 762" />
       </g>
-      <g fill="#E87918">
-        <circle cx="260" cy="160" r="2.2" opacity="0.35" />
-        <circle cx="220" cy="300" r="1.8" opacity="0.28" />
-        <circle cx="180" cy="460" r="2" opacity="0.30" />
-        <circle cx="1320" cy="160" r="2" opacity="0.30" />
-        <circle cx="1340" cy="300" r="1.8" opacity="0.27" />
-        <circle cx="1360" cy="480" r="2" opacity="0.32" />
-        <circle cx="180" cy="740" r="1.8" opacity="0.28" />
-        <circle cx="1280" cy="740" r="2" opacity="0.30" />
+      <g class="ne-dots">
+        <circle cx="84" cy="186" r="3" />
+        <circle cx="238" cy="118" r="4.5" />
+        <circle cx="296" cy="64" r="2.5" />
+        <circle cx="372" cy="208" r="3" />
+        <circle cx="412" cy="690" r="3.5" />
+        <circle cx="1054" cy="132" r="3" />
+        <circle cx="1226" cy="200" r="4.5" />
+        <circle cx="1288" cy="296" r="2.5" />
+        <circle cx="1352" cy="118" r="3" />
+        <circle cx="1008" cy="742" r="3.5" />
+        <circle cx="1188" cy="660" r="3" />
+        <circle cx="1330" cy="762" r="3.5" />
+        <circle cx="96" cy="628" r="3" />
+        <circle cx="246" cy="738" r="4" />
+        <circle cx="64" cy="470" r="2.5" />
+        <circle cx="1386" cy="470" r="2.5" />
+      </g>
+      <g class="ne-hexes" fill="none" stroke-width="1">
+        <path d="M1180 480 l26 15 v30 l-26 15 l-26 -15 v-30 Z" />
+        <path d="M1240 540 l18 10.4 v20.8 l-18 10.4 l-18 -10.4 v-20.8 Z" />
+        <path d="M210 420 l20 11.5 v23 l-20 11.5 l-20 -11.5 v-23 Z" />
       </g>
     </svg>
 
-    <!-- Dotted world map -->
-    <div class="ne-world-map">
-      <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" class="ne-world-svg">
-        <defs>
-          <pattern id="ne-dots" x="0" y="0" width="7" height="7" patternUnits="userSpaceOnUse">
-            <circle cx="3.5" cy="3.5" r="1.05" fill="#E87918" />
-          </pattern>
-          <radialGradient id="ne-map-fade" cx="50%" cy="50%" r="70%">
-            <stop offset="55%" stop-color="white" stop-opacity="1" />
-            <stop offset="100%" stop-color="white" stop-opacity="0" />
-          </radialGradient>
-          <mask id="ne-map-mask">
-            <rect width="1000" height="500" fill="url(#ne-map-fade)" />
-          </mask>
-        </defs>
-        <!-- Dotted continents (filled with pattern) -->
-        <g mask="url(#ne-map-mask)" opacity="0.38">
-          <!-- North America -->
-          <path d="M110 95 L175 78 L205 88 L225 125 L215 165 L175 175 L135 155 L105 120 Z" fill="url(#ne-dots)" />
-          <!-- South America -->
-          <path d="M195 190 L235 200 L245 260 L225 310 L195 315 L175 260 L180 210 Z" fill="url(#ne-dots)" />
-          <!-- Greenland -->
-          <path d="M280 55 L310 50 L315 75 L285 80 Z" fill="url(#ne-dots)" opacity="0.7" />
-          <!-- Africa -->
-          <path d="M385 135 L425 125 L445 165 L440 230 L420 265 L385 255 L365 190 L375 145 Z" fill="url(#ne-dots)" />
-          <!-- Europe -->
-          <path d="M385 95 L445 85 L465 115 L445 145 L405 140 L380 115 Z" fill="url(#ne-dots)" />
-          <!-- Asia -->
-          <path d="M465 75 L585 65 L645 95 L665 145 L620 190 L540 175 L485 135 L460 105 Z" fill="url(#ne-dots)" />
-          <path d="M580 195 L610 185 L625 210 L595 225 Z" fill="url(#ne-dots)" opacity="0.85" />
-          <!-- Australia -->
-          <path d="M625 305 L675 295 L695 315 L685 345 L635 350 L615 325 Z" fill="url(#ne-dots)" />
-        </g>
-        <!-- Fine circuit hex patterns at edges -->
-        <g stroke="#E87918" stroke-opacity="0.10" fill="none" stroke-width="0.6">
-          <path d="M40 40 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
-          <path d="M70 70 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
-          <path d="M960 40 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
-          <path d="M930 70 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
-          <path d="M40 430 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
-          <path d="M960 430 l10 6 l0 12 l-10 6 l-10 -6 l0 -12 Z" />
-        </g>
-      </svg>
-    </div>
+    <!-- Layer 3: fine dust grid -->
+    <div class="ne-dust"></div>
 
-    <!-- Soft ambient glows -->
-    <div class="ne-glow ne-glow--top"></div>
-    <div class="ne-glow ne-glow--bottom"></div>
+    <!-- Layer 4: ambient light -->
     <div class="ne-glow ne-glow--card"></div>
+    <div class="ne-glow ne-glow--left"></div>
+    <div class="ne-glow ne-glow--right"></div>
+    <div class="ne-vignette"></div>
   </div>
 
-  <!-- Upper-left subtle brand mark (text only, card holds primary logo) -->
-  <div class="ne-header-logo" aria-label="NovaEdge">
-    <div class="ne-header-text">
-      <span class="ne-header-title">NOVA EDGE</span>
-      <span class="ne-header-subtitle">Swatch360</span>
+  <!-- Option B: subtle top-left global wordmark (card logo stays dominant) -->
+  <div class="ne-topbar">
+    <div class="ne-topbar-mark" aria-label="NovaEdge">
+      <svg class="ne-topbar-hex" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.6 20.2 7.3 v9.4 L12 21.4 3.8 16.7 V7.3 Z" fill="none" stroke="currentColor" stroke-width="1.6" />
+        <path d="M12 7.1 l4.4 2.5 v5 L12 17.2 7.6 14.6 v-5 Z" fill="currentColor" opacity="0.55" />
+      </svg>
+      <span class="ne-topbar-name">NOVA EDGE</span>
+      <span class="ne-topbar-sep"></span>
+      <span class="ne-topbar-product">Swatch360</span>
     </div>
   </div>
 
-  <!-- Centered login card -->
+  <!-- ================= Centered login card ================= -->
   <mat-card appearance="raised" class="ne-login-card">
     <mat-card-content class="!p-0">
-      <form class="ne-login-form flex flex-col" [formGroup]="loginFormGroup" (ngSubmit)="login()">
-        <!-- Card header - primary NovaEdge brand (native transparent logo, no container) -->
-        <div class="ne-card-brand">
-          <img class="ne-card-logo-img" src="assets/logo_title_white.png" alt="NovaEdge" />
+      <form class="ne-login-form" [formGroup]="loginFormGroup" (ngSubmit)="login()">
+        <!-- Primary brand: large, no box, no badge, no container -->
+        <div class="ne-brand">
+          <img class="ne-brand-logo" src="assets/logo_title_dark_bg.png" alt="NovaEdge — Swatch360" />
         </div>
-        <h1 class="ne-welcome">Welcome back!</h1>
-        <p class="ne-subtitle">Sign in to continue to your NovaEdge account</p>
+
+        <h1 class="ne-title">Welcome back!</h1>
+        <p class="ne-subtitle">Sign in to continue to your <span class="ne-strong">NovaEdge</span> account</p>
 
         @if (isLoading || (isLoading$ | async)) {
           <mat-progress-bar color="warn" mode="indeterminate" class="ne-progress"></mat-progress-bar>
@@ -103,16 +91,13 @@
         }
         <span tb-toast class="ne-toast"></span>
 
-        <!-- Fields - preserve existing ids / formControls / validation -->
-        <div class="ne-fields flex flex-col">
+        <div class="ne-fields">
           <mat-form-field class="ne-field tb-autofilled" appearance="outline" hideRequiredMarker>
             <mat-label>Username</mat-label>
             <input id="username-input" matInput type="email" autofocus formControlName="username" autocomplete="email" placeholder="Enter your email" />
             <mat-icon matPrefix class="ne-field-icon">mail</mat-icon>
             @if (loginFormGroup.get('username').invalid) {
-              <mat-error>
-                {{ 'login.invalid-email-format' | translate }}
-              </mat-error>
+              <mat-error>{{ 'login.invalid-email-format' | translate }}</mat-error>
             }
           </mat-form-field>
 
@@ -124,7 +109,6 @@
           </mat-form-field>
 
           <div class="ne-row">
-            <!-- <mat-checkbox color="primary" class="ne-remember">Remember me</mat-checkbox> -->
             <button class="ne-forgot" mat-button type="button" routerLink="/login/resetPasswordRequest">
               {{ (passwordViolation ? 'login.reset-password' : 'login.forgot-password') | translate }}
             </button>
@@ -136,7 +120,11 @@
         </div>
       </form>
 
-      <div class="ne-card-footer">© 2026 Nova Edge. All rights reserved.</div>
+      <div class="ne-card-footer">
+        <span class="ne-footer-rule"></span>
+        <span>© 2026 Nova Edge. All rights reserved.</span>
+        <span class="ne-footer-rule"></span>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>
