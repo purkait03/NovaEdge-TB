@@ -87,7 +87,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "rgb(255, 255, 255)",
+                    "backgroundColor": "rgb(255, 248, 207)",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "8px",
                     "settings": {
@@ -415,7 +415,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -556,7 +556,7 @@
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
                         "tooltipHideZeroValues": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -570,10 +570,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -890,7 +890,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -1031,7 +1031,7 @@
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
                         "tooltipHideZeroValues": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -1045,10 +1045,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -1242,7 +1242,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -1382,7 +1382,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -1396,10 +1396,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -1596,7 +1596,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -1736,7 +1736,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -1750,10 +1750,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -1985,7 +1985,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -2125,7 +2125,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -2139,10 +2139,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -2390,7 +2390,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -2530,7 +2530,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -2544,10 +2544,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -2752,7 +2752,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -2892,7 +2892,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -2906,10 +2906,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -3117,7 +3117,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -3257,7 +3257,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -3271,10 +3271,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -3479,7 +3479,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -3619,7 +3619,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -3633,10 +3633,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -3804,7 +3804,7 @@
                                             },
                                             "pointLabelColor": "rgba(0, 0, 0, 0.76)",
                                             "enablePointLabelBackground": false,
-                                            "pointLabelBackground": "rgba(255,255,255,0.56)",
+                                            "pointLabelBackground": "rgba(255, 248, 207, 0.56)",
                                             "pointShape": "emptyCircle",
                                             "pointSize": 4,
                                             "fillAreaSettings": {
@@ -3832,7 +3832,7 @@
                                             },
                                             "labelColor": "rgba(0, 0, 0, 0.76)",
                                             "enableLabelBackground": false,
-                                            "labelBackground": "rgba(255,255,255,0.56)",
+                                            "labelBackground": "rgba(255, 248, 207, 0.56)",
                                             "backgroundSettings": {
                                                 "type": "none",
                                                 "opacity": 0.4,
@@ -3895,7 +3895,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -4035,7 +4035,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -4049,10 +4049,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -4220,7 +4220,7 @@
                                             },
                                             "pointLabelColor": "rgba(0, 0, 0, 0.76)",
                                             "enablePointLabelBackground": false,
-                                            "pointLabelBackground": "rgba(255,255,255,0.56)",
+                                            "pointLabelBackground": "rgba(255, 248, 207, 0.56)",
                                             "pointShape": "emptyCircle",
                                             "pointSize": 4,
                                             "fillAreaSettings": {
@@ -4248,7 +4248,7 @@
                                             },
                                             "labelColor": "rgba(0, 0, 0, 0.76)",
                                             "enableLabelBackground": false,
-                                            "labelBackground": "rgba(255,255,255,0.56)",
+                                            "labelBackground": "rgba(255, 248, 207, 0.56)",
                                             "backgroundSettings": {
                                                 "type": "none",
                                                 "opacity": 0.4,
@@ -4301,7 +4301,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -4441,7 +4441,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -4455,10 +4455,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -4646,7 +4646,7 @@
                                             },
                                             "pointLabelColor": "rgba(0, 0, 0, 0.76)",
                                             "enablePointLabelBackground": false,
-                                            "pointLabelBackground": "rgba(255,255,255,0.56)",
+                                            "pointLabelBackground": "rgba(255, 248, 207, 0.56)",
                                             "pointShape": "emptyCircle",
                                             "pointSize": 4,
                                             "fillAreaSettings": {
@@ -4674,7 +4674,7 @@
                                             },
                                             "labelColor": "rgba(0, 0, 0, 0.76)",
                                             "enableLabelBackground": false,
-                                            "labelBackground": "rgba(255,255,255,0.56)",
+                                            "labelBackground": "rgba(255, 248, 207, 0.56)",
                                             "backgroundSettings": {
                                                 "type": "none",
                                                 "opacity": 0.4,
@@ -4737,7 +4737,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -4877,7 +4877,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -4891,10 +4891,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -5110,7 +5110,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -5250,7 +5250,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -5264,10 +5264,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -5472,7 +5472,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -5612,7 +5612,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -5626,10 +5626,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -5839,7 +5839,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -5979,7 +5979,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -5993,10 +5993,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -6192,7 +6192,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -6332,7 +6332,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -6346,10 +6346,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -6554,7 +6554,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -6694,7 +6694,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -6708,10 +6708,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -6921,7 +6921,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -7061,7 +7061,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -7075,10 +7075,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -7283,7 +7283,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -7423,7 +7423,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -7437,10 +7437,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -7655,7 +7655,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -7795,7 +7795,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -7809,10 +7809,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -8008,7 +8008,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -8148,7 +8148,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -8162,10 +8162,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -8370,7 +8370,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -8510,7 +8510,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -8524,10 +8524,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -8742,7 +8742,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -8882,7 +8882,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -8896,10 +8896,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -9095,7 +9095,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -9235,7 +9235,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -9249,10 +9249,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -9457,7 +9457,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -9597,7 +9597,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -9611,10 +9611,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -9824,7 +9824,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -9964,7 +9964,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -9978,10 +9978,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -10177,7 +10177,7 @@
                         }
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -10317,7 +10317,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -10331,10 +10331,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -10539,7 +10539,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -10679,7 +10679,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -10693,10 +10693,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -10906,7 +10906,7 @@
                         "timezone": null
                     },
                     "showTitle": true,
-                    "backgroundColor": "#FFFFFF",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
@@ -11046,7 +11046,7 @@
                         },
                         "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
                         "tooltipDateInterval": true,
-                        "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+                        "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
                         "tooltipBackgroundBlur": 4,
                         "animation": {
                             "animation": true,
@@ -11060,10 +11060,10 @@
                         },
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },
@@ -11202,7 +11202,7 @@
                         }
                     ],
                     "showTitle": true,
-                    "backgroundColor": "#fff",
+                    "backgroundColor": "#FFF8CF",
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0",
                     "settings": {
@@ -11437,10 +11437,10 @@
                         "targetDashboardState": "default",
                         "background": {
                             "type": "color",
-                            "color": "#fff",
+                            "color": "#FFF8CF",
                             "overlay": {
                                 "enabled": false,
-                                "color": "rgba(255,255,255,0.72)",
+                                "color": "rgba(255, 248, 207, 0.72)",
                                 "blur": 3
                             }
                         },

@@ -42,16 +42,16 @@
 </g>
 <defs>
 <clipPath id="clip0_18368_189992">
-<rect width="50" height="50" fill="white" transform="translate(0 216.028) scale(1.00075) rotate(-30)"/>
+<rect width="50" height="50" fill="#FFF8CF" transform="translate(0 216.028) scale(1.00075) rotate(-30)"/>
 </clipPath>
 <clipPath id="clip1_18368_189992">
-<rect width="50" height="50" fill="white" transform="translate(54.054 82.8782) scale(1.00075) rotate(-15)"/>
+<rect width="50" height="50" fill="#FFF8CF" transform="translate(54.054 82.8782) scale(1.00075) rotate(-15)"/>
 </clipPath>
 <clipPath id="clip2_18368_189992">
-<rect width="50" height="50" fill="white" transform="translate(887.613 69.9311) scale(1.00075) rotate(15)"/>
+<rect width="50" height="50" fill="#FFF8CF" transform="translate(887.613 69.9311) scale(1.00075) rotate(15)"/>
 </clipPath>
 <clipPath id="clip3_18368_189992">
-<rect width="50" height="50" fill="white" transform="translate(946.667 191.01) scale(1.00075) rotate(30)"/>
+<rect width="50" height="50" fill="#FFF8CF" transform="translate(946.667 191.01) scale(1.00075) rotate(30)"/>
 </clipPath>
 </defs>
 </svg>

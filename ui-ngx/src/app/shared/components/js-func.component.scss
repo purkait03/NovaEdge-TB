@@ -47,6 +47,24 @@
     }
   }
 
+:host-context(.tb-dark) {
+  .tb-js-func-panel {
+    border-color: var(--tb-border-color);
+    background: var(--tb-surface);
+  }
+  .tb-js-func-toolbar button.mat-mdc-button-base {
+    background: var(--tb-surface-raised);
+    color: var(--tb-text-secondary);
+    border: 1px solid var(--tb-border-color);
+    &:not(.tb-help-popup-button) {
+      color: var(--tb-text-secondary);
+    }
+  }
+  .tb-help-popup-button-loading {
+    background: var(--tb-surface-raised);
+  }
+}
+
   &:not(.tb-fullscreen) {
     &.tb-hide-brackets {
       padding-bottom: 15px;

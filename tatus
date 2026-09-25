@@ -1,0 +1,10 @@
+b854f37 | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | Refactor branding and visual elements in login component for consistency
+8ae53a4 | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | Update localization files to replace "TBEL" with "NovaEL" across multiple languages
+4207e3a | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | centralize Help Page URL for consistent navigation across the application
+d90561f | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | Mordernize the toggle button
+ca76d77 | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | Remove tb finger print and remember me feture
+0d8fdac | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | Refactor code structure for improved readability and maintainability
+5db396e | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | feat: enhance dark theme support across dialog and content components with updated styles
+8ea0d75 | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | feat: update popover styles for dark theme support and add modern design tokens
+28a819f | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | feat: implement IoT loading component with dark theme support and global overlay styles
+d87e27a | author: SovanPradhan-dev <sovanpradhan1000@gmail.com> | committer: SovanPradhan-dev <sovanpradhan1000@gmail.com> | feat: implement IoT loading component with dark theme support and global overlay styles

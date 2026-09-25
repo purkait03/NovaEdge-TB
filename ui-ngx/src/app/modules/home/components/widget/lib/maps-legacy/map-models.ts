@@ -282,7 +282,7 @@ export const defaultTripAnimationCommonSettings: TripAnimationCommonSettings = {
   latKeyName: 'latitude',
   lngKeyName: 'longitude',
   showTooltip: true,
-  tooltipColor: '#fff',
+  tooltipColor: '#FFF8CF',
   tooltipFontColor: '#000',
   tooltipOpacity: 1,
   useTooltipFunction: false,

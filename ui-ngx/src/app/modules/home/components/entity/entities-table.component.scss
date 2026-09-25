@@ -28,13 +28,13 @@
     .tb-entity-table-content {
       width: 100%;
       height: 100%;
-      background: #fff;
+      background: var(--tb-surface);
       overflow: hidden;
 
       &.tb-outlined-border {
-        box-shadow: 0 0 0 0 rgb(0 0 0 / 20%), 0 0 0 0 rgb(0 0 0 / 14%), 0 0 0 0 rgb(0 0 0 / 12%);
-        border: solid 1px #e0e0e0;
-        border-radius: 4px;
+        box-shadow: var(--tb-shadow-sm);
+        border: 1px solid var(--tb-border-color);
+        border-radius: var(--tb-radius-md);
       }
 
       .mat-toolbar-tools{

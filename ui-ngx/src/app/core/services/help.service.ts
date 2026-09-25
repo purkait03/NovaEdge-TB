@@ -19,7 +19,7 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable, of } from 'rxjs';
 import { catchError, map, mergeMap, tap } from 'rxjs/operators';
-import { docPlatformPrefix, helpBaseUrl as siteBaseUrl } from '@shared/models/constants';
+import { docPlatformPrefix, helpBaseUrl as siteBaseUrl, HELP_PAGE_URL } from '@shared/models/constants';
 import { UiSettingsService } from '@core/http/ui-settings.service';
 
 const localHelpBaseUrl = '/assets';
@@ -37,6 +37,20 @@ export class HelpService {
   private siteBaseUrl = siteBaseUrl;
   private docPlatformPrefix = docPlatformPrefix;
   private helpCache: {[lang: string]: {[key: string]: string}} = {};
+
+  /**
+   * Centralized Help Page URL - single source of truth for 'Go to help page' action.
+   * All Help (?) buttons across the application open this exact base URL in a new tab
+   * without appended path, query, hash or current route.
+   * Edit HELP_PAGE_URL in @shared/models/constants to change destination globally.
+   */
+  getHelpPageUrl(): string {
+    return HELP_PAGE_URL;
+  }
+
+  openHelpPage(): void {
+    window.open(HELP_PAGE_URL, '_blank');
+  }
 
   constructor(
     private translate: TranslateService,

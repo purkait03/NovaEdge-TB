@@ -1,0 +1,22 @@
+﻿const puppeteer = require('puppeteer-core');
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
+(async () => {
+  const browser = await puppeteer.launch({ headless: true, executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", args:['--no-sandbox'] });
+  const page = await browser.newPage();
+  await page.setViewport({width:1440,height:900});
+  await page.goto('http://localhost:4200/', {waitUntil:'domcontentloaded', timeout:60000});
+  await page.waitForSelector('#username-input', {timeout:60000});
+  await page.type('#username-input', 'tenant@thingsboard.org');
+  await page.type('#password-input', 'tenant');
+  await page.click('button[type=submit]');
+  await page.waitForFunction(()=>!location.href.includes('/login'), {timeout:60000});
+  await sleep(3000);
+  await page.evaluate(()=>{ history.pushState({},'', '/customers'); location.reload(); });
+  await sleep(10000);
+  await page.screenshot({path:'C:\\Users\\USER\\AppData\\Local\\Temp\\opencode\\customers_light.png'});
+  await page.evaluate(()=>{ document.body.classList.remove('tb-default'); document.body.classList.add('tb-dark'); });
+  await sleep(1500);
+  await page.screenshot({path:'C:\\Users\\USER\\AppData\\Local\\Temp\\opencode\\customers_dark.png'});
+  console.log('screenshots saved');
+  await browser.close();
+})().catch(e=>{console.error('FATAL',e);process.exit(1)});

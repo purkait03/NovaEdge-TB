@@ -73,7 +73,7 @@ $error-height: 14px !default;
 
         box-shadow: 0 0 0 8px rgba(0, 0, 0, .1),
         0 0 3px 1px rgba(0, 0, 0, .1),
-        inset 0 8px 3px -8px rgba(255, 255, 255, .4);
+        inset 0 8px 3px -8px rgba(255, 248, 207, .4);
 
         input {
           display: none;
@@ -118,8 +118,8 @@ $error-height: 14px !default;
           box-shadow: inset 8px 6px 5px -7px #a2a2a2,
           inset -8px 6px 5px -7px #a2a2a2,
           inset 0 -3px 2px -2px rgba(200, 200, 200, .5),
-          0 3px 3px -2px #fff,
-          inset 0 -230px 60px -200px rgba(255, 255, 255, .2),
+          0 3px 3px -2px #FFF8CF,
+          inset 0 -230px 60px -200px rgba(255, 248, 207, .2),
           inset 0 220px 40px -200px rgba(0, 0, 0, .3);
 
           transition: all .2s;
@@ -180,7 +180,7 @@ $error-height: 14px !default;
         input:checked + .back {
           padding: 2px 4px;
 
-          background-image: linear-gradient(0deg, #868686 30%, transparent 70%), linear-gradient(90deg, rgba(115, 115, 115, 0) 0%, rgba(255, 255, 255, .74) 50%, rgba(105, 105, 105, 0) 100%);
+          background-image: linear-gradient(0deg, #868686 30%, transparent 70%), linear-gradient(90deg, rgba(115, 115, 115, 0) 0%, rgba(255, 248, 207, .74) 50%, rgba(105, 105, 105, 0) 100%);
 
           box-shadow: 30px 30px 30px -20px rgba(49, 49, 49, .1),
           -30px 30px 30px -20px rgba(111, 111, 111, .1),

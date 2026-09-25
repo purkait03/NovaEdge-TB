@@ -33,7 +33,7 @@ const METRIC: TbMeasureUnits<TemperatureMetricUnits> = {
     },
     K: {
       name: 'unit.kelvin',
-      tags: ['heat', 'cold', 'warmth', 'degrees', 'color quality', 'white balance', 'color temperature'],
+      tags: ['heat', 'cold', 'warmth', 'degrees', 'color quality', '#FFF8CF balance', 'color temperature'],
       to_anchor: 1,
       anchor_shift: 273.15,
     },

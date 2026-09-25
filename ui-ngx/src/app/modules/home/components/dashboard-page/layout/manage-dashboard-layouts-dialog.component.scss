@@ -73,7 +73,7 @@ $tb-warn: mat.m2-get-color-from-palette(map-get($tb-theme, warn), text);
           width: 20px;
           height: 20px;
           line-height: 20px;
-          color: rgba(255, 255, 255, 0.76);
+          color: rgba(255, 248, 207, 0.76);
 
           &:hover {
             transform: rotate(180deg);
@@ -104,7 +104,7 @@ $tb-warn: mat.m2-get-color-from-palette(map-get($tb-theme, warn), text);
         input {
           border: 1px solid #778899;
           background-color: transparent;
-          color: #ffffff;
+          color: #FFF8CF;
           border-radius: 4px;
           text-align: center;
           outline: none;
@@ -163,7 +163,7 @@ $tb-warn: mat.m2-get-color-from-palette(map-get($tb-theme, warn), text);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #FFFFFF;
+    background: #FFF8CF;
     padding: 8px;
     border: 2px dashed rgba(0, 0, 0, 0.08);
     border-radius: 10px;

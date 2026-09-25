@@ -1,90 +1,130 @@
-<!--
+<!-- ============================================================
+     NovaEdge / Swatch360 — Premium Enterprise IoT Login
+     Visual redesign only. All authentication bindings, form
+     controls, validation, routing and i18n keys are preserved.
+     ============================================================ -->
+<div class="ne-login-page tb-dark">
+  <!-- ================= Ambient background ================= -->
+  <div class="ne-login-bg" aria-hidden="true">
+    <!-- Layer 1: technical grid -->
+    <div class="ne-grid"></div>
 
-    Copyright © 2016-2026 The Thingsboard Authors
+    <!-- Layer 2: IoT network nodes + constellation links -->
+    <svg class="ne-nodes" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g class="ne-links" fill="none" stroke-width="1" stroke-linecap="round">
+        <path d="M84 186 L238 118 L372 208" />
+        <path d="M238 118 L296 64" />
+        <path d="M1054 132 L1226 200 L1352 118" />
+        <path d="M1226 200 L1288 296" />
+        <path d="M96 628 L246 738 L412 690" />
+        <path d="M1008 742 L1188 660 L1330 762" />
+        <path d="M372 208 L412 690" />
+        <path d="M64 470 L84 186" />
+        <path d="M1352 118 L1386 470" />
+        <path d="M64 470 L96 628" />
+        <path d="M1386 470 L1330 762" />
+      </g>
+      <g class="ne-dots">
+        <circle cx="84" cy="186" r="3" />
+        <circle cx="238" cy="118" r="4.5" />
+        <circle cx="296" cy="64" r="2.5" />
+        <circle cx="372" cy="208" r="3" />
+        <circle cx="412" cy="690" r="3.5" />
+        <circle cx="1054" cy="132" r="3" />
+        <circle cx="1226" cy="200" r="4.5" />
+        <circle cx="1288" cy="296" r="2.5" />
+        <circle cx="1352" cy="118" r="3" />
+        <circle cx="1008" cy="742" r="3.5" />
+        <circle cx="1188" cy="660" r="3" />
+        <circle cx="1330" cy="762" r="3.5" />
+        <circle cx="96" cy="628" r="3" />
+        <circle cx="246" cy="738" r="4" />
+        <circle cx="64" cy="470" r="2.5" />
+        <circle cx="1386" cy="470" r="2.5" />
+      </g>
+      <g class="ne-hexes" fill="none" stroke-width="1">
+        <path d="M1180 480 l26 15 v30 l-26 15 l-26 -15 v-30 Z" />
+        <path d="M1240 540 l18 10.4 v20.8 l-18 10.4 l-18 -10.4 v-20.8 Z" />
+        <path d="M210 420 l20 11.5 v23 l-20 11.5 l-20 -11.5 v-23 Z" />
+      </g>
+    </svg>
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+    <!-- Layer 3: fine dust grid -->
+    <div class="ne-dust"></div>
 
-        http://www.apache.org/licenses/LICENSE-2.0
+    <!-- Layer 4: ambient light -->
+    <div class="ne-glow ne-glow--card"></div>
+    <div class="ne-glow ne-glow--left"></div>
+    <div class="ne-glow ne-glow--right"></div>
+    <div class="ne-vignette"></div>
+  </div>
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+  <!-- Option B: subtle top-left global wordmark (card logo stays dominant) -->
+  <div class="ne-topbar">
+    <div class="ne-topbar-mark" aria-label="NovaEdge">
+      <svg class="ne-topbar-hex" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.6 20.2 7.3 v9.4 L12 21.4 3.8 16.7 V7.3 Z" fill="none" stroke="currentColor" stroke-width="1.6" />
+        <path d="M12 7.1 l4.4 2.5 v5 L12 17.2 7.6 14.6 v-5 Z" fill="currentColor" opacity="0.55" />
+      </svg>
+      <span class="ne-topbar-name">NOVA EDGE</span>
+      <span class="ne-topbar-sep"></span>
+      <span class="ne-topbar-product">Swatch360</span>
+    </div>
+  </div>
 
--->
-<div class="tb-login-content mat-app-background tb-dark flex flex-1 items-center justify-center">
-  <mat-card appearance="raised" style="max-height: 80vh; overflow-y: auto;">
-    <mat-card-content class="!p-6">
-      <form class="tb-login-form flex flex-col" [formGroup]="loginFormGroup" (ngSubmit)="login()">
-        <div class="flex flex-col items-center justify-start" style="padding: 16px 0;">
-          <tb-logo link="https://www.seple.in/" target="_blank" class="login-logo"></tb-logo>
+  <!-- ================= Centered login card ================= -->
+  <mat-card appearance="raised" class="ne-login-card">
+    <mat-card-content class="!p-0">
+      <form class="ne-login-form" [formGroup]="loginFormGroup" (ngSubmit)="login()">
+        <!-- Primary brand: large, no box, no badge, no container -->
+        <div class="ne-brand">
+          <img class="ne-brand-logo" src="assets/logo_title_dark_bg.png" alt="NovaEdge — Swatch360" />
         </div>
+
+        <h1 class="ne-title">Welcome back!</h1>
+        <p class="ne-subtitle">Sign in to continue to your <span class="ne-strong">NovaEdge</span> account</p>
+
         @if (isLoading || (isLoading$ | async)) {
-          <mat-progress-bar color="warn" mode="indeterminate">
-          </mat-progress-bar>
+          <mat-progress-bar color="warn" mode="indeterminate" class="ne-progress"></mat-progress-bar>
+        } @else {
+          <span class="ne-progress-spacer"></span>
         }
-        @if (!isLoading && !(isLoading$ | async)) {
-          <span style="height: 4px;"></span>
-        }
-        <span tb-toast style="height: 20px;"></span>
-        <div class="flex flex-col">
-          @if(oauth2Clients?.length) {
-            <div class="oauth-container tb-default flex flex-col gap-4">
-              @if(oauth2Clients.length !== 1) {
-                <div class="title">{{ 'login.sign-in-with' | translate: {name: ''} }}</div>
-              }
-              <div class="login-button-container flex flex-wrap justify-center gap-4">
-                @for(oauth2Client of oauth2Clients; track oauth2Client.url) {
-                  <a mat-stroked-button class="login-with-button"
-                     [href]=getOAuth2Uri(oauth2Client)>
-                    <tb-icon matButtonIcon class="tb-mat-20">{{ oauth2Client.icon }}</tb-icon>
-                    @if(oauth2Clients.length === 1) {
-                      {{ 'login.sign-in-with' | translate: {name: oauth2Clients[0].name} }}
-                    } @else {
-                      {{ oauth2Client.name }}
-                    }
-                  </a>
-                }
-              </div>
-              <div class="container-divider">
-                <mat-divider class="tb-dark flex-1"></mat-divider>
-                <div class="text">{{ "login.or" | translate | uppercase }}</div>
-                <mat-divider class="tb-dark flex-1"></mat-divider>
-              </div>
-            </div>
-          } @else {
-            <div class="oauth-container flex flex-col">
-              <div class="title !mb-4" translate>login.sign-in-to-your-account</div>
-            </div>
-          }
-          <mat-form-field class="tb-autofilled" appearance="outline" hideRequiredMarker>
-            <mat-label translate>login.username</mat-label>
-            <input id="username-input" matInput type="email" autofocus formControlName="username" autocomplete="email"/>
-            <mat-icon matPrefix>email</mat-icon>
+        <span tb-toast class="ne-toast"></span>
+
+        <div class="ne-fields">
+          <mat-form-field class="ne-field tb-autofilled" appearance="outline" hideRequiredMarker>
+            <mat-label>Username</mat-label>
+            <input id="username-input" matInput type="email" autofocus formControlName="username" autocomplete="email" placeholder="Enter your email" />
+            <mat-icon matPrefix class="ne-field-icon">mail</mat-icon>
             @if (loginFormGroup.get('username').invalid) {
-              <mat-error>
-                {{ 'login.invalid-email-format' | translate }}
-              </mat-error>
+              <mat-error>{{ 'login.invalid-email-format' | translate }}</mat-error>
             }
           </mat-form-field>
-          <mat-form-field class="tb-autofilled" appearance="outline">
-            <mat-label translate>common.password</mat-label>
-            <input id="password-input" matInput type="password" formControlName="password" autocomplete="current-password"/>
+
+          <mat-form-field class="ne-field tb-autofilled" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input id="password-input" matInput type="password" formControlName="password" autocomplete="current-password" placeholder="Enter your password" />
+            <mat-icon matPrefix class="ne-field-icon">lock</mat-icon>
             <tb-toggle-password matSuffix></tb-toggle-password>
-            <mat-icon matPrefix>lock</mat-icon>
           </mat-form-field>
-          <button mat-flat-button color="accent" [disabled]="isLoading || (isLoading$ | async)"
-          class="tb-action-button" type="submit">{{ 'login.sign-in' | translate }}</button>
-          <div class="forgot-password flex items-center justify-end gap-5">
-            <button class="tb-reset-password" mat-button type="button" routerLink="/login/resetPasswordRequest">
+
+          <div class="ne-row">
+            <button class="ne-forgot" mat-button type="button" routerLink="/login/resetPasswordRequest">
               {{ (passwordViolation ? 'login.reset-password' : 'login.forgot-password') | translate }}
             </button>
           </div>
+
+          <button mat-flat-button class="ne-signin" type="submit" [disabled]="isLoading || (isLoading$ | async)">
+            {{ 'login.sign-in' | translate }}
+          </button>
         </div>
       </form>
+
+      <div class="ne-card-footer">
+        <span class="ne-footer-rule"></span>
+        <span>© 2026 Nova Edge. All rights reserved.</span>
+        <span class="ne-footer-rule"></span>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>

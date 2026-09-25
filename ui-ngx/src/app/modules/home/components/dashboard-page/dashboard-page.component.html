@@ -396,7 +396,7 @@
         @if (!readonly && (hideToolbar || widgetEditMode)) {
           <section data-html2canvas-ignore class="tb-header-buttons tb-enter-edit-mode flex flex-row flex-wrap items-end justify-start">
             <button [class.!hidden]="isEdit"
-                    color="#fff"
+                    color="#FFF8CF"
                     mat-mini-fab
                     class="tb-btn-header tb-btn-edit"
                     (click)="toggleDashboardEditMode()"
@@ -405,7 +405,7 @@
               <mat-icon>edit</mat-icon>
             </button>
             <button [class.!hidden]="!isEdit"
-                    color="#fff"
+                    color="#FFF8CF"
                     mat-mini-fab
                     class="tb-btn-header tb-btn-edit"
                     (click)="saveDashboard()"
@@ -415,7 +415,7 @@
               <mat-icon>done</mat-icon>
             </button>
             <button [class.!hidden]="!isEdit"
-                    color="#fff"
+                    color="#FFF8CF"
                     mat-mini-fab
                     class="tb-btn-header tb-btn-edit"
                     (click)="toggleDashboardEditMode()"
@@ -426,11 +426,11 @@
             </button>
           </section>
         }
-        @if (!embedded) {
+        <!-- @if (!embedded) {
           <section data-html2canvas-ignore class="tb-powered-by-footer" [style.color]="dashboard.configuration.settings.titleColor">
             <span>Powered by <a href="https://thingsboard.io" target="_blank">ThingsBoard v.{{ thingsboardVersion }}</a></span>
           </section>
-        }
+        } -->
       </mat-drawer-content>
       <mat-drawer class="tb-details-drawer"
                   [opened]="isEditingWidget || isAddingWidget"

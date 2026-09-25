@@ -40,7 +40,7 @@ $previewSize: 64px !default;
   }
 
   .image-content-container {
-    background: #FFFFFF;
+    background: #FFF8CF;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     height: $previewSize;
@@ -127,7 +127,7 @@ $previewSize: 64px !default;
       align-items: center;
       border-radius: 4px;
       border-right: 1px solid rgba(0, 0, 0, 0.12);
-      background: #fff;
+      background: #FFF8CF;
       overflow: hidden;
 
       .tb-image-preview {

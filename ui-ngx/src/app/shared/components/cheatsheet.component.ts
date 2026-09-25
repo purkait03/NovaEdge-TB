@@ -31,7 +31,7 @@ import Mousetrap from 'mousetrap';
   left: 0;
   color: #333;
   font-size: 1em;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 248, 207, 0.9);
   outline: 0;
 }
 .tb-hotkeys-container.fade {
@@ -73,7 +73,7 @@ import Mousetrap from 'mousetrap';
 }
 .tb-hotkeys-key {
   display: inline-block;
-  color: #fff;
+  color: #FFF8CF;
   background-color: #333;
   border: 1px solid #333;
   border-radius: 5px;
@@ -101,7 +101,7 @@ import Mousetrap from 'mousetrap';
   text-align: center;
 }
 .tb-hotkeys-close:hover {
-  background-color: #fff;
+  background-color: #FFF8CF;
   cursor: pointer;
 }
 @media all and (max-width: 500px) {

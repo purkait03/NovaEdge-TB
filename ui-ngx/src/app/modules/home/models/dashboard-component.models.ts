@@ -589,7 +589,7 @@ export class DashboardWidget implements GridsterItem, IDashboardWidget {
 
   updateWidgetParams(detectChanges = true) {
     this.color = this.widget.config.color || 'rgba(0, 0, 0, 0.87)';
-    this.backgroundColor = this.widget.config.backgroundColor || '#fff';
+    this.backgroundColor = this.widget.config.backgroundColor || '#FFF8CF';
     this.padding = this.widget.config.padding || '8px';
     this.margin = this.widget.config.margin || '0px';
     this.borderRadius = this.widget.config.borderRadius;

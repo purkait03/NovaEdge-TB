@@ -139,7 +139,7 @@ const defaultMaskIconContainerDefinition: MarkerIconContainerDefinition = {
       elements = elements[0].getElementsByClassName('marker-icon-container');
       if (elements.length) {
         const iconContainer = new G(elements[0] as SVGGElement);
-        iconContainer.add(iconElement.clone().fill('#fff').translate(-cx, -cy));
+        iconContainer.add(iconElement.clone().fill('#FFF8CF').translate(-cx, -cy));
       }
     }
   }
@@ -357,7 +357,7 @@ export const createPlaceItemIcon = (iconRegistry: MatIconRegistry, domSanitizer:
   if (placeItemIconURI$) {
     return placeItemIconURI$;
   }
-  placeItemIconURI$ = createColorMarkerShapeURI(iconRegistry, domSanitizer, MarkerShape.markerShape1, tinycolor('rgba(255,255,255,0.75)')).pipe(
+  placeItemIconURI$ = createColorMarkerShapeURI(iconRegistry, domSanitizer, MarkerShape.markerShape1, tinycolor('rgba(255, 248, 207, 0.75)')).pipe(
     shareReplay({refCount: true, bufferSize: 1})
   );
   return placeItemIconURI$;

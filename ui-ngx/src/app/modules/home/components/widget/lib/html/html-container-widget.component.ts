@@ -65,7 +65,7 @@ import { TbAnchorComponent } from '@shared/components/tb-anchor.component';
     '    display: flex;\n' +
     '    align-items: center;\n' +
     '    justify-content: center;\n' +
-    '    background: rgba(255, 255, 255, .5);\n' +
+    '    background: rgba(255, 248, 207, .5);\n' +
     '\n' +
     '    span {\n' +
     '      color: #f00;\n' +

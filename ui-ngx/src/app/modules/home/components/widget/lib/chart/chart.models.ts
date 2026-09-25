@@ -248,7 +248,7 @@ export const chartBarDefaultSettings: ChartBarSettings = {
   },
   labelColor: chartColorScheme['series.label'].light,
   enableLabelBackground: false,
-  labelBackground: 'rgba(255,255,255,0.56)',
+  labelBackground: 'rgba(255, 248, 207, 0.56)',
   backgroundSettings: {
     type: ChartFillType.none,
     opacity: 0.4,

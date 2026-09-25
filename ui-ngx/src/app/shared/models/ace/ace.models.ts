@@ -20,6 +20,7 @@ import { forkJoin, from, of } from 'rxjs';
 import { map, mergeMap, tap } from 'rxjs/operators';
 import { unwrapModule } from '@core/utils';
 import { Renderer2 } from '@angular/core';
+import { registerNovaEdgeDarkTheme, trackAceEditor, getAceTheme } from './theme-nova-edge-dark';
 
 let aceDependenciesLoaded = false;
 let aceModule: any;
@@ -67,6 +68,19 @@ function loadAceDependencies(): Observable<any> {
 
 export function getAce(): Observable<any> {
   if (aceModule) {
+    // Ensure dark theme registered even on cached path
+    try { registerNovaEdgeDarkTheme(aceModule); } catch (e) {}
+    try {
+      if (!(aceModule as any).__novaEditWrapped) {
+        const origEdit = (aceModule as any).edit.bind(aceModule);
+        (aceModule as any).__novaEditWrapped = true;
+        (aceModule as any).edit = (el: any, opts: any) => {
+          const ed: any = origEdit(el, opts);
+          try { trackAceEditor(ed); } catch (e) {}
+          return ed;
+        };
+      }
+    } catch (e) {}
     return of(aceModule);
   } else {
     return from(import('ace-builds/src-noconflict/ace')).pipe(
@@ -77,9 +91,30 @@ export function getAce(): Observable<any> {
       }),
       tap((module) => {
         aceModule = module;
+        try { registerNovaEdgeDarkTheme(module); } catch (e) {}
+        // Wrap ace.edit to auto-apply Nova Edge theme and track for live toggle
+        try {
+          if (!(module as any).__novaEditWrapped) {
+            const origEdit = module.edit.bind(module);
+            (module as any).__novaEditWrapped = true;
+            module.edit = (el: any, opts: any) => {
+              const ed: any = origEdit(el, opts);
+              try { trackAceEditor(ed); } catch (e) {}
+              return ed;
+            };
+          }
+        } catch (e) {}
+        // Re-export helpers for convenience
+        (module as any).novaEdgeDark = { getTheme: getAceTheme };
       })
     );
   }
+}
+
+export function createAceEditorWithTheme(element: any, options: Partial<Ace.EditorOptions>, ace: any): Ace.Editor {
+  const editor = ace.edit(element, options);
+  try { trackAceEditor(editor); } catch (e) {}
+  return editor;
 }
 
 export function getAceDiff(): Observable<any> {

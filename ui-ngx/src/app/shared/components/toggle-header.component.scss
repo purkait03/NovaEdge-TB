@@ -133,7 +133,7 @@
         &.mat-button-toggle-checked {
           .mat-button-toggle-button {
             background: $tb-primary-color;
-            color: #FFFFFF;
+            color: #FFF8CF;
           }
         }
       }
@@ -141,7 +141,7 @@
         .mat-button-toggle.mat-button-toggle-appearance-standard {
           &.mat-button-toggle-checked {
             .mat-button-toggle-button {
-              background: #FFFFFF;
+              background: #FFF8CF;
               color: $tb-primary-color;
             }
           }
@@ -267,7 +267,7 @@
       &.tb-fill {
         &.tb-invert {
           .mat-button-toggle.mat-button-toggle-appearance-standard {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 248, 207, 0.8);
           }
         }
       }

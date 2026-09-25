@@ -107,3 +107,32 @@
     }
   }
 }
+
+:host-context(.tb-dark) {
+  .tb-content {
+    border-color: var(--tb-border-color);
+    background: var(--tb-surface);
+  }
+  .gutter {
+    background: var(--tb-surface-raised);
+  }
+  div.tb-editor-area-title-panel label {
+    background: var(--tb-surface-raised);
+    color: var(--tb-text-secondary);
+    border: 1px solid var(--tb-border-color);
+  }
+  div.tb-editor-area-title-panel .mat-mdc-button {
+    background: var(--tb-surface-raised);
+    color: var(--tb-text-secondary);
+    border: 1px solid var(--tb-border-color);
+  }
+  .mat-toolbar.tb-dialog-header {
+    background: var(--tb-surface-overlay);
+    color: var(--tb-text-primary);
+    border-bottom: 1px solid var(--tb-border-color);
+  }
+  div[mat-dialog-actions] {
+    background: var(--tb-surface-overlay);
+    border-top: 1px solid var(--tb-border-color);
+  }
+}

@@ -91,7 +91,7 @@ export class LabelWidgetSettingsComponent extends WidgetSettingsComponent {
         size: 6,
         style: 'normal',
         weight: '500',
-        color: '#fff'
+        color: '#FFF8CF'
       }
     };
     const labelsArray = this.labelWidgetSettingsForm.get('labels') as UntypedFormArray;

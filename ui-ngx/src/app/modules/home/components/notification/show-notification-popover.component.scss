@@ -18,3 +18,18 @@
 .tb-no-notification-svg-color {
   color: $tb-primary-color;
 }
+
+:host-context(.tb-dark) {
+  section:first-of-type > div {
+    color: var(--tb-text-primary);
+  }
+  .mat-divider {
+    border-top-color: var(--tb-border-color);
+  }
+  span[translate] {
+    color: var(--tb-text-secondary);
+  }
+  .tb-no-data-text {
+    color: var(--tb-text-secondary);
+  }
+}

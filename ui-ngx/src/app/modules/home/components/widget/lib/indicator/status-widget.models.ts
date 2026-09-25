@@ -140,14 +140,14 @@ export const statusWidgetDefaultSettings: StatusWidgetSettings = {
     icon: 'mdi:curtains',
     iconSize: 32,
     iconSizeUnit: 'px',
-    primaryColor: '#fff',
-    secondaryColor: 'rgba(255, 255, 255, 0.80)',
+    primaryColor: '#FFF8CF',
+    secondaryColor: 'rgba(255, 248, 207, 0.80)',
     background: {
       type: BackgroundType.color,
       color: '#3F52DD',
       overlay: {
         enabled: false,
-        color: 'rgba(255,255,255,0.72)',
+        color: 'rgba(255, 248, 207, 0.72)',
         blur: 3
       }
     },
@@ -158,7 +158,7 @@ export const statusWidgetDefaultSettings: StatusWidgetSettings = {
       color: '#CACACA',
       overlay: {
         enabled: false,
-        color: 'rgba(255,255,255,0.72)',
+        color: 'rgba(255, 248, 207, 0.72)',
         blur: 3
       }
     }
@@ -191,10 +191,10 @@ export const statusWidgetDefaultSettings: StatusWidgetSettings = {
     secondaryColor: 'rgba(0, 0, 0, 0.54)',
     background: {
       type: BackgroundType.color,
-      color: '#FFF',
+      color: '#FFF8CF',
       overlay: {
         enabled: false,
-        color: 'rgba(255,255,255,0.72)',
+        color: 'rgba(255, 248, 207, 0.72)',
         blur: 3
       }
     },
@@ -205,7 +205,7 @@ export const statusWidgetDefaultSettings: StatusWidgetSettings = {
       color: '#CACACA',
       overlay: {
         enabled: false,
-        color: 'rgba(255,255,255,0.72)',
+        color: 'rgba(255, 248, 207, 0.72)',
         blur: 3
       }
     }

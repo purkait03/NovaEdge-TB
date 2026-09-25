@@ -15,77 +15,154 @@
     body, html {
       height: 100%;
       overflow: hidden;
-      background-color: #eee;
+      background-color: #0D0906;
     }
 
+    /* NovaEdge Pulse Orbit – 3 concentric orbits + brand mark only – correct orbit-container → particle */
     .tb-loading-spinner {
-      margin: auto;
-      z-index: 1;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0D0906;
+      overflow: hidden;
+    }
+
+    .ne-pulse-orbit {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .ne-pulse-orbit__logo {
+      position: relative;
+      z-index: 2;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: ne-pulse 0.9s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    .ne-pulse-orbit__logo img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      display: block;
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    @keyframes ne-pulse {
+      0% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(196,154,108,0.18)); }
+      14% { transform: scale(1.08); filter: drop-shadow(0 0 10px rgba(196,154,108,0.32)); }
+      28% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(196,154,108,0.18)); }
+      42% { transform: scale(1.08); filter: drop-shadow(0 0 10px rgba(196,154,108,0.32)); }
+      70% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(196,154,108,0.18)); }
+      100% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(196,154,108,0.18)); }
+    }
+
+    .ne-orbit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid rgba(196,154,108,0.16);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      will-change: transform;
+      animation: ne-orbit-rotate linear infinite;
+    }
+
+    .ne-orbit--1 { width: 118px; height: 118px; animation-duration: 5s; }
+    .ne-orbit--2 { width: 156px; height: 156px; border-color: rgba(196,154,108,0.11); animation-duration: 7s; animation-direction: reverse; }
+    .ne-orbit--3 { width: 196px; height: 196px; border-color: rgba(196,154,108,0.07); animation-duration: 9s; }
+
+    @keyframes ne-orbit-rotate {
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .ne-dot {
       position: absolute;
       top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 136px;
-      height: 30px;
-      text-align: center;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      margin-left: -3.5px;
+      border-radius: 50%;
+      background: #C49A6C;
+      box-shadow: 0 0 0 4px rgba(196,154,108,0.13), 0 0 10px rgba(196,154,108,0.42);
+      transform: translate(-50%, -50%);
+      opacity: 0.92;
     }
 
-    .tb-loading-spinner > div {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      background-color: rgb(43,160,199);
-
-      border-radius: 100%;
-      display: inline-block;
-      -webkit-animation: tb-bouncedelay 1.4s infinite ease-in-out both;
-      -moz-animation: tb-bouncedelay 1.4s infinite ease-in-out both;
-      animation: tb-bouncedelay 1.4s infinite ease-in-out both;
+    .ne-dot--small {
+      width: 5px;
+      height: 5px;
+      margin-left: -2.5px;
+      top: 0;
+      opacity: 0.76;
+      box-shadow: 0 0 0 3px rgba(196,154,108,0.11), 0 0 8px rgba(196,154,108,0.32);
     }
 
-    .tb-loading-spinner .tb-bounce1 {
-      -webkit-animation-delay: -0.32s;
-      -moz-animation-delay: -0.32s;
-      animation-delay: -0.32s;
+    .ne-dot--tiny {
+      width: 4px;
+      height: 4px;
+      margin-left: -2px;
+      top: 0;
+      opacity: 0.58;
+      box-shadow: 0 0 0 2px rgba(196,154,108,0.09);
     }
 
-    .tb-loading-spinner .tb-bounce2 {
-      -webkit-animation-delay: -0.16s;
-      -moz-animation-delay: -0.16s;
-      animation-delay: -0.16s;
+    .ne-orbit .ne-dot:nth-child(2) {
+      top: 100%;
     }
 
-    @-webkit-keyframes tb-bouncedelay {
-      0%, 80%, 100% { -webkit-transform: scale(0) }
-      40% { -webkit-transform: scale(1.0) }
+    @media (max-width: 600px) {
+      .ne-pulse-orbit { width: 170px; height: 170px; }
+      .ne-orbit--1 { width: 100px; height: 100px; }
+      .ne-orbit--2 { width: 132px; height: 132px; }
+      .ne-orbit--3 { width: 164px; height: 164px; }
+      .ne-pulse-orbit__logo { width: 48px; height: 48px; }
+      .ne-pulse-orbit__logo img { width: 44px; height: 44px; }
     }
 
-    @-moz-keyframes tb-bouncedelay {
-      0%, 80%, 100% { -moz-transform: scale(0) }
-      40% { -moz-transform: scale(1.0) }
-    }
-
-    @keyframes tb-bouncedelay {
-      0%, 80%, 100% {
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        transform: scale(0);
-      } 40% {
-          -webkit-transform: scale(1.0);
-          -moz-transform: scale(1.0);
-          transform: scale(1.0);
-        }
+    @media (prefers-reduced-motion: reduce) {
+      .ne-pulse-orbit__logo,
+      .ne-orbit { animation: none !important; }
+      .ne-orbit { opacity: 0.5; }
+      .ne-dot { opacity: 0.80; }
     }
 
   </style>
 </head>
 <body class="tb-default">
   <tb-root></tb-root>
-  <div id="tb-loading-spinner" class="tb-loading-spinner">
-    <div class="tb-bounce1"></div>
-    <div class="tb-bounce2"></div>
-    <div class="tb-bounce3"></div>
+  <div id="tb-loading-spinner" class="tb-loading-spinner" role="status" aria-label="Loading">
+    <div class="ne-pulse-orbit" aria-hidden="true">
+      <div class="ne-orbit ne-orbit--1">
+        <span class="ne-dot"></span>
+        <span class="ne-dot ne-dot--small"></span>
+      </div>
+      <div class="ne-orbit ne-orbit--2">
+        <span class="ne-dot ne-dot--small"></span>
+        <span class="ne-dot"></span>
+      </div>
+      <div class="ne-orbit ne-orbit--3">
+        <span class="ne-dot ne-dot--tiny"></span>
+        <span class="ne-dot"></span>
+      </div>
+      <div class="ne-pulse-orbit__logo">
+        <img src="assets/small_logo_title_black.png" alt="NovaEdge" />
+      </div>
+    </div>
   </div>
 </body>
 </html>

@@ -16,7 +16,13 @@
 
 import { Injectable } from '@angular/core';
 
-const APP_PREFIX = 'SW-';
+// NovaEdge storage namespace. Upstream ThingsBoard used 'tb-', and an
+// intermediate Swatch360 customization used 'SW-'. NovaEdge standard is 'NE-'.
+// Consumers must go through this service so keys stay consistent
+// (e.g. 'SETTINGS' -> 'NE-SETTINGS', 'HIDE_GITHUB_STAR_BUTTON' -> 'NE-HIDE_GITHUB_STAR_BUTTON').
+// Direct localStorage keys (jwt_token, ne-dark-mode, tbBufferStore.*) are intentionally unprefixed
+// and must NOT be migrated to this prefix.
+const APP_PREFIX = 'NE-';
 
 // @dynamic
 @Injectable(

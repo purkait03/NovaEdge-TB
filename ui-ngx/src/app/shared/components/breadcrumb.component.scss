@@ -22,7 +22,7 @@
     line-height: 20px;
     font-weight: 400;
     overflow: hidden;
-    color: rgba(0,0,0,0.76);
+    color: var(--tb-text-primary);
 
     h1,
     a,
@@ -33,17 +33,22 @@
     }
 
     h1 {
-      font-size: 24px;
-      font-weight: 400;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--tb-text-primary);
     }
 
     a {
       border: none;
-      opacity: .75;
+      opacity: .7;
       transition: opacity .35s;
-      color: inherit;
+      color: var(--tb-text-secondary);
       text-decoration: none;
       outline: none;
+      &:hover {
+        color: var(--tb-primary-color);
+      }
     }
 
     a:hover,
@@ -57,7 +62,8 @@
       padding: 0;
       width: 20px;
       text-align: center;
-      opacity: .75;
+      opacity: .5;
+      color: var(--tb-text-muted);
       &.last-divider {
         opacity: 1;
       }

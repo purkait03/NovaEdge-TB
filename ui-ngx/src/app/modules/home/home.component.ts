@@ -25,11 +25,13 @@ import {
   signal,
   ViewChild
 } from '@angular/core';
+import { Renderer2 } from '@angular/core';
 import { skip, startWith, Subject } from 'rxjs';
 import { select, Store } from '@ngrx/store';
 import { debounceTime, distinctUntilChanged, take, takeUntil } from 'rxjs/operators';
 
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { OverlayContainer } from '@angular/cdk/overlay';
 import { PageComponent } from '@shared/components/page.component';
 import { AppState } from '@core/core.state';
 import { getCurrentAuthState, selectUserSettingsProperty } from '@core/auth/auth.selectors';
@@ -43,6 +45,47 @@ import { ActiveComponentService } from '@core/services/active-component.service'
 import { FormBuilder } from '@angular/forms';
 import { ActionPreferencesPutUserSettings } from '@core/auth/auth.actions';
 import { HomeService } from '@core/services/home.service';
+
+// NovaEdge dark-mode preference. Stored as a plain 'true'/'false' string via
+// direct localStorage access (NOT via LocalStorageService, which JSON-encodes
+// and prefixes keys with 'NE-'). Upstream ThingsBoard used 'tb-dark-mode';
+// NovaEdge uses 'ne-dark-mode'. The legacy key is only consulted once for
+// migration and is never the source of truth afterwards.
+const DARK_MODE_KEY = 'ne-dark-mode';
+const LEGACY_DARK_MODE_KEY = 'tb-dark-mode';
+
+function readDarkModePreference(): boolean {
+  try {
+    const current = localStorage.getItem(DARK_MODE_KEY);
+    if (current !== null) {
+      // Canonical key wins; drop any stale legacy key so only one source remains.
+      try {
+        if (localStorage.getItem(LEGACY_DARK_MODE_KEY) !== null) {
+          localStorage.removeItem(LEGACY_DARK_MODE_KEY);
+        }
+      } catch {
+        // ignore cleanup errors
+      }
+      return current === 'true';
+    }
+    // One-time migration from upstream key; then canonicalize to the new key
+    // so there are never two conflicting sources.
+    const legacy = localStorage.getItem(LEGACY_DARK_MODE_KEY);
+    if (legacy !== null) {
+      const migrated = legacy === 'true';
+      try {
+        localStorage.setItem(DARK_MODE_KEY, migrated ? 'true' : 'false');
+        localStorage.removeItem(LEGACY_DARK_MODE_KEY);
+      } catch {
+        // ignore quota / privacy-mode errors; caller still gets correct value
+      }
+      return migrated;
+    }
+  } catch {
+    // localStorage unavailable (e.g. privacy mode) -> fall back to light mode
+  }
+  return false;
+}
 
 @Component({
     selector: 'tb-home',
@@ -65,6 +108,8 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   sidenavDesktop = signal(true);
   sidenavCollapsed = signal(false);
   menuCollapsed= computed(() => this.sidenavDesktop() && this.sidenavCollapsed());
+
+  darkMode = signal(false);
 
   logo = 'assets/logo_title_black.png';
   collapsedLogo =  'assets/small_logo_title_black.png';
@@ -89,11 +134,17 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
               private activeComponentService: ActiveComponentService,
               private fb: FormBuilder,
               public breakpointObserver: BreakpointObserver,
-              public homeService: HomeService) {
+              public homeService: HomeService,
+              private renderer: Renderer2,
+              private overlayContainer: OverlayContainer) {
     super(store);
   }
 
   ngOnInit() {
+
+    const savedDarkMode = readDarkModePreference();
+    this.darkMode.set(savedDarkMode);
+    this.applyTheme(savedDarkMode);
 
     const isGtSm = this.breakpointObserver.isMatched(MediaBreakpoints['gt-sm']);
     this.sidenavMode = isGtSm ? 'side' : 'over';
@@ -160,6 +211,36 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
 
   isFullscreen() {
     return screenfull.isFullscreen;
+  }
+
+  toggleTheme() {
+    const dark = !this.darkMode();
+    this.darkMode.set(dark);
+    localStorage.setItem(DARK_MODE_KEY, dark ? 'true' : 'false');
+    this.applyTheme(dark);
+  }
+
+  private applyTheme(dark: boolean) {
+    const body = this.window.document.body;
+    // Material + Tailwind theme is scoped to ".tb-default" (see tailwind.config.js
+    // `important: ".tb-default"` and theme.scss `.tb-default` / `.tb-dark`).
+    // Keep tb-default always so layout utilities (flex, etc) continue to work in dark mode,
+    // and toggle tb-dark as an additional theme layer.
+    // NOTE: do NOT rename these to ne-* — no `.ne-default`/`.ne-dark` rules exist,
+    // so doing so silently disables the dark theme even when storage says true.
+    this.renderer.addClass(body, 'tb-default');
+    if (dark) {
+      this.renderer.addClass(body, 'tb-dark');
+    } else {
+      this.renderer.removeClass(body, 'tb-dark');
+    }
+    const overlayEl = this.overlayContainer.getContainerElement();
+    this.renderer.addClass(overlayEl, 'tb-default');
+    if (dark) {
+      this.renderer.addClass(overlayEl, 'tb-dark');
+    } else {
+      this.renderer.removeClass(overlayEl, 'tb-dark');
+    }
   }
 
   goBack() {

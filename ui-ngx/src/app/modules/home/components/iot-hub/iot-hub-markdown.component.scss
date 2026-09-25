@@ -172,7 +172,7 @@ $gallery-border-hover-color: #2a7dec;
           top: 1px;
           transition: .2s;
           color: $copy-button-color;
-          background: rgba(255, 255, 255, .85);
+          background: rgba(255, 248, 207, .85);
           backdrop-filter: blur(4px);
           opacity: 0;
           font-weight: 500;
@@ -181,7 +181,7 @@ $gallery-border-hover-color: #2a7dec;
         }
 
         div {
-          background-color: #fff;
+          background-color: #FFF8CF;
           position: absolute;
           width: 38px;
           height: 28px;
@@ -407,7 +407,7 @@ $gallery-border-hover-color: #2a7dec;
         overflow: hidden;
         margin: 0;
         padding: 0;
-        background: #fff;
+        background: #FFF8CF;
         transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
         display: block;
         &:hover {
@@ -424,7 +424,7 @@ $gallery-border-hover-color: #2a7dec;
           display: block;
           height: 115px;
           overflow: hidden;
-          background: #fff;
+          background: #FFF8CF;
           img {
             width: 100%;
             max-width: 100%;
@@ -443,7 +443,7 @@ $gallery-border-hover-color: #2a7dec;
           right: 0;
           padding: .4rem .6rem;
           background: #000000b8;
-          color: #fff;
+          color: #FFF8CF;
           font-size: .75rem;
           line-height: 1.3;
           text-align: center;

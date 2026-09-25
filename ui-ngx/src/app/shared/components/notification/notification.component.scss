@@ -72,3 +72,27 @@
     }
   }
 }
+
+:host-context(.tb-dark) {
+  .notification {
+    background-color: var(--tb-surface) !important;
+  }
+  .notification[style*="border-color: transparent"] {
+    border-color: var(--tb-border-color) !important;
+  }
+  .title {
+    color: var(--tb-text-primary);
+  }
+  .message {
+    color: var(--tb-text-primary);
+  }
+  .description {
+    color: var(--tb-text-secondary);
+    .time {
+      color: var(--tb-text-muted);
+    }
+  }
+  .icon {
+    color: var(--tb-text-secondary);
+  }
+}

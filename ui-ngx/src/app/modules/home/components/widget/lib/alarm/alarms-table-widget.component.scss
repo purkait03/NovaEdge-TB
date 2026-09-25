@@ -42,7 +42,7 @@
                 height: 28px;
                 min-width: 28px;
                 min-height: 28px;
-                color: white;
+                color: #FFF8CF;
                 font-size: 13px;
                 font-weight: 700;
               }
@@ -55,7 +55,7 @@
                 height: 28px;
                 font-size: 28px;
                 margin-right: 8px;
-                color: rgba(0, 0, 0, 0.38);
+                color: var(--tb-text-muted);
                 overflow: visible;
                 vertical-align: middle;
               }

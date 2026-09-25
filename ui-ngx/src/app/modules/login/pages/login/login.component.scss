@@ -1,110 +1,595 @@
 /**
- * Copyright © 2016-2026 The Thingsboard Authors
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * NovaEdge / Swatch360 — Premium Enterprise IoT Login
+ * Deep-charcoal industrial background, warm amber accents,
+ * glass-dark card with brand-hero composition.
+ * Visual layer only — no auth logic.
  */
 @import '../../../../../scss/constants';
-@import '../../../../../theme';
+
+// ------------------------------------------------------------------
+// Design tokens (NovaEdge dark/amber system)
+// ------------------------------------------------------------------
+$ne-bg-deep:      #0B0908;
+$ne-bg:           #121009;
+$ne-bg-warm:      #191209;
+$ne-card:         #201812;
+$ne-card-edge:    rgba(255, 158, 64, 0.16);
+$ne-line:         rgba(232, 132, 44, 0.16);
+$ne-line-soft:    rgba(232, 132, 44, 0.09);
+$ne-amber:        #F58430;
+$ne-amber-bright: #FFA050;
+$ne-amber-deep:   #E06E1A;
+$ne-ink:          #F7F1E8;   // primary text (warm white)
+$ne-ink-dim:      #CBB59C;   // secondary text
+$ne-ink-faint:    #9C8a76;   // muted text
+$ne-ink-ghost:    rgba(247, 241, 232, 0.42);
 
 :host {
   display: flex;
   flex: 1 1 0;
-  .tb-login-content {
-    margin-top: 36px;
-    margin-bottom: 76px;
-    background-color: #eee;
-    --mat-card-elevated-container-elevation: none;
-    .tb-login-form {
-      @media #{$mat-gt-xs} {
-        width: 480px !important;
-      }
+  min-height: 100vh;
+}
 
-      .forgot-password {
-        --mat-button-text-horizontal-padding: 0;
-        --mat-button-text-container-height: 20px;
-      }
+// ------------------------------------------------------------------
+// Page shell
+// ------------------------------------------------------------------
+.ne-login-page {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background:
+    radial-gradient(1150px 780px at 50% 42%, rgba(232, 132, 44, 0.055), transparent 62%),
+    radial-gradient(900px 620px at 8% 12%, rgba(224, 110, 26, 0.05), transparent 60%),
+    radial-gradient(900px 620px at 94% 88%, rgba(224, 110, 26, 0.045), transparent 62%),
+    linear-gradient(180deg, $ne-bg-deep 0%, $ne-bg 42%, $ne-bg-warm 100%);
+  isolation: isolate;
+}
 
-      .tb-action-button{
-        margin: 20px 0 16px;
-      }
+// ------------------------------------------------------------------
+// Ambient background layers
+// ------------------------------------------------------------------
+.ne-login-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+// Layer 1 — technical blueprint grid
+.ne-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(232, 132, 44, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 132, 44, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(130% 100% at 50% 42%, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.25) 58%, transparent 82%);
+  -webkit-mask-image: radial-gradient(130% 100% at 50% 42%, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.25) 58%, transparent 82%);
+}
+
+// Layer 2 — IoT constellation: nodes, links, hexes
+.ne-nodes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  .ne-links {
+    stroke: rgba(232, 132, 44, 0.13);
+  }
+
+  .ne-dots {
+    fill: rgba(255, 160, 80, 0.5);
+  }
+
+  .ne-hexes {
+    stroke: rgba(232, 132, 44, 0.12);
+  }
+}
+
+// Layer 3 — fine dust texture (edges only)
+.ne-dust {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(232, 132, 44, 0.14) 1px, transparent 1.4px);
+  background-size: 28px 28px;
+  opacity: 0.3;
+  mask-image: radial-gradient(120% 92% at 50% 44%, transparent 34%, rgba(0, 0, 0, 0.9) 78%);
+  -webkit-mask-image: radial-gradient(120% 92% at 50% 44%, transparent 34%, rgba(0, 0, 0, 0.9) 78%);
+}
+
+// Layer 4 — ambient light: halo behind card + corner glow
+.ne-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+
+  &--card {
+    width: 920px;
+    height: 660px;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center,
+      rgba(232, 132, 44, 0.13) 0%,
+      rgba(232, 132, 44, 0.05) 34%,
+      transparent 68%);
+  }
+
+  &--left {
+    width: 480px;
+    height: 480px;
+    left: -140px;
+    top: -120px;
+    background: radial-gradient(circle, rgba(224, 110, 26, 0.10) 0%, transparent 70%);
+  }
+
+  &--right {
+    width: 560px;
+    height: 560px;
+    right: -160px;
+    bottom: -180px;
+    background: radial-gradient(circle, rgba(224, 110, 26, 0.08) 0%, transparent 72%);
+  }
+}
+
+// Layer 5 — depth vignette
+.ne-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(140% 110% at 50% 42%, transparent 52%, rgba(6, 4, 3, 0.55) 100%),
+    linear-gradient(180deg, rgba(6, 4, 3, 0.25) 0%, transparent 16%, transparent 82%, rgba(6, 4, 3, 0.4) 100%);
+}
+
+// ------------------------------------------------------------------
+// Top-left global wordmark — subtle, secondary to the card brand
+// ------------------------------------------------------------------
+.ne-topbar {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  z-index: 3;
+  user-select: none;
+}
+
+.ne-topbar-mark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(247, 241, 232, 0.62);
+}
+
+.ne-topbar-hex {
+  width: 20px;
+  height: 20px;
+  color: rgba(245, 132, 48, 0.75);
+  flex: 0 0 auto;
+}
+
+.ne-topbar-name {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+}
+
+.ne-topbar-sep {
+  width: 1px;
+  height: 14px;
+  background: rgba(247, 241, 232, 0.22);
+}
+
+.ne-topbar-product {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: rgba(203, 181, 156, 0.66);
+}
+
+// ------------------------------------------------------------------
+// Login card — dark glass, warm edge, brand-hero composition
+// ------------------------------------------------------------------
+.ne-login-card {
+  position: relative;
+  z-index: 2;
+  width: min(420px, calc(100vw - 40px));
+  margin: auto;               // flex-centered, never clipped on short screens
+  padding: 0;
+  background: linear-gradient(178deg,
+    rgba(40, 30, 21, 0.94) 0%,
+    rgba(31, 23, 15, 0.96) 52%,
+    rgba(25, 18, 11, 0.97) 100%) !important;
+  border: 1px solid rgba(255, 158, 64, 0.14) !important;
+  border-radius: 20px !important;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 12px 28px rgba(0, 0, 0, 0.35),
+    0 0 46px rgba(224, 110, 26, 0.10) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  overflow: hidden;
+  --mat-card-elevated-container-color: transparent;
+  --mat-card-elevated-container-elevation: none;
+
+  .mat-mdc-card-content,
+  .mdc-card__primary-action {
+    padding: 0 !important;
+  }
+
+  // Warm hairline across the top edge
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 160, 80, 0.5), transparent);
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.ne-login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 36px 26px;
+}
+
+// ------------------------------------------------------------------
+// Brand block — the logo is the hero of the card
+// ------------------------------------------------------------------
+.ne-brand {
+  display: flex;
+  justify-content: center;
+  margin: 2px 0 30px;
+}
+
+.ne-brand-logo {
+  display: block;
+  width: 178px;               // large, clearly visible (target 150–190px)
+  max-width: 64%;
+  height: auto;
+  object-fit: contain;
+  background: none;
+  border: none;
+  padding: 0;
+  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.45));
+}
+
+.ne-title {
+  margin: 0 0 8px !important;
+  text-align: center;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  color: $ne-ink !important;
+}
+
+.ne-subtitle {
+  margin: 0 0 22px !important;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $ne-ink-dim;
+
+  .ne-strong {
+    color: rgba(245, 132, 48, 0.95);
+    font-weight: 500;
+  }
+}
+
+// Progress / toast spacers (keep layout stable)
+.ne-progress {
+  margin-bottom: 10px;
+  height: 2px !important;
+  border-radius: 999px;
+  overflow: hidden;
+  --mdc-linear-progress-active-indicator-color: #{$ne-amber};
+  --mdc-linear-progress-track-color: rgba(232, 132, 44, 0.18);
+}
+
+.ne-progress-spacer {
+  display: block;
+  height: 2px;
+  margin-bottom: 10px;
+}
+
+.ne-toast {
+  display: block;
+  min-height: 14px;
+  margin-bottom: 2px;
+}
+
+// ------------------------------------------------------------------
+// Form fields — dark, comfortable, amber focus
+// ------------------------------------------------------------------
+.ne-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ne-field {
+  width: 100%;
+
+  // ~50px input height (MDC token + infix fallback)
+  --mdc-outlined-text-field-container-height: 50px;
+
+  .mat-mdc-form-field-infix {
+    min-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  // Outlines: soft warm border -> amber focus
+  --mdc-outlined-text-field-outline-color: rgba(245, 132, 48, 0.24);
+  --mdc-outlined-text-field-hover-outline-color: rgba(245, 132, 48, 0.45);
+  --mdc-outlined-text-field-focus-outline-color: #{$ne-amber};
+  --mdc-outlined-text-field-label-text-color: #{$ne-ink-faint};
+  --mdc-outlined-text-field-hover-label-text-color: #{$ne-ink-dim};
+  --mdc-outlined-text-field-focus-label-text-color: #{$ne-amber};
+  --mdc-outlined-text-field-input-text-color: #{$ne-ink};
+  --mdc-outlined-text-field-input-text-placeholder-color: #{$ne-ink-ghost};
+  --mdc-outlined-text-field-caret-color: #{$ne-amber};
+  --mat-form-field-outlined-outline-color: rgba(245, 132, 48, 0.24);
+  --mat-form-field-outlined-hover-outline-color: rgba(245, 132, 48, 0.45);
+  --mat-form-field-outlined-focus-outline-color: #{$ne-amber};
+
+  .mdc-notched-outline {
+    border-radius: 11px;
+  }
+
+  .mdc-notched-outline__leading,
+  .mdc-notched-outline__notch,
+  .mdc-notched-outline__trailing {
+    border-color: rgba(245, 132, 48, 0.24) !important;
+    border-width: 1px !important;
+  }
+
+  &:hover .mdc-notched-outline__leading,
+  &:hover .mdc-notched-outline__notch,
+  &:hover .mdc-notched-outline__trailing {
+    border-color: rgba(245, 132, 48, 0.45) !important;
+  }
+
+  &.mat-focused .mdc-notched-outline__leading,
+  &.mat-focused .mdc-notched-outline__notch,
+  &.mat-focused .mdc-notched-outline__trailing {
+    border-color: #{$ne-amber} !important;
+    border-width: 1.5px !important;
+  }
+
+  .mdc-floating-label {
+    color: $ne-ink-faint !important;
+    font-size: 14px !important;
+  }
+
+  &.mat-focused .mdc-floating-label {
+    color: $ne-amber !important;
+  }
+
+  .mat-mdc-form-field-infix input {
+    color: $ne-ink !important;
+    caret-color: $ne-amber !important;
+    font-size: 14.5px !important;
+
+    &::placeholder {
+      color: $ne-ink-ghost !important;
     }
+  }
 
-    .container-divider {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      margin-bottom: 16px;
+  // Autofill: keep dark surface under browser-injected styles
+  &.tb-autofilled input:-webkit-autofill,
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #{$ne-ink} !important;
+    -webkit-box-shadow: 0 0 0 1000px #241a11 inset !important;
+    caret-color: #{$ne-amber} !important;
+    transition: background-color 99999s ease-out;
+  }
 
-      .mat-divider-horizontal{
-        --mat-divider-color: var(--mat-form-field-outlined-outline-color);
-      }
+  .ne-field-icon {
+    color: rgba(203, 181, 156, 0.85) !important;
+    font-size: 19px !important;
+    width: 19px !important;
+    height: 19px !important;
+    margin-right: 2px;
+  }
 
-      .text {
-        padding-right: 8px;
-        padding-left: 8px;
-        font-size: 16px;
-        line-height: 24px;
-      }
-    }
+  &.mat-focused .ne-field-icon {
+    color: $ne-amber !important;
+  }
 
-    .oauth-container{
-      .title {
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: .1px;
-        text-align: center;
-        margin-bottom: 4px;
-      }
+  .mat-mdc-form-field-icon-prefix {
+    padding-right: 10px;
+  }
 
-      .material-icons{
-        width: 20px;
-        min-width: 20px;
-      }
-
-      a.login-with-button {
-        color: rgba(black, 0.87);
-        background-color: #ffffff;
-      }
-
-      .login-button-container {
-        a.login-with-button {
-          max-width: 170px;
-          min-width: 60px;
-          flex-grow: 1;
-          flex-basis: 130px;
-
-          .tb-mat-20 {
-            margin-right: 12px;
-          }
-        }
-
-        &:has(> :nth-child(1):last-child) {
-          a.login-with-button {
-            max-width: 100%;
-          }
-        }
-
-        &:has(> :nth-child(2):last-child),
-        &:has(> :nth-child(4):last-child) {
-          a.login-with-button {
-            max-width: 100%;
-            flex-basis: 180px;
-          }
-        }
-      }
+  .mat-mdc-icon-button {
+    --mdc-icon-button-icon-color: rgba(203, 181, 156, 0.85);
+    &:hover {
+      --mdc-icon-button-icon-color: #{$ne-ink};
     }
   }
 }
 
+// ------------------------------------------------------------------
+// Forgot password row
+// ------------------------------------------------------------------
+.ne-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 2px 0 18px;
+}
+
+.ne-forgot {
+  --mdc-text-button-label-text-color: rgba(245, 132, 48, 0.92);
+  --mat-button-text-label-text-color: rgba(245, 132, 48, 0.92);
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em !important;
+  text-transform: none !important;
+  padding: 0 6px !important;
+  min-width: auto !important;
+  height: 32px !important;
+
+  &:hover {
+    --mdc-text-button-label-text-color: #{$ne-amber-bright};
+    background: rgba(245, 132, 48, 0.08) !important;
+  }
+}
+
+// ------------------------------------------------------------------
+// Sign in button — strong amber CTA
+// ------------------------------------------------------------------
+.ne-signin {
+  width: 100%;
+  height: 50px !important;
+  border-radius: 12px !important;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: none !important;
+  --mdc-filled-button-container-color: #{$ne-amber} !important;
+  --mdc-filled-button-label-text-color: #1B0F05 !important;
+  --mdc-filled-button-container-height: 50px;
+  --mdc-filled-button-container-shape: 12px;
+  background: linear-gradient(180deg, $ne-amber-bright 0%, $ne-amber 46%, $ne-amber-deep 100%) !important;
+  box-shadow:
+    0 10px 26px rgba(224, 110, 26, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28) !important;
+  transition: filter 0.2s ease, box-shadow 0.2s ease, transform 0.12s ease !important;
+
+  &:hover {
+    filter: brightness(1.06);
+    box-shadow:
+      0 12px 30px rgba(224, 110, 26, 0.34),
+      inset 0 1px 0 rgba(255, 255, 255, 0.28) !important;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    filter: brightness(0.98);
+  }
+
+  &:disabled {
+    filter: saturate(0.55) brightness(0.75);
+    box-shadow: none !important;
+    cursor: default;
+  }
+}
+
+// ------------------------------------------------------------------
+// Card footer — quiet legal line
+// ------------------------------------------------------------------
+.ne-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px 28px 20px;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: rgba(156, 138, 118, 0.85);
+  border-top: 1px solid rgba(232, 132, 44, 0.09);
+  background: rgba(14, 10, 6, 0.28);
+}
+
+.ne-footer-rule {
+  height: 1px;
+  width: 34px;
+  background: linear-gradient(90deg, transparent, rgba(232, 132, 44, 0.25), transparent);
+}
+
+// ------------------------------------------------------------------
+// Error / validation colors on the dark theme
+// ------------------------------------------------------------------
+:host ::ng-deep .mat-mdc-form-field-error {
+  color: #FF8A65 !important;
+  font-size: 12px !important;
+}
+
+:host ::ng-deep .ne-field.mat-form-field-invalid .mdc-notched-outline__leading,
+:host ::ng-deep .ne-field.mat-form-field-invalid .mdc-notched-outline__notch,
+:host ::ng-deep .ne-field.mat-form-field-invalid .mdc-notched-outline__trailing {
+  border-color: #FF6B4A !important;
+}
+
+// Hide any leftover SSO chrome if OAuth data exists
+:host ::ng-deep .oauth-container,
+:host ::ng-deep .container-divider,
+:host ::ng-deep .login-with-button {
+  display: none !important;
+}
+
+// ------------------------------------------------------------------
+// Responsive
+// ------------------------------------------------------------------
+@media (max-width: 600px) {
+  .ne-topbar {
+    top: 16px;
+    left: 18px;
+  }
+
+  .ne-login-page {
+    background-attachment: scroll;
+  }
+
+  .ne-login-card {
+    width: calc(100vw - 24px);
+    border-radius: 18px !important;
+  }
+
+  .ne-login-form {
+    padding: 30px 22px 20px;
+  }
+
+  .ne-brand {
+    margin: 0 0 24px;
+  }
+
+  .ne-brand-logo {
+    width: 168px;
+    max-width: 70%;
+  }
+
+  .ne-title {
+    font-size: 23px !important;
+  }
+
+  .ne-signin {
+    height: 48px !important;
+    --mdc-filled-button-container-height: 48px;
+  }
+
+  .ne-card-footer {
+    padding: 14px 18px 16px;
+  }
+}
+
+@media (max-height: 720px) {
+  .ne-login-form {
+    padding-top: 28px;
+    padding-bottom: 18px;
+  }
+
+  .ne-brand {
+    margin-bottom: 20px;
+  }
+
+  .ne-brand-logo {
+    width: 160px;
+  }
+}

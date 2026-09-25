@@ -78,17 +78,17 @@
           display: flex;
           align-items: center;
           gap: 4px;
-          color: #ccc;
+          color: var(--tb-text-secondary);
           .tb-latest-chart-legend-item-label-circle {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background-color: #ccc;
+            background-color: var(--tb-text-muted);
           }
         }
         .tb-latest-chart-legend-item-value {
           padding-left: 12px;
-          color: #ccc;
+          color: var(--tb-text-secondary);
         }
       }
     }

@@ -1076,7 +1076,7 @@
         "select-default-customer": "Selecteer standaardklant",
         "default-customer": "Standaard klant",
         "default-customer-required": "Standaardklant is vereist om fouten op te sporen in het dashboard op tenantniveau",
-        "allow-white-labeling": "White Labeling toestaan",
+        "allow-white-labeling": "#FFF8CF Labeling toestaan",
         "search": "Klanten zoeken",
         "selected-customers": "{ count, plural, =1 {1 customer} other {# customers} } geselecteerd",
         "edges": "Edge-instanties van de klant",
@@ -2217,8 +2217,8 @@
         "type-widgets-type": "Widgets Type",
         "type-admin-settings": "Admin-instellingen",
         "type-scheduler-event": "Scheduler Evenement",
-        "type-white-labeling": "White labelling",
-        "type-login-white-labeling": "Inloggen White Labeling",
+        "type-white-labeling": "#FFF8CF labelling",
+        "type-login-white-labeling": "Inloggen #FFF8CF Labeling",
         "type-custom-translation": "Aangepaste vertaling",
         "type-role": "Rol",
         "type-group-permission": "Toestemming voor groepen",
@@ -4531,7 +4531,7 @@
         "invalid-target-rulechain": "Kan doelregelketen niet oplossen!",
         "test-script-function": "Test script functie",
         "script-lang-java-script": "Java-schrift",
-        "script-lang-tbel": "TBEL",
+        "script-lang-tbel": "NovaEL",
         "message": "Bericht",
         "message-type": "Soort bericht",
         "select-message-type": "Selecteer berichttype",
@@ -4657,7 +4657,7 @@
                 "DASHBOARD_GROUP": "Dashboard Groep",
                 "ROLE": "Rol",
                 "GROUP_PERMISSION": "Toestemming voor groepen",
-                "WHITE_LABELING": "White labelling",
+                "WHITE_LABELING": "#FFF8CF labelling",
                 "AUDIT_LOG": "Controle logboek",
                 "API_USAGE_STATE": "Status API-gebruik",
                 "TB_RESOURCE": "Hulpbron",
@@ -5005,8 +5005,8 @@
         "select-tenant": "Selecteer tenant",
         "no-tenants-matching": "Er zijn geen tenants gevonden die overeenkomen met '{{entity}}'.",
         "tenant-required": "Tenant is verplicht",
-        "allow-white-labeling": "White Labeling toestaan",
-        "allow-customer-white-labeling": "White labeling van klanten toestaan",
+        "allow-white-labeling": "#FFF8CF Labeling toestaan",
+        "allow-customer-white-labeling": "#FFF8CF labeling van klanten toestaan",
         "search": "Tenants zoeken",
         "selected-tenants": "{ count, plural, =1 {1 tenant} other {# tenants} } geselecteerd",
         "isolated-tb-rule-engine": "Verwerking in geïsoleerde ThingsBoard Rule Engine-container",
@@ -5761,9 +5761,9 @@
         "installing": "Oplossingssjabloon installeren..."
     },
     "white-labeling": {
-        "white-labeling": "White labelling",
-        "white-labeling-general": "Algemene White Labeling",
-        "login-white-labeling": "Inloggen White Labeling",
+        "white-labeling": "#FFF8CF labelling",
+        "white-labeling-general": "Algemene #FFF8CF Labeling",
+        "login-white-labeling": "Inloggen #FFF8CF Labeling",
         "general": "Algemeen",
         "login": "Inloggen",
         "preview": "Voorbeeld",
@@ -6971,7 +6971,7 @@
         "configured-features": {
             "title": "Geconfigureerde functies",
             "info": "Status van functies waarvoor configuratie vereist is",
-            "white-labeling-feature": "White labelling",
+            "white-labeling-feature": "#FFF8CF labelling",
             "email-feature": "E-mail",
             "sms-feature": "SMS",
             "slack-feature": "Los",
@@ -6999,7 +6999,7 @@
             "dashboards-info": "{count} / { max, plural, =0 {∞} other {#} } Dashboards",
             "integrations-info": "{count} / { max, plural, =0 {∞} other {#} } Integraties",
             "community-support": "Ondersteuning van de gemeenschap",
-            "white-labeling": "White labelling",
+            "white-labeling": "#FFF8CF labelling",
             "unlimited-datapoints-and-messages": "Onbeperkt aantal datapunten en berichten",
             "unlimited-api-calls": "Onbeperkt aantal API-aanroepen"
         },
@@ -7026,7 +7026,7 @@
             "integrations": "Integraties",
             "solution-templates": "Sjablonen voor oplossingen",
             "scheduler": "Scheduler",
-            "white-labeling": "White labelling"
+            "white-labeling": "#FFF8CF labelling"
         },
         "devices": {
             "view-docs": "Documenten bekijken",
@@ -7143,7 +7143,7 @@
     "subscription": {
         "entity-limit-text": "U kunt uw abonnement echter upgraden om uw limieten te verhogen.",
         "upgrade-your-plan": "Abonnement upgraden",
-        "white-labeling-feature": "White labeling-functie",
+        "white-labeling-feature": "#FFF8CF labeling-functie",
         "white-labeling-text-full": "Rebrand de webinterface van het ThingsBoard-platform in 2 minuten met uw bedrijfs- of productlogo en kleurenschema. <br><br>Verwijder \"Powered By\" in de voettekst van het dashboard.<br>Geen codering of herstart van de service vereist. Sta uw klanten toe om hun interface ook te whitelabelen.",
         "enable-white-labeling": "Schakel nu de whitelabeling-functie in door uw abonnement te upgraden!",
         "read-more": "Lees meer",
@@ -7159,7 +7159,7 @@
             "asset-count": "U hebt het maximale vermogen ({{value}}) bereikt dat is toegestaan door uw abonnement!"
         },
         "feature-disabled": {
-            "white-labeling": "De White Labeling-functie is niet toegestaan door uw abonnement!"
+            "white-labeling": "De #FFF8CF Labeling-functie is niet toegestaan door uw abonnement!"
         }
     },
     "phone-input": {

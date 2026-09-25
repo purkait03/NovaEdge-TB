@@ -41,7 +41,7 @@
   align-items: flex-start;
 
   .tb-primary-fill {
-    background: #fff;
+    background: #FFF8CF;
     border-radius: 50%;
     &:before {
       opacity: 0.1;
@@ -59,7 +59,7 @@
     display: flex;
     flex-direction: column;
     z-index: 101;
-    background: #fff;
+    background: #FFF8CF;
     border-radius: 24px;
     &.tb-primary-fill {
       border-radius: 24px;
@@ -94,12 +94,12 @@
       font-size: 12px;
       line-height: 12px;
       font-weight: 500;
-      color: #ffffff;
+      color: #FFF8CF;
     }
   }
   &.tb-active {
     .tooltipster-box {
-      background: #fff;
+      background: #FFF8CF;
       border: 1px solid rgba(0, 0, 0, 0.38);
       box-shadow: 0 0 10px 6px rgba(0, 0, 0, .2);
       .tooltipster-content {
@@ -121,7 +121,7 @@
             border-top-color: rgba(0, 0, 0, 0.38);
           }
           .tooltipster-arrow-background {
-            border-top-color: #fff;
+            border-top-color: #FFF8CF;
             left: -2px;
           }
         }
@@ -135,7 +135,7 @@
             border-bottom-color: rgba(0, 0, 0, 0.38);
           }
           .tooltipster-arrow-background {
-            border-bottom-color: #fff;
+            border-bottom-color: #FFF8CF;
             left: -2px;
             top: -1px;
           }
@@ -150,7 +150,7 @@
             border-left-color: rgba(0, 0, 0, 0.38);
           }
           .tooltipster-arrow-background {
-            border-left-color: #fff;
+            border-left-color: #FFF8CF;
             top: -2px;
           }
         }
@@ -164,7 +164,7 @@
             border-right-color: rgba(0, 0, 0, 0.38);
           }
           .tooltipster-arrow-background {
-            border-right-color: #fff;
+            border-right-color: #FFF8CF;
             top: -2px;
             left: -1px;
           }

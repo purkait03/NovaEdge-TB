@@ -335,7 +335,7 @@
 {
   "name": "unit.kelvin",
   "symbol": "K",
-  "tags": ["temperature","heat","cold","warmth","degrees","kelvin","K","color quality","white balance","color temperature"]
+  "tags": ["temperature","heat","cold","warmth","degrees","kelvin","K","color quality","#FFF8CF balance","color temperature"]
 },
 {
   "name": "unit.rankine",

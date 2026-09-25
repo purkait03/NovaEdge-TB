@@ -36,7 +36,6 @@ import { ContentType, contentTypesMap } from '@shared/models/constants';
 import { CancelAnimationFrame, RafService } from '@core/services/raf.service';
 import { guid } from '@core/utils';
 import { getAce } from '@shared/models/ace/ace.models';
-import { beautifyJs } from '@shared/models/beautify.models';
 import { coerceBoolean } from '@shared/decorators/coercion';
 
 @Component({
@@ -331,18 +330,37 @@ export class JsonContentComponent implements OnInit, ControlValueAccessor, Valid
   }
 
   beautifyJSON() {
-    beautifyJs(this.contentBody, {indent_size: 4, wrap_line_length: 60}).subscribe(
-      (res) => {
-        this.jsonEditor.setValue(res ? res : '', -1);
-        this.updateView();
-      }
-    );
+    const raw = this.jsonEditor ? this.jsonEditor.getValue() : this.contentBody;
+    if (!raw?.trim()) {
+      return;
+    }
+    try {
+      const parsed = JSON.parse(raw);
+      const res = JSON.stringify(parsed, null, 4);
+      this.ignoreChange = true;
+      this.jsonEditor.setValue(res ? res : '', -1);
+      this.ignoreChange = false;
+      this.updateView();
+    } catch (_) {
+      // invalid JSON: keep current text, validation will show error on blur
+    }
   }
 
   minifyJSON() {
-    const res = JSON.stringify(this.contentBody);
-    this.jsonEditor.setValue(res ? res : '', -1);
-    this.updateView();
+    const raw = this.jsonEditor ? this.jsonEditor.getValue() : this.contentBody;
+    if (!raw?.trim()) {
+      return;
+    }
+    try {
+      const parsed = JSON.parse(raw);
+      const res = JSON.stringify(parsed);
+      this.ignoreChange = true;
+      this.jsonEditor.setValue(res ? res : '', -1);
+      this.ignoreChange = false;
+      this.updateView();
+    } catch (_) {
+      // invalid JSON: keep current text
+    }
   }
 
   onFullscreen() {

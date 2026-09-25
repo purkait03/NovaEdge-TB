@@ -67,7 +67,7 @@ tb-dashboard-widget-select {
         border-radius: 8px;
         overflow: hidden;
         padding: 0;
-        border: 1px solid rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 248, 207, 0.15);
         .mat-button-toggle.mat-button-toggle-appearance-standard {
           .mat-button-toggle-focus-overlay, .mat-button-toggle-ripple {
             border-radius: 0;
@@ -129,7 +129,7 @@ tb-dashboard-widget-select {
       }
 
       &.focus {
-        background: #fff;
+        background: #FFF8CF;
         border-color: rgba(0, 0, 0, 0.15);
         caret-color: $tb-primary-color;
 
@@ -216,7 +216,7 @@ tb-dashboard-widget-select {
       padding: 16px 20px;
       border: 1px solid $tb-primary-color;
       border-radius: 4px;
-      background: #fff;
+      background: #FFF8CF;
       cursor: pointer;
       transition: background-color 0.2s;
 
@@ -324,7 +324,7 @@ tb-dashboard-widget-select {
           justify-content: center;
           align-items: center;
           border-radius: 4px;
-          color: #fff;
+          color: #FFF8CF;
           font-size: 11px;
           font-style: normal;
           font-weight: 600;
@@ -594,7 +594,7 @@ tb-dashboard-widget-select {
     height: 18px;
     border-radius: 9px;
     background: #FF5722;
-    color: white;
+    color: #FFF8CF;
     font-size: 11px;
     font-weight: 600;
     margin-left: 8px;

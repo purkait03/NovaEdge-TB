@@ -90,7 +90,12 @@ export const resolveBreakpoint = (breakpoint: string): string => {
   return breakpoint;
 };
 
-export const helpBaseUrl = 'https://thingsboard.io';
+// Centralized Help Page URL - single source of truth for all Help buttons (Go to help page action).
+// Every Help (?) icon across the application must open this exact base URL in a new tab
+// with no appended path, query, hash or current route. Future URL changes require editing only this constant.
+export const HELP_PAGE_URL = 'https://swatch360.seple.in/';
+
+export const helpBaseUrl = HELP_PAGE_URL.replace(/\/$/, '');
 
 export const docPlatformPrefix = '';
 

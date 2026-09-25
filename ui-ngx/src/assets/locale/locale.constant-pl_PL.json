@@ -1124,7 +1124,7 @@
         "select-default-customer": "Wybierz domyślnego klienta",
         "default-customer": "Domyślny klient",
         "default-customer-required": "Do debugowania panelu na poziomie dzierżawy wymagany jest domyślny klient",
-        "allow-white-labeling": "Zezwalaj na white labeling",
+        "allow-white-labeling": "Zezwalaj na #FFF8CF labeling",
         "search": "Szukaj klientów",
         "selected-customers": "Wybrano {count, plural, =1 {1 klienta} other {# klientów} }",
         "edges": "Obiekty Edge klienta",
@@ -2293,8 +2293,8 @@
         "type-ota-package": "Ota Package",
         "type-queue": "Queue",
         "type-scheduler-event": "Wydarzenie w harmonogramie",
-        "type-white-labeling": "White Labeling",
-        "type-login-white-labeling": "Logowanie White Labeling",
+        "type-white-labeling": "#FFF8CF Labeling",
+        "type-login-white-labeling": "Logowanie #FFF8CF Labeling",
         "type-custom-translation": "Tłumaczenie niestandardowe",
         "type-role": "Rola",
         "type-group-permission": "Zezwolenie grupowe",
@@ -4508,7 +4508,7 @@
         "invalid-target-rulechain": "Nie można rozwiązać docelowego łańcucha reguł!",
         "test-script-function": "Funkcja skryptu testowego",
         "script-lang-java-script": "Java Script",
-        "script-lang-tbel": "TBEL",
+        "script-lang-tbel": "NovaEL",
         "message": "Wiadomość",
         "message-type": "Typ wiadomości",
         "select-message-type": "Wybierz typ wiadomości",
@@ -4636,7 +4636,7 @@
                 "DASHBOARD_GROUP": "Grupa Panelu",
                 "ROLE": "Rola",
                 "GROUP_PERMISSION": "Zezwolenie grupowe",
-                "WHITE_LABELING": "White Labeling",
+                "WHITE_LABELING": "#FFF8CF Labeling",
                 "AUDIT_LOG": "Dziennik kontroli",
                 "API_USAGE_STATE": "Stan użycia interfejsu API",
                 "TB_RESOURCE": "Biblioteka",
@@ -4986,8 +4986,8 @@
         "select-tenant": "Wybierz tenanta",
         "no-tenants-matching": "Nie znaleziono tenanta '{{entity}}'.",
         "tenant-required": "Tenant jest wymagany",
-        "allow-white-labeling": "Zezwalaj na White Labeling",
-        "allow-customer-white-labeling": "Zezwalaj na White Labeling klienta",
+        "allow-white-labeling": "Zezwalaj na #FFF8CF Labeling",
+        "allow-customer-white-labeling": "Zezwalaj na #FFF8CF Labeling klienta",
         "search": "Wyszukaj tenantów",
         "selected-tenants": "Wybrano { count, plural, =1 {1 tenanta} other {# tenantów} }",
         "isolated-tb-rule-engine": "Przetwarzanie w izolowanym kontenerze mechanizmu reguł ThingsBoard",
@@ -7510,7 +7510,7 @@
         "configured-features": {
             "title": "Skonfigurowane funkcje",
             "info": "Stan funkcji wymagających konfiguracji",
-            "white-labeling-feature": "White labeling",
+            "white-labeling-feature": "#FFF8CF labeling",
             "email-feature": "E-mail",
             "sms-feature": "SMS-em",
             "slack-feature": "Slack",
@@ -7538,7 +7538,7 @@
             "dashboards-info": "{count} / { max, plural, =0 {∞} other {#} } Paneli",
             "integrations-info": "{count} / { max, plural, =0 {∞} other {#} } Integracji",
             "community-support": "Pomoc społeczności",
-            "white-labeling": "White labeling",
+            "white-labeling": "#FFF8CF labeling",
             "unlimited-datapoints-and-messages": "Nieograniczone punkty danych i wiadomości",
             "unlimited-api-calls": "Nieograniczone wywołania API"
         },
@@ -7605,9 +7605,9 @@
                     "how-to-configure-sms-provider": "Jak skonfigurować dostawcę SMS"
                 },
                 "step4": {
-                    "title": "Skonfiguruj funkcję: White labeling",
+                    "title": "Skonfiguruj funkcję: #FFF8CF labeling",
                     "content": "<p>Z łatwością dostosuj logo i kolorystykę swojej firmy lub produktu bez kodowania i ponownego uruchamiania usługi.</p><p>Postępuj zgodnie z dokumentacją, aby dowiedzieć się, jak to zrobić:</p>",
-                    "how-to-configure-white-labeling": "Jak white labeling"
+                    "how-to-configure-white-labeling": "Jak #FFF8CF labeling"
                 },
                 "step5": {
                     "title": "Skonfiguruj funkcję: 2FA",
@@ -7685,9 +7685,9 @@
     "subscription": {
         "entity-limit-text": "Możesz jednak uaktualnić swój plan subskrypcji, aby zwiększyć swoje limity.",
         "upgrade-your-plan": "Uaktualnij plan subskrypcji",
-        "white-labeling-feature": "Funkcja white labeling",
-        "white-labeling-text-full": "Zmień nazwę interfejsu internetowego platformy ThingsBoard za pomocą logo Twojej firmy lub produktu oraz schematu kolorów w 2 minuty.<br><br>Usuń opcję „Powered By” w stopce panelu.<br>Nie jest wymagane kodowanie ani ponowne uruchamianie usługi. Pozwól także swoim klientom na White Labeling swoich interfejsów",
-        "enable-white-labeling": "Włącz teraz funkcję white labeling, aktualizując swój plan subskrypcji!",
+        "white-labeling-feature": "Funkcja #FFF8CF labeling",
+        "white-labeling-text-full": "Zmień nazwę interfejsu internetowego platformy ThingsBoard za pomocą logo Twojej firmy lub produktu oraz schematu kolorów w 2 minuty.<br><br>Usuń opcję „Powered By” w stopce panelu.<br>Nie jest wymagane kodowanie ani ponowne uruchamianie usługi. Pozwól także swoim klientom na #FFF8CF Labeling swoich interfejsów",
+        "enable-white-labeling": "Włącz teraz funkcję #FFF8CF labeling, aktualizując swój plan subskrypcji!",
         "read-more": "Czytaj więcej",
         "white-labeling-video-text": "Obejrzyj samouczek wideo poniżej, aby zobaczyć, jak działa ta funkcja!"
     },
@@ -7701,7 +7701,7 @@
             "asset-count": "Osiągnąłeś maksymalną liczbę zasobów ({{value}}) dozwolone przez Twój plan abonamentowy!"
         },
         "feature-disabled": {
-            "white-labeling": "Funkcja white labeling nie jest dozwolona w Twoim planie subskrypcji!"
+            "white-labeling": "Funkcja #FFF8CF labeling nie jest dozwolona w Twoim planie subskrypcji!"
         }
     },
     "phone-input": {

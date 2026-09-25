@@ -51,7 +51,7 @@ export class DashboardStateWidgetSettingsComponent extends WidgetSettingsCompone
       stateId: '',
       defaultAutofillLayout: true,
       defaultMargin: 0,
-      defaultBackgroundColor: '#fff',
+      defaultBackgroundColor: '#FFF8CF',
       syncParentStateParams: true
     };
   }

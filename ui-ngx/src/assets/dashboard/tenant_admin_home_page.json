@@ -12,7 +12,7 @@
           "sizeY": 6.5,
           "config": {
               "showTitle": false,
-              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundColor": "rgb(255, 248, 207)",
               "color": "rgba(0, 0, 0, 0.87)",
               "padding": "16px",
               "settings": {},
@@ -38,7 +38,7 @@
         "config": {
           "datasources": [],
           "showTitle": false,
-          "backgroundColor": "#fff",
+          "backgroundColor": "#FFF8CF",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -76,7 +76,7 @@
         "config": {
           "datasources": [],
           "showTitle": false,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -102,7 +102,7 @@
         "sizeY": 6.5,
         "config": {
           "showTitle": false,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {},
@@ -127,7 +127,7 @@
         "sizeY": 3,
         "config": {
           "showTitle": false,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -154,7 +154,7 @@
         "sizeY": 6.5,
         "config": {
           "showTitle": false,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {},
@@ -244,7 +244,7 @@
             }
           ],
           "showTitle": false,
-          "backgroundColor": "#fff",
+          "backgroundColor": "#FFF8CF",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -365,7 +365,7 @@
             }
           ],
           "showTitle": false,
-          "backgroundColor": "#fff",
+          "backgroundColor": "#FFF8CF",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -647,7 +647,7 @@
             },
             "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
             "tooltipDateInterval": false,
-            "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+            "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
             "tooltipBackgroundBlur": 4,
             "animation": {
               "animation": true,
@@ -661,10 +661,10 @@
             },
             "background": {
               "type": "color",
-              "color": "#fff",
+              "color": "#FFF8CF",
               "overlay": {
                 "enabled": false,
-                "color": "rgba(255,255,255,0.72)",
+                "color": "rgba(255, 248, 207, 0.72)",
                 "blur": 3
               }
             },
@@ -975,7 +975,7 @@
             },
             "tooltipDateColor": "rgba(0, 0, 0, 0.76)",
             "tooltipDateInterval": false,
-            "tooltipBackgroundColor": "rgba(255, 255, 255, 0.76)",
+            "tooltipBackgroundColor": "rgba(255, 248, 207, 0.76)",
             "tooltipBackgroundBlur": 4,
             "animation": {
               "animation": true,
@@ -989,10 +989,10 @@
             },
             "background": {
               "type": "color",
-              "color": "#fff",
+              "color": "#FFF8CF",
               "overlay": {
                 "enabled": false,
-                "color": "rgba(255,255,255,0.72)",
+                "color": "rgba(255, 248, 207, 0.72)",
                 "blur": 3
               }
             },
@@ -1056,7 +1056,7 @@
         "sizeY": 3.5,
         "config": {
           "showTitle": false,
-          "backgroundColor": "#fff",
+          "backgroundColor": "#FFF8CF",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "0px",
           "settings": {
@@ -1096,7 +1096,7 @@
         "sizeY": 6.5,
         "config": {
           "showTitle": false,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -1122,7 +1122,7 @@
         "sizeY": 3,
         "config": {
           "showTitle": true,
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(255, 248, 207)",
           "color": "rgba(0, 0, 0, 0.87)",
           "padding": "16px",
           "settings": {
@@ -1135,10 +1135,10 @@
             },
             "background": {
               "type": "color",
-              "color": "#fff",
+              "color": "#FFF8CF",
               "overlay": {
                 "enabled": false,
-                "color": "rgba(255,255,255,0.72)",
+                "color": "rgba(255, 248, 207, 0.72)",
                 "blur": 3
               }
             }
@@ -1266,7 +1266,7 @@
               }
             },
             "gridSettings": {
-              "backgroundColor": "#ffffff",
+              "backgroundColor": "#FFF8CF",
               "columns": 24,
               "margin": 0,
               "backgroundSizeMode": "100%",
@@ -1294,7 +1294,7 @@
               }
             },
             "gridSettings": {
-              "backgroundColor": "#ffffff",
+              "backgroundColor": "#FFF8CF",
               "columns": 24,
               "margin": 0,
               "outerMargin": true,

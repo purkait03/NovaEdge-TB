@@ -43,7 +43,7 @@ export class DoughnutChartWidgetSettingsComponent extends WidgetSettingsComponen
     return {
       showTooltip: true,
       borderWidth: 5,
-      borderColor: '#fff',
+      borderColor: '#FFF8CF',
       legend: {
         display: true,
         labelsFontColor: '#666'
