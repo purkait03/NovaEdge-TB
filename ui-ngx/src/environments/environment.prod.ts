@@ -18,7 +18,7 @@ export const environment = {
   appTitle: 'Swatch360',
   production: true,
 // @ts-ignore
-  tbVersion: TB_VERSION,
+  tbVersion: SW_VERSION,
 // @ts-ignore
   supportedLangs: SUPPORTED_LANGS,
   defaultLang: 'en_US'
