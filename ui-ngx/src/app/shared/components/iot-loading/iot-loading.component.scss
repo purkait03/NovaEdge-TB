@@ -1,9 +1,12 @@
+$bg-color: #0D0906;
+
 :host {
   display: contents;
 }
 
-/* container – reuse existing loading mechanism, only visual is Pulse Orbit */
+/* container – reuse existing loading mechanism, only visual is dot sliding loader */
 .tb-iot-loading {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,6 +17,7 @@
   box-sizing: border-box;
   overflow: hidden;
   pointer-events: none;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .tb-iot-loading--fullscreen {
@@ -23,118 +27,124 @@
   width: 100vw;
   height: 100vh;
   min-height: 100vh;
-  background: #0D0906;
+  background: $bg-color;
   pointer-events: all;
 }
 
-/* Pulse Orbit – NovaEdge dark, 3 concentric orbits + brand mark only – orbit-container → particle */
-.ne-pulse-orbit {
+.loader {
+  height: 20px;
+  width: 250px;
   position: relative;
-  width: 200px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
+  margin: auto;
 }
 
-.ne-pulse-orbit__logo {
-  position: relative;
-  z-index: 2;
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: ne-pulse 0.9s ease-in-out infinite;
-  will-change: transform;
-}
-
-.ne-pulse-orbit__logo img {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  display: block;
-  image-rendering: -webkit-optimize-contrast;
-}
-
-@keyframes ne-pulse {
-  0% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(196,154,108,0.18)); }
-  14% { transform: scale(1.08); filter: drop-shadow(0 0 10px rgba(196,154,108,0.32)); }
-  28% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(196,154,108,0.18)); }
-  42% { transform: scale(1.08); filter: drop-shadow(0 0 10px rgba(196,154,108,0.32)); }
-  70% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(196,154,108,0.18)); }
-  100% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(196,154,108,0.18)); }
-}
-
-.ne-orbit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 1px solid rgba(196,154,108,0.15);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  will-change: transform;
-  animation: ne-orbit-rotate linear infinite;
-}
-
-.ne-orbit--1 { width: 118px; height: 118px; animation-duration: 5s; }
-.ne-orbit--2 { width: 156px; height: 156px; border-color: rgba(196,154,108,0.11); animation-duration: 7s; animation-direction: reverse; }
-.ne-orbit--3 { width: 196px; height: 196px; border-color: rgba(196,154,108,0.07); animation-duration: 9s; }
-
-@keyframes ne-orbit-rotate {
-  to { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-.ne-dot {
+.tb-iot-loading--fullscreen .loader {
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 7px;
-  height: 7px;
-  margin-left: -3.5px;
-  border-radius: 50%;
-  background: #C49A6C;
-  box-shadow: 0 0 0 4px rgba(196,154,108,0.13), 0 0 10px rgba(196,154,108,0.42);
-  transform: translate(-50%, -50%);
-  opacity: 0.92;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.ne-dot--small {
-  width: 5px;
-  height: 5px;
-  margin-left: -2.5px;
-  top: 0;
-  opacity: 0.76;
-  box-shadow: 0 0 0 3px rgba(196,154,108,0.11), 0 0 8px rgba(196,154,108,0.32);
+.loader--dot {
+  animation-name: loader;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  border: 2px solid white;
 }
 
-.ne-dot--tiny {
-  width: 4px;
-  height: 4px;
-  margin-left: -2px;
-  top: 0;
-  opacity: 0.58;
-  box-shadow: 0 0 0 2px rgba(196,154,108,0.09);
+.loader--dot:first-child {
+  background-color: #8cc759;
+  animation-delay: 0.5s;
 }
 
-.ne-orbit .ne-dot:nth-child(2) {
-  top: 100%;
+.loader--dot:nth-child(2) {
+  background-color: #8c6daf;
+  animation-delay: 0.4s;
 }
 
-@media (max-width: 600px) {
-  .ne-pulse-orbit { width: 170px; height: 170px; }
-  .ne-orbit--1 { width: 100px; height: 100px; }
-  .ne-orbit--2 { width: 132px; height: 132px; }
-  .ne-orbit--3 { width: 164px; height: 164px; }
-  .ne-pulse-orbit__logo { width: 48px; height: 48px; }
-  .ne-pulse-orbit__logo img { width: 44px; height: 44px; }
+.loader--dot:nth-child(3) {
+  background-color: #ef5d74;
+  animation-delay: 0.3s;
+}
+
+.loader--dot:nth-child(4) {
+  background-color: #f9a74b;
+  animation-delay: 0.2s;
+}
+
+.loader--dot:nth-child(5) {
+  background-color: #60beeb;
+  animation-delay: 0.1s;
+}
+
+.loader--dot:nth-child(6) {
+  background-color: #fbef5a;
+  animation-delay: 0s;
+}
+
+.loader--text {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  width: 4rem;
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tb-iot-loading:not(.tb-iot-loading--fullscreen) .loader--text {
+  color: inherit;
+}
+
+.loader--text:after {
+  content: "";
+  font-weight: bold;
+  animation-name: loading-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+  15% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(230px);
+  }
+  65% {
+    transform: translateX(230px);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes loading-text {
+  0% {
+    content: "";
+  }
+  25% {
+    content: "";
+  }
+  50% {
+    content: "";
+  }
+  75% {
+    content: "";
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ne-pulse-orbit__logo,
-  .ne-orbit { animation: none !important; }
-  .ne-orbit { opacity: 0.5; }
-  .ne-dot { opacity: 0.80; }
+  .loader--dot,
+  .loader--text:after {
+    animation: none !important;
+  }
 }
