@@ -77,24 +77,6 @@
       background-color: #fbef5a;
       animation-delay: 0s;
     }
-    .loader--text {
-      position: absolute;
-      top: 200%;
-      left: 0;
-      right: 0;
-      width: 4rem;
-      margin: auto;
-      color: #fff;
-      font-weight: bold;
-    }
-    .loader--text:after {
-      content: "Loading";
-      font-weight: bold;
-      animation-name: loading-text;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-    }
-
     @keyframes loader {
       15% {
         transform: translateX(0);
@@ -109,24 +91,8 @@
         transform: translateX(0);
       }
     }
-    @keyframes loading-text {
-      0% {
-        content: "Loading";
-      }
-      25% {
-        content: "Loading.";
-      }
-      50% {
-        content: "Loading..";
-      }
-      75% {
-        content: "Loading...";
-      }
-    }
-
     @media (prefers-reduced-motion: reduce) {
-      .loader--dot,
-      .loader--text:after { animation: none !important; }
+      .loader--dot { animation: none !important; }
     }
 
   </style>
@@ -141,7 +107,6 @@
       <div class="loader--dot"></div>
       <div class="loader--dot"></div>
       <div class="loader--dot"></div>
-      <div class="loader--text"></div>
     </div>
   </div>
 </body>
