@@ -23,21 +23,27 @@
                [mode]="sidenavMode"
                [opened]="sidenavOpened && !forceFullscreen">
     <header class="tb-nav-header">
-      <mat-toolbar class="tb-nav-header-toolbar">
-        <tb-logo
-          [src]="logo" class="tb-logo-title">
-        </tb-logo>
-        @if (sidenavDesktop()) {
-          <button mat-icon-button class="tb-sidenav-toggle tb-mat-32" (click)="toggleSidenav()">
-            @if (sidenavCollapsed()) {
-              <div class="tb-collapsed-logo-container">
-                <img class="tb-collapsed-logo" [src]="collapsedLogo" aria-label="logo" alt="Logo"/>
-                <tb-icon class="tb-mat-20 tb-open-icon">sidebar-open</tb-icon>
-              </div>
-            } @else {
+      <mat-toolbar class="tb-nav-header-toolbar" [class.ne-rail-header]="menuCollapsed()">
+        @if (!menuCollapsed()) {
+          <tb-logo
+            [src]="logo" class="tb-logo-title">
+          </tb-logo>
+          @if (sidenavDesktop()) {
+            <button mat-icon-button class="tb-sidenav-toggle tb-mat-32" (click)="toggleSidenav()"
+                    matTooltip="Collapse sidebar" matTooltipPosition="right" aria-label="Collapse sidebar">
               <tb-icon class="tb-mat-20">sidebar-close</tb-icon>
-            }
-          </button>
+            </button>
+          }
+        } @else {
+          <div class="ne-rail-brand">
+            <div class="ne-rail-logo" aria-label="NovaEdge" role="img">
+              <img [src]="collapsedLogo" aria-label="logo" alt="NovaEdge"/>
+            </div>
+            <button mat-icon-button class="ne-rail-toggle" (click)="$event.stopPropagation(); toggleSidenav()"
+                    matTooltip="Expand sidebar" matTooltipPosition="right" aria-label="Expand sidebar">
+              <tb-icon class="tb-mat-16">sidebar-open</tb-icon>
+            </button>
+          </div>
         }
       </mat-toolbar>
     </header>

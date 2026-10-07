@@ -55,3 +55,31 @@
     white-space: nowrap;
   }
 }
+
+// Collapsed icon rail: badge floats as a small red dot on the icon corner
+// without disturbing perfect icon centering.
+:host-context(.ne-collapsed) ::ng-deep,
+:host-context(.tb-collapsed) ::ng-deep {
+  .ne-count-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    margin: 0;
+    border: 2px solid #ffffff;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  a.mat-mdc-button.mat-mdc-button-base {
+    overflow: visible;
+    position: relative;
+  }
+}

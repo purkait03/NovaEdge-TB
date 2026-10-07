@@ -40,8 +40,13 @@
       &.tb-collapsed {
         mat-sidenav.tb-site-sidenav {
           width: var(--tb-nav-width-collapsed);
-          .tb-logo-title {
-            opacity: 0;
+          // Purpose-built icon rail: fixed 68px track, content centered.
+          // Individual rail visuals live in the theme blocks below; this
+          // only guarantees geometry so expanded styles never leak in.
+          .tb-nav-header,
+          .tb-side-menu-toolbar,
+          .tb-side-menu-scroll {
+            align-items: center;
           }
         }
         mat-sidenav-content.tb-site-content {
@@ -89,33 +94,61 @@
             background-color: var(--tb-sidebar-bg-hover);
             color: var(--tb-sidebar-text);
           }
-          .tb-collapsed-logo-container {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            margin-left: 6px;
-            .mat-icon, img {
-              width: 20px;
-              height: 20px;
-              position: absolute;
-              inset: 0;
-              transition: opacity $sidenav-anim-timing;
-            }
-            .tb-open-icon {
-              opacity: 0;
-            }
-            .tb-collapsed-logo {
-              opacity: 1;
+        }
+        // ── Purpose-built collapsed icon rail header (structure only) ──
+        // Separate layout from the expanded toolbar: vertical brand stack,
+        // perfectly centered. Theme-specific colors live in the
+        // :host-context blocks further below.
+        &.ne-rail-header {
+          min-height: 0;
+          height: auto;
+          padding: 0;
+          border: 0;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .ne-rail-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+          }
+          .ne-rail-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+            img {
+              width: 24px;
+              height: 24px;
+              object-fit: contain;
+              display: block;
             }
           }
-          &:hover {
-            .tb-collapsed-logo-container {
-              .tb-open-icon {
-                opacity: 1;
-              }
-              .tb-collapsed-logo {
-                opacity: 0;
-              }
+          .ne-rail-toggle {
+            width: 28px;
+            height: 28px;
+            min-width: 28px;
+            min-height: 28px;
+            line-height: 28px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            flex-shrink: 0;
+            ::ng-deep .mat-mdc-button-touch-target {
+              width: 28px;
+              height: 28px;
             }
           }
         }
@@ -361,7 +394,7 @@
     }
     .tb-nav-header {
       flex-shrink: 0;
-      .tb-nav-header-toolbar {
+      .tb-nav-header-toolbar:not(.ne-rail-header) {
         min-height: 60px;
         height: auto;
         padding: 8px 8px 8px 16px;
@@ -372,6 +405,45 @@
         box-shadow:
           0 1px 2px rgba(16, 24, 40, 0.05),
           0 10px 28px -20px rgba(16, 24, 40, 0.25);
+      }
+      // ── Collapsed rail brand: transparent header, compact mark ──
+      .tb-nav-header-toolbar.ne-rail-header {
+        min-height: 0;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        .ne-rail-logo {
+          background: #ffffff;
+          border: 1px solid #e5eaf1;
+          border-radius: 12px;
+          box-shadow:
+            0 1px 2px rgba(16, 24, 40, 0.06),
+            0 4px 12px -6px rgba(16, 24, 40, 0.12);
+        }
+        .ne-rail-toggle {
+          background: #ffffff;
+          border: 1px solid #e5eaf1;
+          color: #64748b;
+          box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+          transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+          &:hover {
+            background: #e8f0fe;
+            border-color: #bfdbfe;
+            color: #2563eb;
+          }
+          &:focus-visible {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+          }
+          ::ng-deep .mat-icon,
+          ::ng-deep tb-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
       }
     }
     .tb-side-menu-toolbar {
@@ -397,6 +469,66 @@
       }
       tb-user-menu {
         background: transparent;
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────
+  // Purpose-built collapsed icon rail — LIGHT THEME.
+  // Independent layout from the expanded card sidebar above:
+  // 68px white rail, centered 40px icon cells, compact brand mark.
+  // ─────────────────────────────────────────────────────────────
+  mat-sidenav-container.tb-desktop.tb-collapsed {
+    mat-sidenav.tb-site-sidenav {
+      background: #ffffff;
+      border-right: 1px solid #e6eaf1;
+      box-shadow: 12px 0 32px -24px rgba(15, 23, 42, 0.18);
+      ::ng-deep .mat-drawer-inner-container {
+        background: #ffffff;
+        padding: 10px 8px 10px;
+        gap: 8px;
+        align-items: stretch;
+        overflow: hidden;
+      }
+      .tb-nav-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .tb-nav-header-toolbar.ne-rail-header {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .tb-side-menu-toolbar {
+        flex: 1 1 auto;
+        min-height: 0;
+        gap: 0;
+        align-items: stretch;
+        .tb-side-menu-scroll {
+          flex: 1 1 auto;
+          min-height: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          padding: 0;
+          overflow-y: auto;
+          overflow-x: hidden;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+          }
+        }
+        tb-user-menu {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding-top: 8px;
+          margin-top: 2px;
+          border-top: 1px solid #f1f5f9;
+        }
       }
     }
   }

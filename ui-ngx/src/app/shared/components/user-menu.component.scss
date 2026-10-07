@@ -210,4 +210,62 @@ tb-user-menu {
       background: #f1f5f9;
     }
   }
+
+  // ── Collapsed icon rail profile: compact 40px rounded container ──
+  // Purpose-built, centered — not a compressed profile card.
+  .tb-side-menu-toolbar button.mat-mdc-button.tb-user-menu.tb-collapsed {
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    background: #ffffff;
+    border: 1px solid #e5eaf1;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
+    line-height: 1;
+    overflow: hidden;
+    &:hover {
+      background: #eef4ff !important;
+      border-color: #bfdbfe;
+    }
+    &:focus-visible {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+    }
+    .mat-icon.tb-mini-avatar,
+    tb-icon.tb-mini-avatar {
+      width: 22px;
+      height: 22px;
+      font-size: 22px;
+      line-height: 22px;
+      margin: 0;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: transparent;
+      color: #64748b;
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    &:hover .mat-icon.tb-mini-avatar,
+    &:hover tb-icon.tb-mini-avatar {
+      color: #2563eb;
+    }
+    .tb-user-info,
+    .ne-profile-settings {
+      display: none !important;
+    }
+  }
 }

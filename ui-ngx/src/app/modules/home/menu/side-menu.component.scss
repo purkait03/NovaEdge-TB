@@ -35,8 +35,21 @@
       a.mat-mdc-button.mat-mdc-button-base {
         padding-right: 0;
         min-width: 0;
+        // Hide text labels only — badges stay visible and icon
+        // alignment is preserved (light rail refines this further).
         span.mdc-button__label {
-          opacity: 0;
+          opacity: 1;
+        }
+        span.mdc-button__label > span:not(.ne-count-badge):not(.tb-toggle-icon) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
         }
         &.is-new::after {
           opacity: 0;
@@ -293,16 +306,181 @@
     border: 1px solid #2563eb;
   }
 
-  // Collapsed icon rail: cards dissolve, icons only (labels hidden by the
-  // existing .tb-collapsed rules; toggle headers keep their popovers).
+  // ─────────────────────────────────────────────────────────
+  // Collapsed icon rail — PURPOSE-BUILT, not a compressed sidebar.
+  // 68px white rail: 40px centered icon cells, 4px uniform rhythm,
+  // compact 12px rounded active pill, subtle section hairlines.
+  // ─────────────────────────────────────────────────────────
   .ne-side-menu.ne-collapsed {
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
     .ne-nav-card {
       background: transparent;
       border: 0;
       border-radius: 0;
       box-shadow: none;
       padding: 0;
+      margin: 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 4px;
+    }
+
+    // Extremely subtle separators between groups — hairline only,
+    // no large gaps.
+    .ne-nav-card + .ne-nav-card {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    .ne-card-items {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 4px;
+      height: auto !important;
+      visibility: visible !important;
+      overflow: visible;
+      transition: none;
+    }
+
+    // ── Icon cells: 40px rounded-square, perfectly centered ──
+    a.mat-mdc-button.mat-mdc-button-base,
+    .tb-button-toggle.mat-mdc-button.mat-mdc-button-base {
+      width: 40px;
+      min-width: 40px;
+      max-width: 40px;
+      height: 40px;
+      min-height: 40px;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      line-height: 1;
+      overflow: visible;
+      position: relative;
+      --mat-button-text-label-text-color: #64748b;
+
+      span.mdc-button__label {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+      }
+
+      // Hide text labels, keep layout purely iconic.
+      span.mdc-button__label > span:not(.ne-count-badge):not(.tb-toggle-icon) {
+        display: none;
+      }
+      .tb-toggle-icon {
+        display: none !important;
+      }
+
+      .mat-icon,
+      tb-icon.mat-icon {
+        margin: 0;
+        width: 21px;
+        height: 21px;
+        min-width: 21px;
+        min-height: 21px;
+        font-size: 21px;
+        line-height: 21px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #64748b;
+        transition: color 160ms ease;
+        svg {
+          width: 21px;
+          height: 21px;
+        }
+      }
+
+      &:hover, &.tb-hovered {
+        background-color: #eef4ff;
+        --mat-button-text-label-text-color: #0f172a;
+        .mat-icon,
+        tb-icon.mat-icon {
+          color: #334155;
+        }
+      }
+
+      &.tb-active {
+        background: #e8f0fe;
+        box-shadow: none;
+        --mat-button-text-label-text-color: #1d4ed8 !important;
+        .mat-icon,
+        tb-icon.mat-icon {
+          color: #2563eb;
+        }
+        &:hover {
+          background: #e3ecfd;
+          .mat-icon,
+          tb-icon.mat-icon {
+            color: #1d4ed8;
+          }
+        }
+      }
+
+      &:focus-visible {
+        outline: 2px solid #2563eb;
+        outline-offset: 1px;
+      }
+
+      // Hide NEW pills in the rail — they would break icon centering.
+      &.is-new::after {
+        display: none;
+      }
+
+      // Notification count stays visible as a small red dot that floats
+      // above the icon corner without shifting icon alignment.
+      .ne-count-badge {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        min-width: 16px;
+        height: 16px;
+        padding: 0 4px;
+        margin: 0;
+        border-radius: 999px;
+        background: #dc2626;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        white-space: nowrap;
+        pointer-events: none;
+      }
+    }
+
+    // Toggle sub-lists never expand inline in rail mode; children live
+    // in the hover popover.
+    .tb-menu-toggle-list {
+      height: 0 !important;
+      visibility: hidden !important;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
     }
   }
 

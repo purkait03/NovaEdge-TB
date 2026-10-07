@@ -78,7 +78,7 @@ tb-root {
   --tb-shadow-md: 0 4px 10px -2px rgba(16, 24, 40, 0.08), 0 2px 4px -2px rgba(16, 24, 40, 0.06);
   --tb-shadow-lg: 0 12px 24px -6px rgba(16, 24, 40, 0.12), 0 4px 8px -4px rgba(16, 24, 40, 0.08);
   --tb-nav-width: 250px;
-  --tb-nav-width-collapsed: 60px;
+  --tb-nav-width-collapsed: 68px;
   --tb-toolbar-height: 64px;
   --tb-sidebar-bg: #2E2910;
   --tb-sidebar-bg-hover: rgba(255, 248, 207, 0.08);
@@ -104,6 +104,7 @@ tb-root {
 
 body:not(.tb-dark) {
   --tb-nav-width: 288px;
+  --tb-nav-width-collapsed: 68px;
   --tb-sidebar-bg: #f6f8fc;
   --tb-sidebar-bg-hover: #eef2f7;
   --tb-sidebar-bg-active: #e7effd;
