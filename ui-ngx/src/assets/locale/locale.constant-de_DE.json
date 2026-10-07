@@ -10189,5 +10189,9 @@
   "language": {
     "auto": "Auto",
     "language": "Sprache"
+  },
+  "sidebar": {
+    "general": "General",
+    "ota-access": "OTA & Access"
   }
 }

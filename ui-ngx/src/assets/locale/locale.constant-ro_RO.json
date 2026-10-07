@@ -1787,5 +1787,9 @@
     },
     "language": {
         "language": "Limba"
-    }
+    },
+  "sidebar": {
+    "general": "General",
+    "ota-access": "OTA & Access"
+  }
 }

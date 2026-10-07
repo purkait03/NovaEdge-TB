@@ -23,4 +23,7 @@
     <tb-icon matButtonIcon>{{section.icon}}</tb-icon>
   }
   <span>{{section.customTranslate ? (section.name | customTranslate) : (section.name | translate)}}</span>
+  @if (section.badge) {
+    <span class="ne-count-badge">{{section.badge}}</span>
+  }
 </a>

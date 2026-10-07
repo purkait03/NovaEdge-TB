@@ -39,14 +39,6 @@ export class MenuToggleComponent {
   constructor(private store: Store<AppState>) {
   }
 
-  sectionHeight(): string {
-    if (this.section.opened && !this.collapsed) {
-      return this.section.pages.length * 40 + 'px';
-    } else {
-      return '0px';
-    }
-  }
-
   toggleSection(event: MouseEvent) {
     event.stopPropagation();
     if (this.collapsed) {

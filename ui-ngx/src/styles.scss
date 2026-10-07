@@ -96,6 +96,26 @@ tb-root {
   --tb-details-drawer-border: rgba(16, 24, 40, 0.08);
 }
 
+/*********************************
+ * NOVAEDGE MODERN CARD SIDEBAR — LIGHT THEME TOKENS
+ * Pure white / cool neutral palette, no beige or brown tones.
+ * Dark theme (.tb-dark, further below) keeps its own values.
+ *********************************/
+
+body:not(.tb-dark) {
+  --tb-nav-width: 288px;
+  --tb-sidebar-bg: #f6f8fc;
+  --tb-sidebar-bg-hover: #eef2f7;
+  --tb-sidebar-bg-active: #e7effd;
+  --tb-sidebar-text: #1e293b;
+  --tb-sidebar-text-secondary: #475569;
+  --tb-sidebar-text-muted: #8ca0b3;
+  --tb-sidebar-border: #e4e9f1;
+  --tb-sidebar-divider: #e7ecf3;
+  --tb-sidebar-scrollbar-thumb: rgba(100, 116, 139, 0.35);
+  --tb-sidebar-scrollbar-thumb-hover: rgba(100, 116, 139, 0.55);
+}
+
 body {
   background-color: var(--tb-page-background, #eef1f6);
 }

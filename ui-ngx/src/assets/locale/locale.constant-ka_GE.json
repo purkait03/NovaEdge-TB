@@ -1803,5 +1803,9 @@
   },
   "language": {
     "language": "ენა"
+  },
+  "sidebar": {
+    "general": "General",
+    "ota-access": "OTA & Access"
   }
 }

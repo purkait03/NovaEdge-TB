@@ -33,6 +33,11 @@ export interface MenuSection {
   isNew?: boolean;
   customTranslate?: boolean;
   active?: boolean;
+  /**
+   * Optional count badge rendered at the far right of the navigation row
+   * (e.g. open alarm count). Rendered only when set; never affects row height.
+   */
+  badge?: string;
 }
 
 export interface MenuReference {

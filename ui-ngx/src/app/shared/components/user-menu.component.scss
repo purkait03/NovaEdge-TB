@@ -38,6 +38,11 @@ tb-user-menu {
   .tb-user-menu-icon {
     display: none;
   }
+  // Settings affordance for the sidebar profile card. Hidden everywhere
+  // except the light-theme sidebar (see light block below).
+  .ne-profile-settings {
+    display: none;
+  }
   button.mat-mdc-button:not(.mat-mdc-icon-button).tb-user-menu {
     width: 100%;
     height: 100%;
@@ -127,5 +132,82 @@ tb-user-menu {
     border-top: 1px solid var(--tb-border-color);
     margin-top: 0;
     color: rgb(209, 39, 48) !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * Sidebar user profile card — LIGHT THEME ONLY. The account button
+ * becomes a separate rounded white card (avatar, name, role, gear),
+ * visually detached from the navigation cards above it.
+ * ───────────────────────────────────────────────────────────── */
+:host-context(body:not(.tb-dark)) ::ng-deep {
+  .tb-side-menu-toolbar button.mat-mdc-button.tb-user-menu:not(.tb-collapsed) {
+    height: auto;
+    min-height: 64px;
+    box-sizing: border-box;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #e5eaf1;
+    border-radius: 16px;
+    box-shadow:
+      0 1px 2px rgba(16, 24, 40, 0.05),
+      0 10px 28px -20px rgba(16, 24, 40, 0.25);
+    &:hover {
+      background: #f8fafc !important;
+      border-color: #dbe3ec;
+    }
+    .mat-icon.tb-mini-avatar,
+    tb-icon.tb-mini-avatar {
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      margin: 0;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #e8f0fe;
+      color: #2563eb;
+    }
+    .tb-user-info {
+      min-width: 0;
+      opacity: 1;
+    }
+    span.tb-user-display-name {
+      color: #0f172a !important;
+      font-size: 14px;
+      line-height: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    span.tb-user-authority {
+      color: #64748b !important;
+      font-size: 12px;
+      line-height: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ne-profile-settings {
+      display: inline-flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      margin-left: auto;
+      border-radius: 10px;
+      color: #94a3b8;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &:hover .ne-profile-settings {
+      color: #475569;
+      background: #f1f5f9;
+    }
   }
 }

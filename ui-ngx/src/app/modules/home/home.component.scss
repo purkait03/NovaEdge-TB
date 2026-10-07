@@ -335,3 +335,77 @@
     background: var(--tb-page-background);
   }
 }
+
+/* ─────────────────────────────────────────────────────────────
+ * NovaEdge Modern Card Sidebar shell — LIGHT THEME ONLY.
+ * Dark theme (.tb-dark) is untouched and keeps its current look.
+ * The sidenav becomes a very light neutral track; the logo header,
+ * navigation cards and user profile float on it as white cards.
+ * Layout: fixed header / scrollable nav / pinned profile, all in
+ * normal flow (flex column + gaps), so cards can never overlap.
+ * ───────────────────────────────────────────────────────────── */
+:host-context(body:not(.tb-dark)) {
+  mat-sidenav.tb-site-sidenav {
+    background: #f6f8fc;
+    border-right: 1px solid #e6eaf1;
+    box-shadow: 16px 0 40px -24px rgba(15, 23, 42, 0.18);
+    ::ng-deep .mat-drawer-inner-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      overflow: hidden;
+      background: #f6f8fc;
+    }
+    .tb-nav-header {
+      flex-shrink: 0;
+      .tb-nav-header-toolbar {
+        min-height: 60px;
+        height: auto;
+        padding: 8px 8px 8px 16px;
+        background: #ffffff;
+        border: 1px solid #e5eaf1;
+        border-bottom: 1px solid #e5eaf1;
+        border-radius: 16px;
+        box-shadow:
+          0 1px 2px rgba(16, 24, 40, 0.05),
+          0 10px 28px -20px rgba(16, 24, 40, 0.25);
+      }
+    }
+    .tb-side-menu-toolbar {
+      min-height: 0;
+      gap: 12px;
+      padding: 0;
+      background: transparent;
+      border-right: none;
+      .tb-side-menu-scroll {
+        padding: 2px;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(100, 116, 139, 0.4) transparent;
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: rgba(100, 116, 139, 0.35);
+          border-radius: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          background: transparent;
+        }
+      }
+      tb-user-menu {
+        background: transparent;
+      }
+    }
+  }
+  @media (max-width: 599px) {
+    mat-sidenav.tb-site-sidenav {
+      ::ng-deep .mat-drawer-inner-container {
+        gap: 8px;
+        padding: 8px;
+      }
+    }
+  }
+}
